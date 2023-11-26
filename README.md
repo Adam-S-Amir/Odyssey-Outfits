@@ -2,7 +2,6 @@
 Gunna change the name later
 
 # Stuff to keep in mind
-
 ADA shit (:root must be dynamic)
 
 Site needs to look good on phones, tablets, and computers
