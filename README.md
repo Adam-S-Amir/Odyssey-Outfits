@@ -6,7 +6,7 @@ ADA shit (:root must be dynamic)
 
 Site needs to look good on phones, tablets, and computers
 
-Implement a shit ton of JS and other libs
+Implement a shit ton of JS and other libs/frameworks
 
 
 [Guidelines](https://connect.fbla.org/headquarters/files/High%20School%20Competitive%20Events%20Resources/Individual%20Guidelines/Presentation%20Events/Website-Coding--Development.pdf)
