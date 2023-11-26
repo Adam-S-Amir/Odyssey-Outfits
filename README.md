@@ -4,6 +4,8 @@ Gunna change the name later
 # Stuff to keep in mind
 ADA shit (:root must be dynamic)
 
+Text to speech on mouse hover?
+
 Site needs to look good on phones, tablets, and computers
 
 Implement a shit ton of JS and other libs/frameworks
