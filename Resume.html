@@ -4,29 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company | Upload a Resume</title>
+    <link rel="stylesheet" href="./Assets/CSS/root.css">
+    <link rel="stylesheet" href="./Assets/CSS/stylesheet.css">
+    <title>Company | Home</title>
 </head>
 
 <body>
-    <select id="Job-Select">
-        <option style="text-align: center;">Select a Job:</option>
-        <optgroup label="Category 1">
-            <option>Job 1</option>
-            <option>Job 2</option>
-            <option>Job 3</option>
-        </optgroup>
-        <optgroup label="Category 2">
-            <option>Job 1</option>
-            <option>Job 2</option>
-            <option>Job 3</option>
-        </optgroup>
-        <optgroup label="Category 3">
-            <option>Job 1</option>
-            <option>Job 2</option>
-            <option>Job 3</option>
-        </optgroup>
-    </select>
+    <header>
+        <div class="nav-container">
+            <div class="navbar">
+                <h1 class="title">Company</h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <section id="Job-main">
+        <div class="container">
+            <select id="Job-Select">
+                <option style="text-align: center;">Select a Job:</option>
+                <optgroup label="Upper Management">
+                    <option>Chief Financial Officer</option>
+                    <option>Chief Executive Officer</option>
+                    <option>Chief Operating Officer</option>
+                </optgroup>
+                <optgroup label="Lower Management">
+                    <option>Human Resources</option>
+                    <option>Regional Manager</option>
+                    <option>Office Manager</option>
+                </optgroup>
+                <optgroup label="Sales Department">
+                    <option>Regional Sales Director</option>
+                    <option>Account Executive</option>
+                    <option>Salesman</option>
+                </optgroup>
+                <optgroup label="Financial Department">
+                    <option>Regional Financial Director</option>
+                    <option>Payroll Administrator</option>
+                    <option>Financial Analyst</option>
+                </optgroup>
+                <optgroup label="IT Department">
+                    <option>Fullstack Developer</option>
+                    <option>Network Administrator</option>
+                    <option>Help Desk Administrator</option>
+                </optgroup>
+            </select>
+        </div>
+    </section>
+    <section id="Job-info">
+        <div class="container">
+            <div style="clear: both">
+                <h1 id="job-value"></h1>
+                <h1 id="job-desc"></h1>
+            </div>
+        </div>
+    </section>
+    <section id="pdf-viewer">
+        <div class="container">
+            <label for="pdfInput" id="fileInputLabel">Upload a R&eacute;sum&eacute;</label>
+            <input type="file" id="pdfInput" accept=".pdf">
+            <iframe id="pdfViewer" width="100%" height="500"></iframe>
+            <button id="submit-resume">Submit Your R&eacute;sum&eacute;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Company.&nbsp;All rights reserved.</p>
+        </div>
+    </footer>
     <script src="./Assets/JS/index.js"></script>
 </body>
 

@@ -1,3 +1,12 @@
+/** MAIN STYLES */
+* {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +17,9 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--alt-text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* .nav-container {
@@ -17,6 +29,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    flex: 1;
 }
 
 header {
@@ -37,8 +50,7 @@ header h1 {
     align-items: center;
 }
 
-h1,
-.title {
+h1.title {
     padding-left: 15px;
 }
 
@@ -84,17 +96,18 @@ div.navbar a:hover {
     color: var(--alt-text-color);
 }
 
-div.navbar .focused{
+div.navbar .focused {
     color: var(--text-hover);
 }
 
-div.navbar .focused:hover{
-    color: var(--text-color);
+.focused {
+    color: var(--text-hover);
 }
 
 section {
     font-size: larger;
     padding: 2em 0;
+    min-height: 100%;
 }
 
 section>.container>h2 {
@@ -128,9 +141,13 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 1em 0;
-    /* position: absolute; */
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+::selection {
+    background-color: var(--text-hover);
 }
 
 ::-webkit-scrollbar {
@@ -148,3 +165,114 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #555555;
 }
+
+/** END MAIN STYLES */
+
+/** RESUME */
+#job-value {
+    float: left;
+}
+
+#job-desc {
+    float: right;
+}
+
+#fileInputLabel,
+#pdfInput,
+#pdfViewer,
+#submit-resume {
+    display: none;
+}
+
+#Job-Select {
+    outline: transparent;
+    padding: 0.6em 0.4em;
+    /* width: 150px; */
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--alt-background-color);
+    color: var(--text-color);
+    border-radius: 0.4em;
+    border: 1px solid var(--text-hover);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+select#Job-Select>option,
+select#Job-Select>optgroup,
+select#Job-Select>optgroup>option {
+    background-color: var(--alt-background-color);
+}
+
+select#Job-Select>option {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#pdfViewer {
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 0.4em;
+    border: 1px solid var(--text-hover);
+    position: relative;
+    flex-direction: column;
+    transition-duration: 0.2s;
+    overflow: hidden
+}
+
+
+#pdfInput {
+    color: transparent;
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#pdfInput::file-selector-button,
+#fileInputLabel,
+#submit-resume {
+    position: absolute;
+    outline: transparent;
+    padding: 0.6em 0.4em;
+    font-weight: bold;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--alt-background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-hover);
+    border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#submit-resume {
+    position: relative;
+    width: 100%;
+    bottom: -30px;
+}
+
+#Job-Select:hover,
+#fileInputLabel:hover,
+#submit-resume:hover {
+    background-color: var(--text-hover);
+}
+
+/** END RESUME  */
