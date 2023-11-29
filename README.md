@@ -5,6 +5,7 @@
 
 - [ ] Language localizations
   - [x] Test page works
+  - [ ] Toast notification to select language on site load
 
 - [ ] Text to speech on mouse hover?
 
