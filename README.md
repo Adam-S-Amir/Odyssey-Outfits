@@ -1,7 +1,13 @@
 # REQUIREMENTS
-- [ ] ADA shit (:root must be dynamic)
+
+
+- [ ] ADA stuffs (:root must be dynamic)
 
 - [ ] Site needs to look good on phones, tablets, and computers
+  - [x] Detects User-agent
+    - [ ] Change site mechanics based on device type
+
+- [ ] Toast notification to ask to allow cookies on site load
 
 - [ ] Language localizations
   - [x] Test page works
@@ -9,11 +15,11 @@
 
 - [ ] Text to speech on mouse hover?
 
-- [ ] Implement a shit ton of JS and other libs/frameworks
+- [ ] Implement a ton of JS and other libs/frameworks
 
 - [ ] GitHub wiki
 
-- [ ] Comments site-wied (backend)
+- [ ] Comments site-wide (backend)
 
 - [ ] Company name/change repo name
 
