@@ -1,6 +1,23 @@
 # FBLA
 Gunna change the name later
 
+# REQUIREMENTS
+- [ ] ADA shit (:root must be dynamic)
+
+- [ ] Site needs to look good on phones, tablets, and computers
+
+- [ ] Language localizations
+  - [x] Test page works
+
+- [ ] Text to speech on mouse hover?
+
+- [ ] Implement a shit ton of JS and other libs/frameworks
+
+- [ ] GitHub wiki
+
+- [ ] Comments site-wied (backend)
+
+- [ ] [GitHub community standards](https://github.com/Adam-S-Amir/FBLA/community)
 
 [Guidelines](https://connect.fbla.org/headquarters/files/High%20School%20Competitive%20Events%20Resources/Individual%20Guidelines/Presentation%20Events/Website-Coding--Development.pdf)
 
