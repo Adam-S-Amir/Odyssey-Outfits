@@ -1,6 +1,3 @@
-# FBLA
-Gunna change the name later
-
 # REQUIREMENTS
 - [ ] ADA shit (:root must be dynamic)
 
@@ -16,6 +13,8 @@ Gunna change the name later
 - [ ] GitHub wiki
 
 - [ ] Comments site-wied (backend)
+
+- [ ] Company name/change repo name
 
 - [ ] [GitHub community standards](https://github.com/Adam-S-Amir/FBLA/community)
 
