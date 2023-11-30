@@ -83,6 +83,7 @@ document.getElementById('pdfInput').addEventListener('change', function (event) 
         document.getElementById('submit-resume').style.display = "block";
         document.getElementById('pdfViewer').style.display = "block";
         document.getElementById("fileInputLabel").style.display = "none";
+        document.getElementById("Job-Select").disabled = true;
         reader.onload = function (e) {
             pdfViewer.src = e.target.result;
         };

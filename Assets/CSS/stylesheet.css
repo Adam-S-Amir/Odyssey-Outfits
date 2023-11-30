@@ -168,6 +168,65 @@ footer {
 
 /** END MAIN STYLES */
 
+/** MOBILE NAVBAR */
+.topnav {
+    overflow: hidden;
+    background-color: var(--alt-background-color);
+    position: relative;
+}
+
+.topnav #Links {
+    display: none;
+}
+
+.topnav a,
+.topnav h1 {
+    color: var(--text-color);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: var(--text-hover);
+    color: var(--text-color);
+}
+
+@font-face {
+    font-family: 'Mobile';
+    src: url('../Fonts/mobile.eot');
+    src: url('../fonts/mobile.eot') format('embedded-opentype'),
+        url('../fonts/mobile.woff2') format('woff2'),
+        url('../fonts/mobile.woff') format('woff'),
+        url('../fonts/mobile.ttf') format('truetype'),
+        url('../fonts/mobile.svg') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.mobile {
+    display: inline-block;
+    font: normal normal normal 14px/1 "Mobile";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.mobile-bars:before {
+    content: "\f0c9"
+}
+
+/** END MOBILE NAVBAR */
+
 /** RESUME */
 #job-value {
     float: left;
@@ -229,6 +288,9 @@ select#Job-Select>option {
     overflow: hidden
 }
 
+#pdfViewer::after {
+    content: "PDF Viewer";
+}
 
 #pdfInput {
     color: transparent;

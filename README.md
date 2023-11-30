@@ -5,7 +5,8 @@
 
 - [ ] Site needs to look good on phones, tablets, and computers
   - [x] Detects User-agent
-    - [ ] Change site mechanics based on device type
+    - [x] Navbar is dynamic
+    - [ ] Font-size changes
 
 - [ ] Toast notification to ask to allow cookies on site load
 
