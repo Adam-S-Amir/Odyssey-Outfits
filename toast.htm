@@ -11,49 +11,70 @@
 <body>
     <h1>Toasty</h1>
     <button onclick="createDiv();">Call Javascript Toast</button>
-    <script>
-        // * the js version
 
-        function createDiv() {
-            // Create a new div element and nested elements
-            const newDiv = document.createElement('div');
-            const paragraph = document.createElement('p');
+</body>
+<script>
+    // * the js version
 
-            // set styles for the div
-            newDiv.style.border = '3px solid black';
-            newDiv.style.padding = '5px';
-            newDiv.style.width = '50%';
+    function createDiv() {
+        // Create a new div element and nested elements
+        const newDiv = document.createElement('div');
+        const paragraph = document.createElement('p');
+        const newButton = document.createElement('button');
 
-            // question being asked 
-            paragraph.textContent = 'Do you agree to our terms and conditions?';
-            paragraph.style.padding = '0px';
-            paragraph.id = "paragraph";
-            // Create a checkbox element
-            const newCheckbox = document.createElement('input');
-            newCheckbox.type = 'checkbox';
+        // set styles for the div
+        newDiv.style.border = '3px solid black';
+        newDiv.style.padding = '5px';
+        newDiv.style.width = '50%';
 
-            // Create a label for the checkbox
-            const label = document.createElement('label');
-            label.textContent = 'Check me';
-            label.id = "label_checkbox";
+        // question being asked 
+        paragraph.textContent = 'Do you agree to our terms and conditions?';
+        paragraph.style.padding = '0px';
+        paragraph.id = "paragraph";
+        // Create a checkbox element
+        const newCheckbox = document.createElement('input');
+        newCheckbox.type = 'checkbox';
 
-            // Append the checkbox and label to the div
-            newDiv.appendChild(paragraph)
-            newDiv.appendChild(newCheckbox);
-            newDiv.appendChild(label);
+        // Create a label for the checkbox
+        const label = document.createElement('label');
+        label.textContent = 'Check me';
+        label.id = "label_checkbox";
 
-            // Add the div to the HTML document
-            document.body.appendChild(newDiv);
 
-            const myCheckbox = document.getElementById('check');
+        //Testing with a button instead
+
+        newButton.textContent = 'I agree';
+        newButton.id = "agreed";
+        newButton.onclick = function() {
+            console.log("You clicked me!");
+            newDiv.style.display = 'none';
+            newDiv.remove()
         }
 
+        // Append the checkbox and label to the div
+        newDiv.appendChild(paragraph)
+        newDiv.appendChild(newCheckbox);
+        newDiv.appendChild(label);
+        newDiv.appendChild(newButton);
+
+        // Add the div to the HTML document
+        document.body.appendChild(newDiv);
 
 
+    }
+    /*
+        const myCheckbox = document.getElementById('check');
+        myCheckbox.addEventListener("newDiv", function() {
+            // Check if the checkbox is checked
+            if (myCheckbox.checked) {
+                // If checked, remove the div
+                newDiv.remove();
+                console.log('Div deleted!');
+            }
+        });
+     */
 
-
-        // Call the function to create a div with a checkbox inside
-    </script>
-</body>
+    // Call the function to create a div with a checkbox inside
+</script>
 
 </html>
