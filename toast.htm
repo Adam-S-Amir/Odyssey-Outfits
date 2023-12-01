@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="MigDevv" content="Test website to ask for cookies/terms and conditions.">
     <title>Document</title>
+    <link rel="stylesheet" href="./Assets/CSS/root.css">
 </head>
 
 <body>
@@ -14,8 +15,6 @@
 
 </body>
 <script>
-    // * the js version
-
     function createDiv() {
         // Div element
         const createDiv = document.createElement('div');
@@ -35,6 +34,7 @@
         const newButton = document.createElement('button');
         newButton.textContent = 'I agree';
         newButton.id = "agreed";
+        newButton.style.background = "#B87100";
 
         // removes div element on button click
         newButton.onclick = function() {
@@ -48,9 +48,6 @@
         document.body.appendChild(createDiv);
         createDiv.appendChild(paragraph);
         createDiv.appendChild(newButton);
-
-
-
 
     }
 
