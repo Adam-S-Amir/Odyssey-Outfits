@@ -11,7 +11,8 @@
 <body>
     <h1>Toasty</h1>
     <button onclick="createDiv();">Call Javascript Toast</button>
-
+    <p>Only allows one div to be created.</p>
+    <button onclick="test();">Call test function</button>
 </body>
 
 <script>
@@ -21,6 +22,7 @@
         createDiv.style.border = '3px solid black';
         createDiv.style.padding = '5px';
         createDiv.style.width = '50%';
+        createDiv.id = "test";
 
         // paragraph element
         const paragraph = document.createElement('p');
@@ -44,6 +46,14 @@
         createDiv.appendChild(paragraph);
         createDiv.appendChild(newButton);
 
+    }
+
+    function test() {
+        console.log("started test");
+        var elements = document.getElementById("test");
+        if (elements == null) {
+            createDiv();
+        }
     }
 </script>
 
