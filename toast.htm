@@ -17,62 +17,43 @@
     // * the js version
 
     function createDiv() {
-        // Create a new div element and nested elements
-        const newDiv = document.createElement('div');
+        // Div element
+        const createDiv = document.createElement('div');
+        createDiv.style.border = '3px solid black';
+        createDiv.style.padding = '5px';
+        createDiv.style.width = '50%';
+
+
+        // paragraph element
         const paragraph = document.createElement('p');
-        const newButton = document.createElement('button');
-
-        // set styles for the div
-        newDiv.style.border = '3px solid black';
-        newDiv.style.padding = '5px';
-        newDiv.style.width = '50%';
-
-        // question being asked 
         paragraph.textContent = 'Do you agree to our terms and conditions?';
         paragraph.style.padding = '0px';
         paragraph.id = "paragraph";
-        // Create a checkbox element
-        const newCheckbox = document.createElement('input');
-        newCheckbox.type = 'checkbox';
-
-        // Create a label for the checkbox
-        const label = document.createElement('label');
-        label.textContent = 'Check me';
-        label.id = "label_checkbox";
 
 
-        //Testing with a button instead
-
+        // button element
+        const newButton = document.createElement('button');
         newButton.textContent = 'I agree';
         newButton.id = "agreed";
+
+        // removes div element on button click
         newButton.onclick = function() {
             console.log("You clicked me!");
-            newDiv.style.display = 'none';
-            newDiv.remove()
+            createDiv.style.display = 'none';
+            createDiv.remove();
         }
 
-        // Append the checkbox and label to the div
-        newDiv.appendChild(paragraph)
-        newDiv.appendChild(newCheckbox);
-        newDiv.appendChild(label);
-        newDiv.appendChild(newButton);
 
-        // Add the div to the HTML document
-        document.body.appendChild(newDiv);
+        // combining them all together
+        document.body.appendChild(createDiv);
+        createDiv.appendChild(paragraph);
+        createDiv.appendChild(newButton);
+
+
 
 
     }
-    /*
-        const myCheckbox = document.getElementById('check');
-        myCheckbox.addEventListener("newDiv", function() {
-            // Check if the checkbox is checked
-            if (myCheckbox.checked) {
-                // If checked, remove the div
-                newDiv.remove();
-                console.log('Div deleted!');
-            }
-        });
-     */
+
 
     // Call the function to create a div with a checkbox inside
 </script>
