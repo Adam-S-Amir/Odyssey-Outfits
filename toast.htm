@@ -13,6 +13,7 @@
     <button onclick="createDiv();">Call Javascript Toast</button>
 
 </body>
+
 <script>
     function createDiv() {
         // Div element
@@ -25,8 +26,6 @@
         const paragraph = document.createElement('p');
         paragraph.textContent = 'Do you agree to our terms and conditions?';
         paragraph.style.padding = '0px';
-        paragraph.id = "paragraph";
-
 
         // button element
         const newButton = document.createElement('button');
@@ -36,10 +35,9 @@
 
         // removes div element on button click
         newButton.onclick = function() {
-            console.log("You clicked me!");
+            console.log("Button was clicked, removing div element.");
             createDiv.remove();
         }
-
 
         // combining them all together
         document.body.appendChild(createDiv);
@@ -47,9 +45,6 @@
         createDiv.appendChild(newButton);
 
     }
-
-
-    // Call the function to create a div with a checkbox inside
 </script>
 
 </html>
