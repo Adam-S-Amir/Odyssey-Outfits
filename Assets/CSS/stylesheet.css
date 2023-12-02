@@ -362,6 +362,7 @@ select#Job-Select>option {
     justify-content: center;
     align-items: center;
     position: fixed;
+    width: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -375,8 +376,9 @@ select#Job-Select>option {
 
 /* Style the form elements as needed */
 form {
+    clear: both;
     color: var(--text-color);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -385,19 +387,47 @@ label {
 }
 
 input {
+    display: flex;
     padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     border: 1px solid var(--text-hover);
     border-radius: 3px;
+    width: 100%;
+    /* Make inputs fill the available space */
+}
+
+select {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100%;
+}
+
+div.left {
+    position: relative;
+    float: left;
+    padding-right: 15px;
+}
+
+div.right {
+    position: relative;
+    float: right;
 }
 
 button {
+    bottom: 0;
     padding: 10px;
     background-color: var(--background-color);
     color: var(--alt-text-color);
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
 }
 
 /** END SUBMISSION FORM */
