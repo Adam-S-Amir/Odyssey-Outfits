@@ -50,9 +50,9 @@ function navbar() {
       <h1>Odyssey Outfits</h1>
       <div id="Links">
           <a href="./index.html">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a href="./About.html">About</a>
+          <a href="./Services.html">Services</a>
+          <a href="./Contact.html">Contact</a>
           <a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
@@ -71,9 +71,9 @@ function navbar_default() {
   <nav>
       <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Services</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
           <li><a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
       </ul>
   </nav>
