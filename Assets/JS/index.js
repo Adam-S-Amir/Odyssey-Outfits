@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     let msg = [`
                     <h1>Terms of Service</h1>
-                    <p>Our website gathers user data to enhance the overall user experience. Kindly review our Terms of Service through the following link, and please acknowledge your acceptance to continue enjoying our services seamlessly.</p>
+                    <p>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
                     <a href="./TOS.html" target="_blank">Terms Of Service</a>
                     <br>
                     <br>
