@@ -27,6 +27,10 @@ body {
     height: 100%;
 }
 
+a {
+    color: var(--focused);
+}
+
 /* .nav-container {
     width: 80%;
 } */
@@ -97,16 +101,16 @@ div.navbar a {
 }
 
 div.navbar a:hover {
-    background-color: var(--text-hover);
+    background-color: var(--focused);
     color: var(--alt-text-color);
 }
 
 div.navbar .focused {
-    color: var(--text-hover);
+    color: var(--focused);
 }
 
 .focused {
-    color: var(--text-hover);
+    color: var(--focused);
 }
 
 section {
@@ -116,7 +120,7 @@ section {
 }
 
 section>.container>h2 {
-    color: var(--text-hover);
+    color: var(--focused);
 }
 
 section>.container>ul {
@@ -170,7 +174,7 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--text-hover);
+    background-color: var(--focused);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -211,36 +215,111 @@ footer {
 }
 
 .topnav a:hover {
-    background-color: var(--text-hover);
+    background-color: var(--focused);
     color: var(--text-color);
-}
-
-@font-face {
-    font-family: 'Mobile';
-    src: url('../Fonts/mobile.eot');
-    src: url('../fonts/mobile.eot') format('embedded-opentype'),
-        url('../fonts/mobile.woff2') format('woff2'),
-        url('../fonts/mobile.woff') format('woff'),
-        url('../fonts/mobile.ttf') format('truetype'),
-        url('../fonts/mobile.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
 }
 
 .mobile {
     display: inline-block;
-    font: normal normal normal 14px/1 "Mobile";
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .mobile-bars:before {
-    content: "\f0c9"
+    content: "≡";
+    color: black;
+    font-weight: 1000;
+    font-size: 20px;
 }
 
 /** END MOBILE NAVBAR */
+
+/** TOAST */
+
+.toast-overlay {
+    z-index: 9999998;
+    background-color: var(--overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.toast {
+    color: var(--alt-text-color);
+    z-index: 9999999;
+    width: 40%;
+    background-color: var(--background-color);
+    border: solid var(--focused);
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    border-radius: 1vmax;
+    -webkit-border-radius: 1vmax;
+    -moz-border-radius: 1vmax;
+    -ms-border-radius: 1vmax;
+    -o-border-radius: 1vmax;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, transform 0.5s;
+    -moz-transition: opacity 0.5s, transform 0.5s;
+    -ms-transition: opacity 0.5s, transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+.message-container {
+    text-align: center;
+    padding: 5px;
+}
+
+.toast-button {
+    background-color: var(--focused);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border: solid var(--alt-background-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.toast>p {
+    text-align: center;
+}
+
+/** END TOAST */
 
 /** RESUME */
 #job-value {
@@ -249,6 +328,10 @@ footer {
 
 #job-desc {
     float: right;
+}
+
+.job-desc {
+    font-size: large;
 }
 
 #fileInputLabel,
@@ -267,7 +350,7 @@ footer {
     background-color: var(--alt-background-color);
     color: var(--text-color);
     border-radius: 0.4em;
-    border: 1px solid var(--text-hover);
+    border: 1px solid var(--focused);
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -296,37 +379,110 @@ select#Job-Select>option {
     text-align: center;
     background-color: var(--background-color);
     border-radius: 0.4em;
-    border: 1px solid var(--text-hover);
+    border: 1px solid var(--focused);
     position: relative;
     flex-direction: column;
     transition-duration: 0.2s;
-    overflow: hidden
+    overflow: hidden;
 }
 
 #pdfViewer::after {
     content: "PDF Viewer";
 }
 
-#pdfInput {
-    color: transparent;
-    position: absolute;
-    left: 55%;
-    transform: translate(-50%, -50%);
+#Job-Select:hover,
+#fileInputLabel:hover,
+#submit-resume:hover {
+    background-color: var(--focused);
 }
 
-#pdfInput::file-selector-button,
-#fileInputLabel,
-#submit-resume {
-    position: absolute;
+div.overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    border: solid var(--focused);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+div.overlay form {
+    color: var(--text-color);
+    flex-direction: column;
+}
+
+div.overlay label {
+    margin-bottom: 8px;
+}
+
+div.overlay input {
+    display: flex;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid var(--focused);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+div.overlay select {
+    display: flex;
+    margin-bottom: 5px;
     outline: transparent;
     padding: 0.6em 0.4em;
     font-weight: bold;
     font-size: 16px;
-    width: 150px;
+    background-color: var(--alt-background-color);
+    color: var(--text-color);
+    border: 1px solid var(--focused);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#fileInputLabel,
+#pdfInput {
+    bottom: 0;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--alt-text-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+#submit-resume {
+    outline: transparent;
+    padding: 0.6em 0.4em;
+    font-weight: bold;
+    font-size: 16px;
     text-align: center;
     background-color: var(--alt-background-color);
     color: var(--text-color);
-    border: 1px solid var(--text-hover);
+    border: 1px solid var(--focused);
     border-radius: 0.4em;
     -webkit-border-radius: 0.4em;
     -moz-border-radius: 0.4em;
@@ -338,96 +494,9 @@ select#Job-Select>option {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-}
-
-#submit-resume {
     position: relative;
     width: 100%;
     bottom: -30px;
 }
 
-#Job-Select:hover,
-#fileInputLabel:hover,
-#submit-resume:hover {
-    background-color: var(--text-hover);
-}
-
 /** END RESUME  */
-
-/** SUBMISSION FORM */
-
-.overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 60%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: var(--alt-background-color);
-    border: solid var(--text-hover);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-}
-
-/* Style the form elements as needed */
-form {
-    clear: both;
-    color: var(--text-color);
-    /* display: flex; */
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 8px;
-}
-
-input {
-    display: flex;
-    padding: 8px;
-    margin-bottom: 5px;
-    border: 1px solid var(--text-hover);
-    border-radius: 3px;
-    width: 100%;
-    /* Make inputs fill the available space */
-}
-
-select {
-    display: flex;
-    margin-bottom: 5px;
-}
-
-.submit-div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 100%;
-}
-
-div.left {
-    position: relative;
-    float: left;
-    padding-right: 15px;
-}
-
-div.right {
-    position: relative;
-    float: right;
-}
-
-button {
-    bottom: 0;
-    padding: 10px;
-    background-color: var(--background-color);
-    color: var(--alt-text-color);
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    position: relative;
-}
-
-/** END SUBMISSION FORM */

@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the 'TOS' item exists in localStorage
+  if (localStorage.getItem('TOS') === 'accepted') {
+    // The 'TOS' item exists
+    console.log("User has accepted the TOS request.");
+    // You can perform further actions here if needed
+  } else {
+    let msg = [`
+                    <h1>Terms of Service</h1>
+                    <p>Our website gathers user data to enhance the overall user experience. Kindly review our Terms of Service through the following link, and please acknowledge your acceptance to continue enjoying our services seamlessly.</p>
+                    <a href="./TOS.html" target="_blank">Terms Of Service</a>
+                    <br>
+                    <br>
+              `]
+
+    window.toast({
+      message: msg,
+      btnmsg: "OK",
+      action: () => TOS(),
+    })
+  }
+
+  function TOS() {
+    localStorage.setItem("TOS", "accepted")
+  }
+
+});
+
 function detectDeviceType() {
   const userAgent = navigator.userAgent;
 
@@ -19,7 +47,7 @@ function navbar() {
   navbarclass.classList.remove("navbar");
   navbar.innerHTML = [`
   <div class="topnav">
-      <h1>Company</h1>
+      <h1>Odyssey Outfits</h1>
       <div id="Links">
           <a href="./index.html">Home</a>
           <a href="#about">About</a>
@@ -39,7 +67,7 @@ function navbar_default() {
   let navbarclass = document.getElementById("navbar");
   navbarclass.classList.add("navbar");
   navbar.innerHTML = [`
-  <h1 class="title">Company</h1>
+  <h1 class="title">Odyssey Outfits</h1>
   <nav>
       <ul>
           <li><a href="./index.html">Home</a></li>
@@ -63,4 +91,80 @@ function mobilehide() {
 window.addEventListener('resize', function (event) {
   detectDeviceType();
 });
+
 detectDeviceType();
+
+window.toast = window.toast || (({
+  message,
+  btnmsg,
+  action,
+}) => {
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.id = "toast-overlay";
+  overlay.classList.add("toast-overlay");
+  document.body.appendChild(overlay);
+
+  // Div element for the toast
+  const createDiv = document.createElement('div');
+  createDiv.classList.add("toast");
+
+  // Container for the message
+  const messageContainer = document.createElement('div');
+  messageContainer.classList.add('message-container');
+
+  // Function to handle removal with fade-out and slide-down animations
+  const removeToast = () => {
+    createDiv.style.opacity = 0;
+    createDiv.style.transform = 'translateY(50%)';
+    setTimeout(() => {
+      createDiv.remove();
+      overlay.remove(); // Remove overlay when toast is removed
+    }, 500); // Remove after the animation duration (in milliseconds)
+  };
+
+  // Iterate through the array and create HTML elements for each message
+  message.forEach(htmlString => {
+    const element = document.createElement('div');
+    element.innerHTML = htmlString;
+    messageContainer.appendChild(element);
+  });
+
+  // Button element
+  const newButton = document.createElement('button');
+  newButton.textContent = btnmsg || 'I agree';
+  newButton.id = "agreed";
+  newButton.classList.add("toast-button");
+
+  // removes div element on button click with fade-out and slide-down animations
+  newButton.onclick = function () {
+    // If action is defined and is a function, execute it before removing the toast
+    if (action && typeof action === 'function') {
+      action();  // Call the function when the button is clicked
+    }
+    removeToast();
+  };
+
+  // Combine them all together
+  overlay.appendChild(createDiv);
+
+  // Triggering reflow to restart the CSS transition
+  void createDiv.offsetWidth;
+
+  createDiv.style.opacity = 1;
+
+  createDiv.appendChild(messageContainer);
+  createDiv.appendChild(newButton);
+});
+
+window.alert = (message) => {
+  toast({
+    message
+  });
+};
+
+window.confirm = (message) => {
+  toast({
+    message
+  });
+};

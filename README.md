@@ -2,13 +2,14 @@
 
 
 - [ ] ADA stuffs (:root must be dynamic)
+  - [ ] Must be able to select between normal and black and white
 
 - [ ] Site needs to look good on phones, tablets, and computers
   - [x] Detects User-agent
     - [x] Navbar is dynamic
-    - [ ] Font-size changes
+    - [x] Font-size changes
 
-- [ ] Toast notification to ask to allow cookies on site load
+- [x] Toast notification to ask to allow cookies on site load
 
 - [ ] Language localizations
   - [x] Test page works
@@ -22,7 +23,7 @@
 
 - [ ] Comments site-wide (backend)
 
-- [ ] Company name/change repo name
+- [x] Company name/change repo name
 
 - [ ] [GitHub community standards](https://github.com/Adam-S-Amir/FBLA/community)
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/CSS/root.css">
     <link rel="stylesheet" href="./Assets/CSS/stylesheet.css">
-    <title>Odyssey Outfits | Home</title>
+    <title>Odyssey Outfits | Upload a R&eacute;sum&eacute;</title>
 </head>
 
 <body>
@@ -67,12 +67,49 @@
             </div>
         </div>
     </section>
+    <div class="overlay" id="Job-Form">
+        <form>
+            <label for="form-name">First Name:</label>
+            <input type="text" id="form-name" name="form-name" required>
+
+            <label for="form-lname">Last Name:</label>
+            <input type="text" id="form-lname" name="form-lname" required>
+
+            <label for="form-email">Email:</label>
+            <input type="email" id="form-email" name="form-email" required>
+
+            <label for="form-phone">Phone Number:</label>
+            <input type="tel" id="form-phone" name="form-phone" required>
+
+            <label for="form-linkedin">Linkedin:</label>
+            <input type="url" id="form-linkedin" name="form-linkedin" required>
+
+            <label for="form-address">Current Address:</label>
+            <input type="text" id="form-address" name="form-address" required>
+
+            <label for="form-legal">Are you legally authorized<br>to work in the United States?</label>
+            <select id="form-legal" required>
+                <option></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <label for="form-education">Have you completed the following level<br>of education: Bachelor's Degree?</label>
+            <select id="form-education" required>
+                <option></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <div class="submit-div">
+                <label for="pdfInput" id="fileInputLabel">Upload a R&eacute;sum&eacute;</label>
+                <input type="file" id="pdfInput" accept=".pdf">
+            </div>
+        </form>
+    </div>
     <section id="pdf-viewer">
         <div class="container">
-            <label for="pdfInput" id="fileInputLabel">Upload a R&eacute;sum&eacute;</label>
-            <input type="file" id="pdfInput" accept=".pdf">
             <iframe id="pdfViewer" width="100%" height="500"></iframe>
-            <button id="submit-resume">Submit Your R&eacute;sum&eacute;</button>
+            <button type="submit" id="submit-resume" onclick="sendEmail()">Submit Your Application</button>
         </div>
     </section>
 
@@ -81,6 +118,7 @@
             <p>&copy; 2023 Odyssey Outfits.&nbsp;All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./Assets/JS/index.js"></script>
     <script src="./Assets/JS/Resume.js"></script>
 </body>

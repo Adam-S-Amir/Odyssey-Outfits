@@ -3,7 +3,8 @@
     --alt-background-color: #DDD0C8;
     --text-color: #073632;
     --alt-text-color: #DDD0C8;
-    --text-hover: #B87100;
+    --focused: #B87100;
+    --overlay: rgba(85,85,85,0.8);
     --scrollbar-thumb: #888888;
     --scrollbar-thumb-hover: #555555;
     --ADA-Black: #000000;
