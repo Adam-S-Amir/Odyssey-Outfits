@@ -34,3 +34,5 @@
 [Dashboard](https://vercel.com/adam-s-amirs-projects/odysseyoutfits)
 
 [Live Preview](https://odysseyoutfits.vercel.app/index.html)
+
+[Locale Names](https://www.localeplanet.com/icu/index.html)

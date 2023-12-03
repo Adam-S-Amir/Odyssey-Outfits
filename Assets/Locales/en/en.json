@@ -1,4 +1,37 @@
 {
   "greeting": "Hello, World!",
-  "description": "This is a sample website."
+  "description": "This is a sample website.",
+  "nav-home": "Home",
+  "nav-about": "About",
+  "nav-services": "Services",
+  "nav-contact": "Contact",
+  "nav-resume": "Upload a Résumé",
+
+  "Select-a-Job": "Select a Job",
+  "Upper-Management": "Upper Management",
+  "Chief-Financial-Officer": "Chief Financial Officer",
+  "Chief-Executive-Officer": "Chief Executive Officer",
+  "Chief-Operating-Officer": "Chief Operating Officer",
+  "Lower-Management": "Lower Management",
+  "Human-Resources": "Human Resources",
+  "Regional-Manager": "Regional Manager",
+  "Office-Manager": "Office Manager",
+  "Sales-Department": "Sales Department",
+  "Regional-Sales-Director": "Regional Sales Director",
+  "Account-Executive": "Account Executive",
+  "Salesman": "Salesman",
+  "Financial-Department": "Financial Department",
+  "Regional-Financial-Director": "Regional Financial Director",
+  "Payroll-Administrator": "Payroll Administrator",
+  "Financial-Analyst": "Financial Analyst",
+  "IT-Department": "IT Department",
+  "Fullstack-Developer": "Fullstack Developer",
+  "Network-Administrator": "Network Administrator",
+  "Help-Desk-Administrator": "Help Desk Administrator",
+
+  "Selected-Job": "Selected Job: ",
+  "Department-Division": "Department/Division: ",
+  "Job-Description": "Job Description: ",
+
+  "copyright": "© 2023 Odyssey Outfits. All rights reserved."
 }

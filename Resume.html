@@ -17,11 +17,17 @@
                 <h1 class="title">Odyssey Outfits</h1>
                 <nav>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./About.html">About</a></li>
-                        <li><a href="./Services.html">Services</a></li>
-                        <li><a href="./Contact.html">Contact</a></li>
-                        <li><a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+                        <li><a id="nav-home" href="./index.html">Home</a></li>
+                        <li><a id="nav-about" href="./About.html">About</a></li>
+                        <li><a id="nav-services" href="./Services.html">Services</a></li>
+                        <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+                        <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+                        <li>
+                            <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                                <option value="en">en/US</option>
+                                <option value="es">es/ES</option>
+                            </select>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -31,31 +37,31 @@
     <section id="Job-main">
         <div class="container">
             <select id="Job-Select">
-                <option style="text-align: center;">Select a Job:</option>
-                <optgroup label="Upper Management">
-                    <option>Chief Financial Officer</option>
-                    <option>Chief Executive Officer</option>
-                    <option>Chief Operating Officer</option>
+                <option id="Select-a-Job" style="text-align: center;" label="Select a Job:"></option>
+                <optgroup id="Upper-Management" label="Upper Management">
+                    <option id="Chief-Financial-Officer">Chief Financial Officer</option>
+                    <option id="Chief-Executive-Officer">Chief Executive Officer</option>
+                    <option id="Chief-Operating-Officer">Chief Operating Officer</option>
                 </optgroup>
-                <optgroup label="Lower Management">
-                    <option>Human Resources</option>
-                    <option>Regional Manager</option>
-                    <option>Office Manager</option>
+                <optgroup id="Lower-Management" label="Lower Management">
+                    <option id="Human-Resources">Human Resources</option>
+                    <option id="Regional-Manager">Regional Manager</option>
+                    <option id="Office-Manager">Office Manager</option>
                 </optgroup>
-                <optgroup label="Sales Department">
-                    <option>Regional Sales Director</option>
-                    <option>Account Executive</option>
-                    <option>Salesman</option>
+                <optgroup id="Sales-Department" label="Sales Department">
+                    <option id="Regional-Sales-Director">Regional Sales Director</option>
+                    <option id="Account-Executive">Account Executive</option>
+                    <option id="Salesman">Salesman</option>
                 </optgroup>
-                <optgroup label="Financial Department">
-                    <option>Regional Financial Director</option>
-                    <option>Payroll Administrator</option>
-                    <option>Financial Analyst</option>
+                <optgroup id="Financial-Department" label="Financial Department">
+                    <option id="Regional-Financial-Director">Regional Financial Director</option>
+                    <option id="Payroll-Administrator">Payroll Administrator</option>
+                    <option id="Financial-Analyst">Financial Analyst</option>
                 </optgroup>
-                <optgroup label="IT Department">
-                    <option>Fullstack Developer</option>
-                    <option>Network Administrator</option>
-                    <option>Help Desk Administrator</option>
+                <optgroup id="IT-Department" label="IT Department">
+                    <option id="Fullstack-Developer">Fullstack Developer</option>
+                    <option id="Network-Administrator">Network Administrator</option>
+                    <option id="Help-Desk-Administrator">Help Desk Administrator</option>
                 </optgroup>
             </select>
         </div>
@@ -70,39 +76,39 @@
     </section>
     <div class="overlay" id="Job-Form">
         <form>
-            <label for="form-name">First Name:</label>
+            <label for="form-name" id="label-">First Name:</label>
             <input type="text" id="form-name" name="form-name" required>
 
-            <label for="form-lname">Last Name:</label>
+            <label for="form-lname" id="label-">Last Name:</label>
             <input type="text" id="form-lname" name="form-lname" required>
 
-            <label for="form-email">Email:</label>
+            <label for="form-email" id="label-">Email:</label>
             <input type="email" id="form-email" name="form-email" required>
 
-            <label for="form-phone">Phone Number:</label>
+            <label for="form-phone" id="label-">Phone Number:</label>
             <input type="tel" id="form-phone" name="form-phone" required>
 
-            <label for="form-linkedin">Linkedin:</label>
+            <label for="form-linkedin" id="label-">Linkedin:</label>
             <input type="url" id="form-linkedin" name="form-linkedin" required>
 
-            <label for="form-address">Current Address:</label>
+            <label for="form-address" id="label-">Current Address:</label>
             <input type="text" id="form-address" name="form-address" required>
 
-            <label for="form-legal">Are you legally authorized<br>to work in the United States?</label>
+            <label for="form-legal" id="label-">Are you legally authorized<br>to work in the United States?</label>
             <select id="form-legal" required>
                 <option></option>
                 <option>Yes</option>
                 <option>No</option>
             </select>
 
-            <label for="form-education">Have you completed the following level<br>of education: Bachelor's Degree?</label>
+            <label for="form-education" id="label-">Have you completed the following level<br>of education: Bachelor's Degree?</label>
             <select id="form-education" required>
                 <option></option>
                 <option>Yes</option>
                 <option>No</option>
             </select>
             <div class="submit-div">
-                <label for="pdfInput" id="fileInputLabel">Upload a R&eacute;sum&eacute;</label>
+                <label for="pdfInput" id="fileInputLabel" id="label-">Upload a R&eacute;sum&eacute;</label>
                 <input type="file" id="pdfInput" accept=".pdf">
             </div>
         </form>
@@ -116,10 +122,11 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Odyssey Outfits.&nbsp;All rights reserved.</p>
+            <p id="copyright">&copy; 2023 Odyssey Outfits.&nbsp;All rights reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./Assets/JS/locales.js"></script>
     <script src="./Assets/JS/index.js"></script>
     <script src="./Assets/JS/Resume.js"></script>
 </body>

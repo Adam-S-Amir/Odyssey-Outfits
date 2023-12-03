@@ -1,4 +1,38 @@
 {
   "greeting": "¡Hola, Mundo!",
-  "description": "Este es un sitio web de muestra."
+  "description": "Este es un sitio web de muestra.",
+
+  "nav-home": "Inicio",
+  "nav-about": "Acerca",
+  "nav-services": "Servicio",
+  "nav-contact": "Contacto",
+  "nav-resume": "Subir un Curriculum",
+
+  "Select-a-Job": "Seleccionar un Trabajo",
+  "Upper-Management": "Gerencia Superior",
+  "Chief-Financial-Officer": "Director de Finanzas",
+  "Chief-Executive-Officer": "Director General",
+  "Chief-Operating-Officer": "Director de Operaciones",
+  "Lower-Management": "Menor Gestión",
+  "Human-Resources": "Recursos Humanos",
+  "Regional-Manager": "Gerente Regional",
+  "Office-Manager": "Gerente de Oficina",
+  "Sales-Department": "Departamento de Ventas",
+  "Regional-Sales-Director": "Director Regional de Ventas",
+  "Account-Executive": "Ejecutivo de Cuentas",
+  "Salesman": "El Vendedor",
+  "Financial-Department": "Departamento Financiero",
+  "Regional-Financial-Director": "Director Regional de Finanzas",
+  "Payroll-Administrator": "Administrador De Nóminas",
+  "Financial-Analyst": "Analista Financiero",
+  "IT-Department": "Departamento de IT",
+  "Fullstack-Developer": "Desarrollador Fullstack",
+  "Network-Administrator": "Administrador de Red",
+  "Help-Desk-Administrator": "Administrador de la Mesa de Ayuda",
+
+  "Selected-Job": "Trabajo Seleccionado: ",
+  "Department-Division": "Departamento/División: ",
+  "Job-Description": "Descripción del Puesto: ",
+
+  "copyright": "© 2023 Odyssey Outfits. Todos Los Derechos Reservados"
 }

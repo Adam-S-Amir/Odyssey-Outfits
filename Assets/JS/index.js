@@ -49,11 +49,15 @@ function navbar() {
   <div class="topnav">
       <h1>Odyssey Outfits</h1>
       <div id="Links">
-          <a href="./index.html">Home</a>
-          <a href="./About.html">About</a>
-          <a href="./Services.html">Services</a>
-          <a href="./Contact.html">Contact</a>
-          <a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
+          <a id="nav-home" href="./index.html">Home</a>
+          <a id="nav-about" href="./About.html">About</a>
+          <a id="nav-services" href="./Services.html">Services</a>
+          <a id="nav-contact" href="./Contact.html">Contact</a>
+          <a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
+          <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+              <option value="en">en/US</option>
+              <option value="es">es/ES</option>
+          </select>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
           <i class="mobile mobile-bars"></i>
@@ -70,11 +74,17 @@ function navbar_default() {
   <h1 class="title">Odyssey Outfits</h1>
   <nav>
       <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./About.html">About</a></li>
-          <li><a href="./Services.html">Services</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
-          <li><a class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+          <li><a id="nav-home" href="./index.html">Home</a></li>
+          <li><a id="nav-about" href="./About.html">About</a></li>
+          <li><a id="nav-services" href="./Services.html">Services</a></li>
+          <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+          <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+          <li>
+              <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                  <option value="en">en/US</option>
+                  <option value="es">es/ES</option>
+              </select>
+          </li>
       </ul>
   </nav>
 `]

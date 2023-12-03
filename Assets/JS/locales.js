@@ -7,14 +7,33 @@ function setLanguage(language) {
 
 // Function to update content based on the current language
 function updateContent() {
+    // Set the selected option on page load
+    document.getElementById('languageSelect').value = currentLanguage;
+
     fetch(`./Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('greeting').textContent = data.greeting;
-            document.getElementById('description').textContent = data.description;
+            // Loop through the keys in the JSON data
+            Object.keys(data).forEach(key => {
+                // Find the corresponding HTML element by ID
+                const element = document.getElementById(key);
+
+                if (element) {
+                    // Check if the element is an optgroup
+                    if (element.tagName.toLowerCase() === "option") {
+                        element.setAttribute('label', data[key]);
+                    } else if (element.tagName.toLowerCase() === "optgroup") {
+                        element.setAttribute('label', data[key]);
+                    } else {
+                        // Update the text content of regular elements
+                        element.textContent = data[key];
+                    }
+                }
+            });
         })
         .catch(error => console.error('Error loading language file:', error));
 }
+
 
 // Function to change language based on select value
 function changeLanguage(selectedLanguage) {
@@ -28,8 +47,6 @@ function getStoredLanguage() {
 
 // Set the initial language from localStorage or use default
 let currentLanguage = getStoredLanguage();
-
-// Set the selected option on page load
 document.getElementById('languageSelect').value = currentLanguage;
 
 // Update lang localization
