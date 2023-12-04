@@ -63,6 +63,7 @@
   "label-form-legal": "Are you legally authorized<br>to work in the United States?",
   "label-form-education": "Have you completed the following level<br>of education: Bachelor's Degree?",
   "fileInputLabel": "Upload Your Résumé",
+  "pdf-file-error": "Please upload a valid PDF file.",
   "submit-resume": "Submit Your Application",
 
   "application-sent": "Application Sent!",

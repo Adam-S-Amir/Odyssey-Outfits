@@ -1,19 +1,49 @@
 document.getElementById('Job-Select').addEventListener('change', function () {
-    let selectedOption = this.options[this.selectedIndex];
-    let selectedText = selectedOption.id;
-    let selectedCategory = selectedOption.parentElement.id;
-    const optgroup = selectedOption.closest("optgroup");
+    //^ This event listener is fired when the user selects a job or a new jon.
+    //! Basically if the user interacts with the select element,
+    //! All the code below will be executed,
+    //! depending on the conditionals
 
+    //* Initialize the variables
+    let selectedOption = this.options[this.selectedIndex];
+    //^ This var is the option in the select element
+    //* which has been selected by the user
+    let selectedText = selectedOption.id;
+    //^ Fetch ID of the selected option
+    //! Mainly for changing locale
+    let selectedCategory = selectedOption.parentElement.id;
+    //^ Fetch id of the selected option's group
+    //! Mainly for the conditionals
+    let optgroup = selectedOption.closest("optgroup");
+    //^ Fetch id of the selected option's group
+    //! Mainly for changing locale
+    let footer = document.getElementById("footer");
+    //^ Fetch id of the footer
+    //! Mainly for changing position so the
+    //! Page looks better/smoother
     let fileInputLabel = document.getElementById("fileInputLabel");
     let pdfViewer = document.getElementById('pdfViewer');
     let jobvalue = document.getElementById("job-value");
     let jobdesc = document.getElementById('job-desc');
     let jobform = document.getElementById("Job-Form");
+    //^ Fetch id of currently hidden elements
+    //! Will be revealed later
     let desc = "<span id='Job-Description'></span><br><span class='focused job-desc'>";
+    //^ Create text element
+    //! Will display job description based on the selected job
+    //! Text is blank and will be filled according to the selected
+    //! language of the user
     fileInputLabel.style.display = "block";
+    //^ Reveal the file input label
+
+    //* Conditional statements to set job description based on the selected job
     if (selectedCategory === 'Upper-Management' && selectedText === 'Chief-Financial-Officer') {
         jobdesc.innerHTML = desc + "<span id='CFO'></span>" + "</span>";
+        //^ innerHTML of the job description will be set
+        //* to in this case, CFO. Left empty and will be
+        //* filled according to the selected language of the user
         show();
+        //^ Show hidden elements
     } else if (selectedCategory === 'Upper-Management' && selectedText === 'Chief-Executive-Officer') {
         jobdesc.innerHTML = desc + "<span id='CEO'></span>" + "</span>";
         show();
@@ -58,45 +88,73 @@ document.getElementById('Job-Select').addEventListener('change', function () {
         show();
     } else {
         hide();
+        //^ If the user selects "Select a Job:", this will
+        //* Hide everything and revert to the page's default
+        //* appearance
     }
-    jobvalue.innerHTML = "<span id='Selected-Job'></span><br><span class='focused job-desc'>" + selectedOption.label.replace(/-/g, ' ') + "</span><br><span id='Department-Division'></span><br><span class='focused job-desc'>" + optgroup.label + "</span>";
-    updateContent();
 
+    jobvalue.innerHTML = "<span id='Selected-Job'></span><br><span class='focused job-desc'>" + selectedOption.label.replace(/-/g, ' ') + "</span><br><span id='Department-Division'></span><br><span class='focused job-desc'>" + optgroup.label + "</span>";
+    //^ Update job value
+    updateContent();
+    //^ Update locale information
+
+    //* Function to hide specific elements
     function hide() {
         jobvalue.style.display = "none";
         fileInputLabel.style.display = "none";
         pdfViewer.style.display = "none";
         jobdesc.style.display = "none";
-        jobform.style.display = "none"
+        jobform.style.display = "none";
+        footer.classList.add("absolute-footer");
     }
 
+    //* Function to show specific elements
     function show() {
         jobvalue.style.display = "block";
         jobdesc.style.display = "block";
-        jobform.style.display = "flex"
+        jobform.style.display = "flex";
+        footer.classList.remove("absolute-footer");
     }
 });
 
 document.getElementById('pdfInput').addEventListener('change', function (event) {
+    //^ Event listener for the 'pdfInput' element
+
     const fileInput = event.target;
     const file = fileInput.files[0];
+    //^ using const so vars will NEVER be redeclared
 
+    //* Check if the selected file is a valid PDF
     if (file && file.type === 'application/pdf') {
         const reader = new FileReader();
+        //^ Handle PDF file display
         document.getElementById('submit-resume').style.display = "block";
         document.getElementById('pdfViewer').style.display = "block";
         document.getElementById("fileInputLabel").style.display = "none";
         document.getElementById("Job-Select").disabled = true;
+
+        //* Read PDF file and display in the viewer
         reader.onload = function (e) {
             pdfViewer.src = e.target.result;
         };
 
         reader.readAsDataURL(file);
+        //^ Read file and display it as such
+
     } else {
-        alert('Please select a valid PDF file.');
+        //* if user didn't select a PDF file, this will run
+        let msg = [`
+                    <p id='pdf-file-error'>Please select a valid PDF file:</p>
+                `]
+
+        window.toast({
+            message: msg,
+            btnmsg: "OK",
+        })
     }
 });
 
+//* Function to send an email based on the user's selected job and form input
 function sendEmail() {
     let jobselect = document.getElementById("Job-Select");
     let selectedOption = jobselect.options[jobselect.selectedIndex];
@@ -108,7 +166,8 @@ function sendEmail() {
     var legalSelect = document.getElementById("form-legal");
     var educationSelect = document.getElementById("form-education");
 
-    // Check if either option is not selected
+    //* Check if either option is not selected
+    //* Send confirmation email
     if (legalSelect.value === "No" || educationSelect.value === "No") {
         emailjs.send("service_swxg0ob", "template_yskewix", {
             to_name: `${formname} ${formlname}`,
@@ -125,6 +184,7 @@ function sendEmail() {
             emailError();
             console.error("Email failed to send:", error);
         });
+        //* Send rejection email
     } else {
         emailjs.send("service_swxg0ob", "template_yskewix", {
             to_name: `${formname} ${formlname}`,
@@ -142,6 +202,7 @@ function sendEmail() {
         });
     }
 
+    //* Function to display a confirmation toast
     function confirmation() {
         let msg = [`
                     <h1 id='application-sent'>Application Sent!</h1>
@@ -155,6 +216,7 @@ function sendEmail() {
         })
     }
 
+    //* Function to display an error toast
     function emailError() {
         let msg = [`
                     <h1 id='application-not-sent'>Application Not Sent!</h1>
@@ -169,4 +231,6 @@ function sendEmail() {
     }
 
 }
+
 emailjs.init("pNW2vDHr-8gYtWcXy");
+//^ Initialize Email.js

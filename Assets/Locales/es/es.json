@@ -63,6 +63,7 @@
   "label-form-legal": "¿Está legalmente autorizado<br>para trabajar en los Estados Unidos?",
   "label-form-education": "¿Ha completado el siguiente nivel<br>de educación: Licenciatura?",
   "fileInputLabel": "Sube Tu Currículum",
+  "pdf-file-error": "Cargue un archivo PDF válido.",
   "submit-resume": "Envíe Su Solicitud",
 
   "application-sent": "¡Solicitud Enviada!",

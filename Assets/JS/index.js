@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function TOS() {
     localStorage.setItem("TOS", "accepted")
-    updateContent();
   }
 
 });
@@ -179,6 +178,8 @@ window.toast = window.toast || (({
 
   createDiv.appendChild(messageContainer);
   createDiv.appendChild(newButton);
+  updateContent();
+  window.scrollTo(0, 0);
 });
 
 window.alert = (message) => {
