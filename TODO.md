@@ -18,7 +18,7 @@
 
 - [ ] Implement a ton of JS and other libs/frameworks
 
-- [ ] GitHub wiki
+- [x] GitHub wiki
 
 - [ ] Comments site-wide (backend)
 
@@ -27,6 +27,16 @@
 - [x] [GitHub community standards](https://github.com/Adam-S-Amir/Odyssey-Outfits/community)
 
 [GitHub Repo Wiki](https://github.com/Adam-S-Amir/Odyssey-Outfits/community)
+
+[GitHub Licensing Guidelines](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license)
+
+[Vercel TOS](https://vercel.com/legal/privacy-policy)
+
+[GitHub TOS](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+
+[Yandex TOS](https://yandex.com/legal/translate_termsofuse/)
+
+[EmailJS](https://www.emailjs.com/legal/terms-of-service/)
 
 [Guidelines](https://connect.fbla.org/headquarters/files/High%20School%20Competitive%20Events%20Resources/Individual%20Guidelines/Presentation%20Events/Website-Coding--Development.pdf)
 
