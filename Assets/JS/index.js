@@ -6,9 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // You can perform further actions here if needed
   } else {
     let msg = [`
-                    <h1>Terms of Service</h1>
-                    <p>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
-                    <a href="./TOS.html" target="_blank">Terms Of Service</a>
+                    <h1 id='TOS-welcome'>Welcome!</h1>
+                    <p id='TOS-locale'>Please select a default language:</p>
+                    <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="en">en/US</option>
+                        <option value="es">es/ES</option>
+                    </select>
+                    <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
+                    <a id='TOS-TOS' href="./TOS.html" target="_blank">Terms Of Service</a>
                     <br>
                     <br>
               `]
@@ -22,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function TOS() {
     localStorage.setItem("TOS", "accepted")
+    updateContent();
   }
 
 });
@@ -145,7 +151,7 @@ window.toast = window.toast || (({
   // Button element
   const newButton = document.createElement('button');
   newButton.textContent = btnmsg || 'I agree';
-  newButton.id = "agreed";
+  newButton.id = "toast-ok";
   newButton.classList.add("toast-button");
 
   // removes div element on button click with fade-out and slide-down animations

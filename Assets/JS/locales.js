@@ -26,7 +26,7 @@ function updateContent() {
                         element.setAttribute('label', data[key]);
                     } else {
                         // Update the text content of regular elements
-                        element.textContent = data[key];
+                        element.innerHTML = data[key];
                     }
                 }
             });

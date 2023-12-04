@@ -304,6 +304,8 @@ footer {
 
 .toast-button {
     background-color: var(--focused);
+    width: 70px;
+    min-width: 70px;
     text-align: center;
     position: relative;
     top: 50%;

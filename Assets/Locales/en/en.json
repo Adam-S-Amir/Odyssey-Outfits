@@ -1,6 +1,11 @@
 {
-  "greeting": "Hello, World!",
-  "description": "This is a sample website.",
+  "TOS-welcome": "Welcome!",
+  "TOS-locale": "Please select a default language:",
+  "TOS-preamble": "Our website gathers user data to enhance the overall user experience.<br> By continuing to use our site, you agree to our TOS.",
+  "TOS-TOS": "Terms Of Service",
+
+  "toast-ok": "OK",
+
   "nav-home": "Home",
   "nav-about": "About",
   "nav-services": "Services",
@@ -55,8 +60,8 @@
   "label-form-phone": "Phone Number:",
   "label-form-linkedin": "Linkedin:",
   "label-form-address": "Current Address:",
-  "label-form-legal": "Are you legally authorized\nto work in the United States?",
-  "label-form-education": "Have you completed the following level\nof education: Bachelor's Degree?",
+  "label-form-legal": "Are you legally authorized<br>to work in the United States?",
+  "label-form-education": "Have you completed the following level<br>of education: Bachelor's Degree?",
   "fileInputLabel": "Upload Your Résumé",
   "submit-resume": "Submit Your Application",
 
@@ -67,6 +72,8 @@
 
   "form-yes": "Yes",
   "form-no": "No",
+  "form-yes-2": "Yes",
+  "form-no-2": "No",
 
   "error-404": "Error 404: Page Not Found :(",
   "copyright": "© 2023 Odyssey Outfits. All rights reserved."

@@ -1,6 +1,10 @@
 {
-  "greeting": "¡Hola, Mundo!",
-  "description": "Este es un sitio web de muestra.",
+  "TOS-welcome": "¡Bienvenidos!",
+  "TOS-locale": "Por favor, seleccione un idioma predeterminado:",
+  "TOS-preamble": "Nuestro sitio web recopila datos de los usuarios para mejorar la experiencia general del usuario. Al continuar utilizando nuestro sitio, acepta nuestros términos de servicio.",
+  "TOS-TOS": "Términos de Servicio",
+
+  "toast-ok": "Si",
 
   "nav-home": "Inicio",
   "nav-about": "Acerca",
@@ -56,8 +60,8 @@
   "label-form-phone": "Número de Teléfono:",
   "label-form-linkedin": "Linkedin:",
   "label-form-address": "Dirección Actual:",
-  "label-form-legal": "¿Está legalmente autorizado\npara trabajar en los Estados Unidos?",
-  "label-form-education": "¿Ha completado el siguiente nivel\nde educación: Licenciatura?",
+  "label-form-legal": "¿Está legalmente autorizado<br>para trabajar en los Estados Unidos?",
+  "label-form-education": "¿Ha completado el siguiente nivel<br>de educación: Licenciatura?",
   "fileInputLabel": "Sube Tu Currículum",
   "submit-resume": "Envíe Su Solicitud",
 
@@ -68,6 +72,8 @@
 
   "form-yes": "Si",
   "form-no": "No",
+  "form-yes-2": "Si",
+  "form-no-2": "No",
 
   "error-404": "Error 404: Página No Encontrada :(",
   "copyright": "© 2023 Odyssey Outfits. Todos Los Derechos Reservados"
