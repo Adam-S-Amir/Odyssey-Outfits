@@ -271,12 +271,12 @@ footer {
 .toast {
     color: var(--alt-text-color);
     z-index: 9999999;
-    width: 40%;
+    width: 60%;
     background-color: var(--background-color);
     border: solid var(--focused);
     position: fixed;
     top: 50%;
-    left: 30%;
+    left: 20%;
     border-radius: 1vmax;
     -webkit-border-radius: 1vmax;
     -moz-border-radius: 1vmax;

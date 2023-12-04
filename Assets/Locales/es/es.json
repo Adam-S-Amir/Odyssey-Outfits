@@ -1,7 +1,7 @@
 {
   "TOS-welcome": "¡Bienvenidos!",
   "TOS-locale": "Por favor, seleccione un idioma predeterminado:",
-  "TOS-preamble": "Nuestro sitio web recopila datos de los usuarios para mejorar la experiencia general del usuario. Al continuar utilizando nuestro sitio, acepta nuestros términos de servicio.",
+  "TOS-preamble": "Nuestro sitio web recopila datos de los usuarios para mejorar la experiencia general del usuario.<br>Al continuar utilizando nuestro sitio, acepta nuestros términos de servicio.",
   "TOS-TOS": "Términos de Servicio",
 
   "toast-ok": "Si",

@@ -1,6 +1,5 @@
 # REQUIREMENTS
 
-
 - [ ] ADA stuffs (:root must be dynamic)
   - [ ] Must be able to select between normal and black and white
 
