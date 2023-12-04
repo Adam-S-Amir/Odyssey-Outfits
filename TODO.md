@@ -1,9 +1,9 @@
 # REQUIREMENTS
 
-- [ ] ADA stuffs (:root must be dynamic)
-  - [ ] Must be able to select between normal and black and white
+- [x] ADA stuffs (:root must be dynamic)
+  - [x] Must be able to select between normal and black and white
 
-- [ ] Site needs to look good on phones, tablets, and computers
+- [x] Site needs to look good on phones, tablets, and computers
   - [x] Detects User-agent
     - [x] Navbar is dynamic
     - [x] Font-size changes

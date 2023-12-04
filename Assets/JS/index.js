@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <option value="en">en/US</option>
                         <option value="es">es/ES</option>
                     </select>
+                    <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act), as a result you may flip the switch located in the top right corner to toggle ADA compliance mode.</p>
                     <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
                     <a id='TOS-TOS' href="./TOS.html" target="_blank">Terms Of Service</a>
                     <br>
@@ -27,6 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function TOS() {
     localStorage.setItem("TOS", "accepted")
+  }
+
+  if (localStorage.getItem('ada') === 'on') {
+    changeRootStyles();
+  } else {
+    return;
   }
 
 });
@@ -69,6 +76,10 @@ function navbar() {
               <option value="en">en/US</option>
               <option value="es">es/ES</option>
           </select>
+          <label class="switch">
+              <input type="checkbox" id='ADA'>
+              <span class="slider round"></span>
+          </label>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
           <i class="mobile mobile-bars"></i>
@@ -96,6 +107,12 @@ function navbar_default() {
                   <option value="en">en/US</option>
                   <option value="es">es/ES</option>
               </select>
+          </li>
+          <li>
+              <label class="switch">
+                  <input type="checkbox" id='ADA'>
+                  <span class="slider round"></span>
+              </label>
           </li>
       </ul>
   </nav>
@@ -186,10 +203,73 @@ window.alert = (message) => {
   toast({
     message
   });
-};
+}
 
 window.confirm = (message) => {
   toast({
     message
   });
-};
+}
+
+const ADACheckbox = document.getElementById('ADA');
+
+//* Function to change root styles
+function changeRootStyles() {
+  // Access the root element
+  const rootElement = document.documentElement;
+
+  // Modify or set styles
+  rootElement.style.setProperty('--background-color', '#FFFFFF');
+  rootElement.style.setProperty('--alt-background-color', '#FFFFFF');
+  rootElement.style.setProperty('--text-color', '#000000');
+  rootElement.style.setProperty('--alt-text-color', '#000000');
+  rootElement.style.setProperty('--focused', '#000000');
+  rootElement.style.setProperty('--button-background-color', '#FFFFFF');
+  rootElement.style.setProperty('--border-color', '#000000');
+  rootElement.style.setProperty('--overlay', '#FFFFFF');
+  rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
+  rootElement.style.setProperty('--scrollbar-thumb-hover', '#FFFFFF');
+  const styleElement = document.createElement('style');
+  styleElement.textContent = `
+    *:hover {
+        background-color: white !important;
+        border-color: black !important;
+    }`;
+  document.head.appendChild(styleElement);
+
+  localStorage.setItem("ada", "on");
+  ADACheckbox.checked = true;
+  console.log("ADA Mode is enabled.")
+}
+
+// Add event listener for the 'click' event
+ADACheckbox.addEventListener('click', function () {
+  // Check if the checkbox is checked
+  if (ADACheckbox.checked) {
+    changeRootStyles();
+    let msg = [`
+                    <h1 id='ada-enabled'>You have enabled ADA Mode.</h1>
+                    <p id='ada-enabled-continue'>It seems you've enabled ADA mode, the color scheme of this website will be black on white until ADA mode is disabled.</p>
+                `]
+
+    window.toast({
+      message: msg,
+      btnmsg: "OK",
+      action: () => location.reload(),
+    })
+    console.log("ADA Mode is enabled.")
+  } else {
+    localStorage.removeItem("ada");
+    let msg = [`
+                    <h1 id='ada-disabled'>You have disabled ADA Mode.</h1>
+                    <p id='ada-disabled-continue'>It seems you've disabled ADA mode, you will need to refresh in order to continue.</p>
+                `]
+
+    window.toast({
+      message: msg,
+      btnmsg: "OK",
+      action: () => location.reload(),
+    })
+    console.log("ADA Mode is disabled.")
+  }
+});

@@ -3,8 +3,14 @@
   "TOS-locale": "Por favor, seleccione un idioma predeterminado:",
   "TOS-preamble": "Nuestro sitio web recopila datos de los usuarios para mejorar la experiencia general del usuario.<br>Al continuar utilizando nuestro sitio, acepta nuestros términos de servicio.",
   "TOS-TOS": "Términos de Servicio",
+  "TOS-ADA": "Nuestro sitio web cumple con la ADA( Ley de Estadounidenses con Discapacidades), como resultado, puede activar el interruptor ubicado en la esquina superior derecha para alternar el modo de cumplimiento de la ADA.",
 
   "toast-ok": "Si",
+
+  "ada-disabled": "Has desactivado el modo ADA.",
+  "ada-disabled-continue": "Parece que ha deshabilitado el modo ADA, deberá actualizar para continuar.",
+  "ada-enabled": "Ha habilitado el modo ADA.",
+  "ada-enabled-continue": "Parece que ha habilitado el modo ADA, el esquema de color de este sitio web será negro sobre blanco hasta que se deshabilite el modo ADA.",
 
   "nav-home": "Inicio",
   "nav-about": "Acerca",
