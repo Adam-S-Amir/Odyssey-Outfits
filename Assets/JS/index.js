@@ -64,6 +64,7 @@ function navbar() {
       </a>
   </div>
 `]
+  updateContent();
 }
 
 function navbar_default() {
@@ -88,6 +89,7 @@ function navbar_default() {
       </ul>
   </nav>
 `]
+  updateContent();
 }
 
 function mobilehide() {

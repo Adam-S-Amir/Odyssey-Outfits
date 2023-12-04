@@ -34,5 +34,41 @@
   "Department-Division": "Departamento/División: ",
   "Job-Description": "Descripción del Puesto: ",
 
+  "CFO": "Estamos buscando un Director Financiero calificado para unirse a nuestro equipo en Odyssey Outfits. En esta función, supervisará nuestras actividades y estrategia financieras. Como director financiero, desarrollará y ejecutará la estrategia financiera de la organización en alineación con nuestros objetivos comerciales generales, brindando orientación financiera estratégica al CEO y otros ejecutivos.",
+  "CEO": "Estamos buscando un Director Ejecutivo calificado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, conducirá a nuestra organización a nuevas alturas al tomar decisiones corporativas estratégicas, supervisar las operaciones y los recursos generales y actuar como enlace principal entre la junta directiva y las operaciones corporativas. Como director ejecutivo, desempeñará un papel fundamental en el establecimiento de la dirección estratégica, la identificación de oportunidades de negocio y la garantía del cumplimiento de los requisitos legales y reglamentarios de la empresa.",
+  "COO": "Estamos buscando un Director de Operaciones calificado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, promoverá la eficiencia operativa e implementará estrategias para ayudar a lograr nuestros objetivos de la manera más eficiente posible. Como miembro clave de nuestro equipo de liderazgo, usted será responsable de desarrollar e implementar políticas y procedimientos operativos, alinear las estrategias operativas con nuestros objetivos comerciales y garantizar la asignación efectiva de recursos.",
+  "HR": "Estamos buscando Recursos Humanos calificados para unirnos a nuestro equipo en Odyssey Outfits. En este puesto, administrará personal, asuntos relacionados con el empleo y respaldará el bienestar general de nuestros valiosos empleados, en su sucursal regional específica. Este rol es crucial para crear un ambiente de trabajo positivo, garantizar el cumplimiento legal y respaldar los objetivos estratégicos de nuestra organización.",
+  "RM": "Estamos buscando un Gerente regional calificado para unirse a nuestro equipo en Odyssey Outfits. En este rol, será responsable de supervisar y administrar las operaciones, las ventas y el desempeño general de múltiples clientes de mayor escala dentro de su región específica. Esta posición clave de liderazgo implica establecer y alcanzar objetivos de desempeño, garantizar el cumplimiento y conducir el éxito financiero.",
+  "OM": "Estamos buscando un gerente de oficina capacitado para unirse a nuestro equipo en Odyssey Outfits. En esta función, usted será responsable de supervisar las operaciones diarias de nuestra oficina (ubicación por determinar). Este rol fundamental requiere una persona dinámica con sólidas habilidades organizativas y gerenciales para garantizar el funcionamiento fluido de nuestra oficina.",
+  "RSD": "Estamos buscando un Director de Ventas Regional capacitado para unirse a nuestro equipo en Odyssey Outfits. En este rol de liderazgo, usted será responsable de impulsar las actividades de ventas dentro de su región específica. Como miembro clave de nuestro equipo, usted será responsable de desarrollar y ejecutar estrategias de ventas, liderar un equipo de ventas dinámico y contribuir al crecimiento y éxito general de la organización.",
+  "AE": "Estamos buscando un ejecutivo de cuentas calificado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, será responsable de administrar las cuentas de los clientes, impulsar el crecimiento del negocio y garantizar la satisfacción del cliente. Si te desenvuelves en un entorno dinámico y colaborativo, te invitamos a formar parte de nuestro equipo.",
+  "SM": "Estamos buscando un vendedor calificado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, será responsable de impulsar el crecimiento de los ingresos mediante la venta efectiva de nuestros productos y servicios a clientes potenciales. Si te apasionan las ventas, establecer relaciones y alcanzar objetivos, te invitamos a formar parte de nuestro dinámico equipo.",
+  "RFD": "Estamos buscando un Director Financiero Regional calificado para unirse a nuestro equipo en Odyssey Outfits. En esta función, supervisará y administrará las operaciones financieras dentro de su región específica. Como líder clave, desempeñará un papel crucial en la configuración e implementación de estrategias financieras para impulsar el éxito de nuestras operaciones en su región asignada.",
+  "PA": "Estamos buscando un Administrador de nómina calificado para unirse a nuestro equipo en Odyssey Outfits. En esta función, usted será responsable de administrar y procesar la compensación de los empleados. Como Administrador de nómina, garantizará el pago preciso y oportuno de los salarios, bonificaciones y beneficios de los empleados, al tiempo que mantendrá el cumplimiento de las regulaciones locales, estatales y federales.",
+  "FA": "Estamos buscando un analista financiero calificado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, proporcionará información valiosa y recomendaciones basadas en un análisis en profundidad de los datos y tendencias financieras. Como analista Financiero, su responsabilidad principal será apoyar a los tomadores de decisiones interpretando información financiera compleja y presentándola de manera clara y significativa.",
+  "FD": "Estamos buscando un desarrollador Full Stack capacitado para unirse a nuestro equipo en Odyssey Outfits. En este puesto, aprovechará su experiencia en desarrollo frontend y backend para crear aplicaciones web fluidas y fáciles de usar. Como desarrollador Full Stack, serás responsable de diseñar e implementar los elementos visuales con los que interactúan los usuarios en nuestros sitios web.",
+  "NA": "Estamos buscando un Administrador de red capacitado para unirse a nuestro equipo en Odyssey Outfits. En esta función, administrará y mantendrá nuestras redes informáticas. Como Administrador de red, garantizará el funcionamiento ininterrumpido de nuestra infraestructura de red, que abarca redes de área local (LAN), redes de área extensa (WAN) y otros sistemas de comunicación.",
+  "HDA": "Estamos buscando un Administrador de Mesa de ayuda capacitado y centrado en el cliente para unirse a nuestro equipo en Odyssey Outfits. En esta función, será responsable de brindar asistencia técnica y apoyo a los empleados dentro de la organización. Su enfoque principal será brindar un servicio crucial abordando problemas de hardware, software, red y otros relacionados con TI dentro de nuestra organización.",
+
+  "label-form-name": "Nombre:",
+  "label-form-lname": "Apellido:",
+  "label-form-email": "Correo Electrónico:",
+  "label-form-phone": "Número de Teléfono:",
+  "label-form-linkedin": "Linkedin:",
+  "label-form-address": "Dirección Actual:",
+  "label-form-legal": "¿Está legalmente autorizado\npara trabajar en los Estados Unidos?",
+  "label-form-education": "¿Ha completado el siguiente nivel\nde educación: Licenciatura?",
+  "fileInputLabel": "Sube Tu Currículum",
+  "submit-resume": "Envíe Su Solicitud",
+
+  "application-sent": "¡Solicitud Enviada!",
+  "received-application": "¡Gracias por enviar su solicitud! Lo hemos recibido con éxito. Por favor, espere una notificación por correo electrónico sobre el estado de su solicitud a medida que avanzamos en nuestro proceso de revisión exhaustiva. Agradecemos su paciencia y esperamos con interés la posibilidad de trabajar juntos.",
+  "application-not-sent": "¡Solicitud No Enviada!",
+  "not-received-application": "¡Gracias por enviar su solicitud! Parece que tuvimos un error al enviar el correo electrónico de confirmación, inténtelo de nuevo pronto.",
+
+  "form-yes": "Si",
+  "form-no": "No",
+
+  "error-404": "Error 404: Página No Encontrada :(",
   "copyright": "© 2023 Odyssey Outfits. Todos Los Derechos Reservados"
 }
