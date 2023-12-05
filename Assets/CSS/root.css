@@ -14,7 +14,7 @@
 }
 
 ::selection {
-    background-color: var(--scrollbar-thumb-hover);
+    background-color: var(--overlay);
 }
 
 ::-webkit-scrollbar {
