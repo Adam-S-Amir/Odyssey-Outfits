@@ -18,6 +18,12 @@
 
 - [ ] Implement a ton of JS and other libs/frameworks
 
+- [ ] Update SECURITY.md
+
+- [ ] ADA mode should be Times New Roman
+  - [ ] [junk](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app&gclid=Cj0KCQiAtICdBhCLARIsALUBFcFVpgDiJYIUMf0qVdD3ss0R5ZQoM_6AkWo2sMbMFhiQwviWFCRKDH0aAtRGEALw_wcB)
+  - [ ] [more junk](https://www.reddit.com/r/webdev/comments/111q1d5/when_building_a_website_do_you_consider_ada/)
+
 - [x] GitHub wiki
 
 - [ ] Comments site-wide (backend)

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <option value="en">en/US</option>
                         <option value="es">es/ES</option>
                     </select>
-                    <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act), as a result you may flip the switch located in the top right corner to toggle ADA compliance mode.</p>
+                    <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act), as a result you may click the eye icon located in the top right corner to toggle ADA compliance mode.</p>
                     <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
                     <a id='TOS-TOS' href="./TOS.html" target="_blank">Terms Of Service</a>
                     <br>
@@ -76,10 +76,7 @@ function navbar() {
               <option value="en">en/US</option>
               <option value="es">es/ES</option>
           </select>
-          <label class="switch">
-              <input type="checkbox" id='ADA'>
-              <span class="slider round"></span>
-          </label>
+          <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
           <i class="mobile mobile-bars"></i>
@@ -109,10 +106,7 @@ function navbar_default() {
               </select>
           </li>
           <li>
-              <label class="switch">
-                  <input type="checkbox" id='ADA'>
-                  <span class="slider round"></span>
-              </label>
+              <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
           </li>
       </ul>
   </nav>
@@ -213,40 +207,13 @@ window.confirm = (message) => {
 
 const ADACheckbox = document.getElementById('ADA');
 
+var toggle = 0;
+
 //* Function to change root styles
 function changeRootStyles() {
-  // Access the root element
-  const rootElement = document.documentElement;
-
-  // Modify or set styles
-  rootElement.style.setProperty('--background-color', '#FFFFFF');
-  rootElement.style.setProperty('--alt-background-color', '#FFFFFF');
-  rootElement.style.setProperty('--text-color', '#000000');
-  rootElement.style.setProperty('--alt-text-color', '#000000');
-  rootElement.style.setProperty('--focused', '#000000');
-  rootElement.style.setProperty('--button-background-color', '#FFFFFF');
-  rootElement.style.setProperty('--border-color', '#000000');
-  rootElement.style.setProperty('--overlay', '#FFFFFF');
-  rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
-  rootElement.style.setProperty('--scrollbar-thumb-hover', '#FFFFFF');
-  const styleElement = document.createElement('style');
-  styleElement.textContent = `
-    *:hover {
-        background-color: white !important;
-        border-color: black !important;
-    }`;
-  document.head.appendChild(styleElement);
-
-  localStorage.setItem("ada", "on");
-  ADACheckbox.checked = true;
-  console.log("ADA Mode is enabled.")
-}
-
-// Add event listener for the 'click' event
-ADACheckbox.addEventListener('click', function () {
-  // Check if the checkbox is checked
-  if (ADACheckbox.checked) {
-    changeRootStyles();
+  if (toggle === 0) {
+    console.log("ADA Mode is enabled.")
+    toggle = 1;
     let msg = [`
                     <h1 id='ada-enabled'>You have enabled ADA Mode.</h1>
                     <p id='ada-enabled-continue'>It seems you've enabled ADA mode, the color scheme of this website will be black on white until ADA mode is disabled.</p>
@@ -255,11 +222,35 @@ ADACheckbox.addEventListener('click', function () {
     window.toast({
       message: msg,
       btnmsg: "OK",
-      action: () => location.reload(),
     })
-    console.log("ADA Mode is enabled.")
-  } else {
+    // Access the root element
+    const rootElement = document.documentElement;
+
+    // Modify or set styles
+    rootElement.style.setProperty('--background-color', '#FFFFFF');
+    rootElement.style.setProperty('--alt-background-color', '#FFFFFF');
+    rootElement.style.setProperty('--text-color', '#000000');
+    rootElement.style.setProperty('--alt-text-color', '#000000');
+    rootElement.style.setProperty('--focused', '#000000');
+    rootElement.style.setProperty('--button-background-color', '#FFFFFF');
+    rootElement.style.setProperty('--border-color', '#000000');
+    rootElement.style.setProperty('--overlay', '#FFFFFF');
+    rootElement.style.setProperty('--scrollbar-track', '#000000');
+    rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
+    const styleElement = document.createElement('style');
+    styleElement.textContent = `
+    *:hover {
+        background-color: white !important;
+        border-color: black !important;
+    }`;
+    localStorage.setItem("ada", "on");
+    document.head.appendChild(styleElement);
+    document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-On.png) center/cover no-repeat";
+  } else if (toggle === 1) {
+    console.log("ADA Mode is disabled.")
     localStorage.removeItem("ada");
+    toggle = 0;
+    document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-Off.png) center/cover no-repeat";
     let msg = [`
                     <h1 id='ada-disabled'>You have disabled ADA Mode.</h1>
                     <p id='ada-disabled-continue'>It seems you've disabled ADA mode, you will need to refresh in order to continue.</p>
@@ -270,6 +261,5 @@ ADACheckbox.addEventListener('click', function () {
       btnmsg: "OK",
       action: () => location.reload(),
     })
-    console.log("ADA Mode is disabled.")
   }
-});
+}
