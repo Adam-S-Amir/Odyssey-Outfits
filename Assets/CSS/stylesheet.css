@@ -555,11 +555,12 @@ div.overlay select {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 15%);
-    -webkit-transform: translate(-50%, 15%);
-    -moz-transform: translate(-50%, 15%);
-    -ms-transform: translate(-50%, 15%);
-    -o-transform: translate(-50%, 15%);
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    text-align: center;
 }
 
 div#Contact-Form.overlay {
