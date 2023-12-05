@@ -547,3 +547,97 @@ div.overlay select {
 }
 
 /** END RESUME  */
+
+/** CONTACT PAGE */
+
+#contact {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    -webkit-transform: translate(-50%, 15%);
+    -moz-transform: translate(-50%, 15%);
+    -ms-transform: translate(-50%, 15%);
+    -o-transform: translate(-50%, 15%);
+}
+
+div#Contact-Form.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+div#Contact-Form.overlay form {
+    color: var(--text-color);
+    flex-direction: column;
+}
+
+div#Contact-Form.overlay label {
+    margin-bottom: 8px;
+}
+
+div#Contact-Form.overlay input {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+div#Contact-Form.overlay select {
+    display: flex;
+    margin-bottom: 5px;
+    outline: transparent;
+    padding: 0.6em 0.4em;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--alt-background-color);
+    color: var(--text-color);
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+div#Contact-Form.overlay textarea {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+/** END CONTACT PAGE */
