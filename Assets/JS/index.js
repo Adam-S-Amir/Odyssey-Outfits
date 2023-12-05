@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (localStorage.getItem('ada') === 'on') {
     changeRootStyles();
   } else {
-    return;
+    localStorage.setItem('ada', 'off')
   }
 
 });
@@ -212,17 +212,20 @@ var toggle = 0;
 //* Function to change root styles
 function changeRootStyles() {
   if (toggle === 0) {
-    console.log("ADA Mode is enabled.")
     toggle = 1;
-    let msg = [`
+    if (localStorage.getItem("ada") === "off") {
+      let msg = [`
                     <h1 id='ada-enabled'>You have enabled ADA Mode.</h1>
                     <p id='ada-enabled-continue'>It seems you've enabled ADA mode, the color scheme of this website will be black on white until ADA mode is disabled.</p>
                 `]
 
-    window.toast({
-      message: msg,
-      btnmsg: "OK",
-    })
+      window.toast({
+        message: msg,
+        btnmsg: "OK",
+      })
+    } else {
+      console.log("ADA Mode is enabled.");
+    }
     // Access the root element
     const rootElement = document.documentElement;
 

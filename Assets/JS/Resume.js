@@ -34,6 +34,7 @@ document.getElementById('Job-Select').addEventListener('change', function () {
     //! Text is blank and will be filled according to the selected
     //! language of the user
     fileInputLabel.style.display = "block";
+    this.style.top = "auto";
     //^ Reveal the file input label
 
     //* Conditional statements to set job description based on the selected job
@@ -100,6 +101,7 @@ document.getElementById('Job-Select').addEventListener('change', function () {
 
     //* Function to hide specific elements
     function hide() {
+        document.getElementById("Job-Select").style.top = "50%";
         jobvalue.style.display = "none";
         fileInputLabel.style.display = "none";
         pdfViewer.style.display = "none";

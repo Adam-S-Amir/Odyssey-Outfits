@@ -92,11 +92,11 @@ div.navbar a {
     text-decoration: none;
     color: var(--text-color);
     padding: 10px 15px;
-    border-radius: 1vmin;
-    -webkit-border-radius: 1vmin;
-    -moz-border-radius: 1vmin;
-    -ms-border-radius: 1vmin;
-    -o-border-radius: 1vmin;
+    border-radius: var(--border-radius-large);
+    -webkit-border-radius: var(--border-radius-large);
+    -moz-border-radius: var(--border-radius-large);
+    -ms-border-radius: var(--border-radius-large);
+    -o-border-radius: var(--border-radius-large);
     transition: background-color 0.3s ease;
 }
 
@@ -148,17 +148,17 @@ section>.container>ul>li:hover {
 .languageSelect {
     margin-bottom: 5px;
     outline: transparent;
-    /* padding: 0.6em 0.4em; */
-    font-weight: bold;
+    /*padding: 0.6em 0.4em;
+    */font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
     color: var(--text-color);
-    border: 1px solid var(--focused);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 .error-404 {
@@ -295,15 +295,15 @@ footer {
     z-index: 9999999;
     width: 60%;
     background-color: var(--background-color);
-    border: solid var(--focused);
     position: fixed;
     top: 50%;
     left: 20%;
-    border-radius: 1vmax;
-    -webkit-border-radius: 1vmax;
-    -moz-border-radius: 1vmax;
-    -ms-border-radius: 1vmax;
-    -o-border-radius: 1vmax;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-xlarge);
+    -webkit-border-radius: var(--border-radius-xlarge);
+    -moz-border-radius: var(--border-radius-xlarge);
+    -ms-border-radius: var(--border-radius-xlarge);
+    -o-border-radius: var(--border-radius-xlarge);
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
     -webkit-transition: opacity 0.5s, transform 0.5s;
@@ -337,12 +337,12 @@ footer {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    border: solid var(--border-color);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 .toast>p {
@@ -374,20 +374,25 @@ footer {
 #Job-Select {
     outline: transparent;
     padding: 0.6em 0.4em;
-    /* width: 150px; */
-    font-weight: bold;
+    /*width: 150px;
+    */font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
     color: var(--text-color);
-    border-radius: 0.4em;
-    border: 1px solid var(--focused);
     position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 select#Job-Select>option,
@@ -397,23 +402,27 @@ select#Job-Select>optgroup>option {
 }
 
 select#Job-Select>option {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 #pdfViewer {
     font-size: 16px;
     text-align: center;
     background-color: var(--background-color);
-    border-radius: 0.4em;
-    border: 1px solid var(--focused);
     position: relative;
     flex-direction: column;
     transition-duration: 0.2s;
     overflow: hidden;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 #pdfViewer::after {
@@ -435,8 +444,6 @@ div.overlay {
     width: 50%;
     padding: 20px;
     background-color: var(--alt-background-color);
-    border: solid var(--focused);
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
     top: 50%;
@@ -446,6 +453,12 @@ div.overlay {
     -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
     -o-transform: translate(-50%);
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 div.overlay form {
@@ -461,12 +474,12 @@ div.overlay input {
     display: flex;
     padding: 8px;
     margin-bottom: 5px;
-    border: 1px solid var(--focused);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 div.overlay select {
@@ -478,12 +491,12 @@ div.overlay select {
     font-size: 16px;
     background-color: var(--alt-background-color);
     color: var(--text-color);
-    border: 1px solid var(--focused);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 .submit-div {
@@ -498,10 +511,14 @@ div.overlay select {
     padding: 10px;
     background-color: var(--background-color);
     color: var(--alt-text-color);
-    border: none;
-    border-radius: 3px;
     cursor: pointer;
     position: relative;
+    border: none;
+    border-radius: var(--border-radius-small);
+    -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: var(--border-radius-small);
 }
 
 #submit-resume {
@@ -512,12 +529,6 @@ div.overlay select {
     text-align: center;
     background-color: var(--alt-background-color);
     color: var(--text-color);
-    border: 1px solid var(--focused);
-    border-radius: 0.4em;
-    -webkit-border-radius: 0.4em;
-    -moz-border-radius: 0.4em;
-    -ms-border-radius: 0.4em;
-    -o-border-radius: 0.4em;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -527,6 +538,12 @@ div.overlay select {
     position: relative;
     width: 100%;
     bottom: -30px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 /** END RESUME  */
