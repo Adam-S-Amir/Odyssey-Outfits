@@ -242,9 +242,12 @@ function changeRootStyles() {
     rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
     const styleElement = document.createElement('style');
     styleElement.textContent = `
+    *{
+      font-family: "Times New Roman", Times, serif;
+    }
     *:hover {
-        background-color: white !important;
-        border-color: black !important;
+        background-color: #FFFFFF !important;
+        border-color: #000000 !important;
     }`;
     localStorage.setItem("ada", "on");
     document.head.appendChild(styleElement);
