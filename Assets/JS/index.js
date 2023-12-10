@@ -73,8 +73,29 @@ function navbar() {
           <a id="nav-contact" href="./Contact.html">Contact</a>
           <a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
           <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
-              <option value="en">en/US</option>
-              <option value="es">es/ES</option>
+                  <option value="ar">العربية</option>
+                  <option value="da">Dansk</option>
+                  <option value="de">Deutsch</option>
+                  <option value="el">Ελληνικά</option>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="fi">Suomi</option>
+                  <option value="fr">Français</option>
+                  <option value="he">עברית</option>
+                  <option value="hu">Magyar</option>
+                  <option value="it">Italiano</option>
+                  <option value="ja">日本語</option>
+                  <option value="ko">한국어</option>
+                  <option value="nb">Norsk Bokmål</option>
+                  <option value="nl">Nederlands</option>
+                  <option value="pl">Polski</option>
+                  <option value="pt">Português</option>
+                  <option value="ru">Русский</option>
+                  <option value="sk">Slovenčina</option>
+                  <option value="sl">Slovenščina</option>
+                  <option value="sv">Svenska</option>
+                  <option value="tr">Türkçe</option>
+                  <option value="zh">中文</option>
           </select>
           <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
       </div>
@@ -101,8 +122,29 @@ function navbar_default() {
           <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
           <li>
               <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
-                  <option value="en">en/US</option>
-                  <option value="es">es/ES</option>
+                  <option value="ar">العربية</option>
+                  <option value="da">Dansk</option>
+                  <option value="de">Deutsch</option>
+                  <option value="el">Ελληνικά</option>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="fi">Suomi</option>
+                  <option value="fr">Français</option>
+                  <option value="he">עברית</option>
+                  <option value="hu">Magyar</option>
+                  <option value="it">Italiano</option>
+                  <option value="ja">日本語</option>
+                  <option value="ko">한국어</option>
+                  <option value="nb">Norsk Bokmål</option>
+                  <option value="nl">Nederlands</option>
+                  <option value="pl">Polski</option>
+                  <option value="pt">Português</option>
+                  <option value="ru">Русский</option>
+                  <option value="sk">Slovenčina</option>
+                  <option value="sl">Slovenščina</option>
+                  <option value="sv">Svenska</option>
+                  <option value="tr">Türkçe</option>
+                  <option value="zh">中文</option>
               </select>
           </li>
           <li>
