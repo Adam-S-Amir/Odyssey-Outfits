@@ -8,9 +8,30 @@ document.addEventListener("DOMContentLoaded", function () {
     let msg = [`
                     <h1 id='TOS-welcome'>Welcome!</h1>
                     <p id='TOS-locale'>Please select a default language:</p>
-                    <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
-                        <option value="en">en/US</option>
-                        <option value="es">es/ES</option>
+                    <select id="languageSelect_2" class="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="ar">العربية</option>
+                        <option value="da">Dansk</option>
+                        <option value="de">Deutsch</option>
+                        <option value="el">Ελληνικά</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fi">Suomi</option>
+                        <option value="fr">Français</option>
+                        <option value="he">עברית</option>
+                        <option value="hu">Magyar</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="nb">Norsk Bokmål</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="pl">Polski</option>
+                        <option value="pt">Português</option>
+                        <option value="ru">Русский</option>
+                        <option value="sk">Slovenčina</option>
+                        <option value="sl">Slovenščina</option>
+                        <option value="sv">Svenska</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="zh">中文</option>
                     </select>
                     <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act), as a result you may click the eye icon located in the top right corner to toggle ADA compliance mode.</p>
                     <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
@@ -69,8 +90,9 @@ function navbar() {
       <div id="Links">
           <a id="nav-home" href="./index.html">Home</a>
           <a id="nav-about" href="./About.html">About</a>
-          <a id="nav-services" href="./Services.html">Services</a>
+          <a id="nav-products" href="./Products.html">Products</a>
           <a id="nav-contact" href="./Contact.html">Contact</a>
+          <a id="nav-faq" href="./FAQ.html">FAQ</a>
           <a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
           <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar">العربية</option>
@@ -117,8 +139,9 @@ function navbar_default() {
       <ul>
           <li><a id="nav-home" href="./index.html">Home</a></li>
           <li><a id="nav-about" href="./About.html">About</a></li>
-          <li><a id="nav-services" href="./Services.html">Services</a></li>
+          <li><a id="nav-products" href="./products.html">Products</a></li>
           <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+          <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
           <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
           <li>
               <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">

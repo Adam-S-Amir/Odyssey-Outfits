@@ -145,11 +145,37 @@ section>.container>ul>li:hover {
     -o-transform: translateX(15px);
 }
 
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: var(--alt-text-color);
+    background-color: var(--button-background-color);
+    height: 35px;
+    /* width: 70px; */
+    /* min-width: 70px; */
+    text-align: center;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); */
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
 .languageSelect {
     margin-bottom: 5px;
     outline: transparent;
     /*padding: 0.6em 0.4em;
-    */font-weight: bold;
+    */
+    font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
     color: var(--text-color);
@@ -379,7 +405,8 @@ footer {
     outline: transparent;
     padding: 0.6em 0.4em;
     /*width: 150px;
-    */font-weight: bold;
+    */
+    font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
     color: var(--text-color);

@@ -34,6 +34,9 @@
 
 - [x] GitHub wiki
 
+- [ ] Google Analytics
+  - [ ] Meta desc tags
+
 - [ ] Comments site-wide (backend)
 
 - [x] Company name/change repo name

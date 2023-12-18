@@ -10,6 +10,14 @@ function updateContent() {
     // Set the selected option on page load
     document.getElementById('languageSelect').value = currentLanguage;
 
+    var TOSelement = document.getElementById('languageSelect_2');
+
+    if (TOSelement) {
+        TOSelement.value = currentLanguage;
+    } else {
+        console.log('TOS Dialog is hidden');
+    }
+
     fetch(`./Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
         .then(response => response.json())
         .then(data => {
@@ -48,6 +56,14 @@ function getStoredLanguage() {
 // Set the initial language from localStorage or use default
 let currentLanguage = getStoredLanguage();
 document.getElementById('languageSelect').value = currentLanguage;
+
+var TOSelement = document.getElementById('languageSelect_2');
+
+if (TOSelement) {
+    TOSelement.value = currentLanguage;
+} else {
+    console.log('TOS Dialog is hidden');
+}
 
 // Update lang localization
 updateContent();
