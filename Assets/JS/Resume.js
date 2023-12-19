@@ -1,11 +1,14 @@
 function ShowJobInfo(element) {
     let elementID = element.id;
-    console.log(elementID)
+    let stringWithoutDash = elementID.replace(/-/g, '');
+    let stringWithoutLowercase = stringWithoutDash.replace(/[a-z]/g, '');
     let value = element.getAttribute('data-value');
-    console.log(value)
-    let SelectedJob = document.getElementById("Selected-Job");
-    SelectedJob.innerHTML = "<span id='Selected-Job'></span><br><span class='focused job-desc'>" + elementID.replace(/-/g, ' ');
-    // + "</span><br><span id='Department-Division'></span><br><span class='focused job-desc'>" + optgroup.label + "</span>";
+    let JobSelected = document.getElementById("Job-Selected");
+    let DepartmentDivisionSelected = document.getElementById("Department-Division-Selected");
+    let DescriptionSelected = document.getElementById("Description-Selected");
+    JobSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${elementID}"></span>`;
+    DepartmentDivisionSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${value}"></span>`;
+    DescriptionSelected.innerHTML = `<span id="${stringWithoutLowercase}"></span>`;
     updateContent();
 }
 

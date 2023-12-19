@@ -19,13 +19,11 @@ function updateContent() {
     }
 
     fetch(`./Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
-        .then(response => response.json())
-        .then(data => {
+        .then(response => response.json()).then(data => {
             // Loop through the keys in the JSON data
             Object.keys(data).forEach(key => {
                 // Find the corresponding HTML element by ID
                 const element = document.getElementById(key);
-
                 if (element) {
                     // Check if the element is an optgroup
                     if (element.tagName.toLowerCase() === "option") {
@@ -37,6 +35,18 @@ function updateContent() {
                         element.innerHTML = data[key];
                     }
                 }
+                // Get all elements with aria-describedby attribute
+                const allElementsWithAria = document.querySelectorAll('[aria-describedby]');
+                // Loop through elements with aria-describedby attribute
+                allElementsWithAria.forEach(ariaElement => {
+                    // Get the value of the aria-describedby attribute
+                    const ariaValue = ariaElement.getAttribute('aria-describedby');
+                    // Check if the aria-describedby value is a key in the JSON data
+                    if (data.hasOwnProperty(ariaValue)) {
+                        // Set the innerHTML of the element to the corresponding JSON data key
+                        ariaElement.innerHTML = data[ariaValue];
+                    }
+                });
             });
         })
         .catch(error => console.error('Error loading language file:', error));
