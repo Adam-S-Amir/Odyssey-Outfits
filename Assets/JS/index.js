@@ -139,7 +139,7 @@ function navbar_default() {
       <ul>
           <li><a id="nav-home" href="./index.html">Home</a></li>
           <li><a id="nav-about" href="./About.html">About</a></li>
-          <li><a id="nav-products" href="./products.html">Products</a></li>
+          <li><a id="nav-products" href="./Products.html">Products</a></li>
           <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
           <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
           <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>

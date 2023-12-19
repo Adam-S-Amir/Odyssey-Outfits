@@ -1,3 +1,14 @@
+function ShowJobInfo(element) {
+    let elementID = element.id;
+    console.log(elementID)
+    let value = element.getAttribute('data-value');
+    console.log(value)
+    let SelectedJob = document.getElementById("Selected-Job");
+    SelectedJob.innerHTML = "<span id='Selected-Job'></span><br><span class='focused job-desc'>" + elementID.replace(/-/g, ' ');
+    // + "</span><br><span id='Department-Division'></span><br><span class='focused job-desc'>" + optgroup.label + "</span>";
+    updateContent();
+}
+
 document.getElementById('Job-Select').addEventListener('change', function () {
     //^ This event listener is fired when the user selects a job or a new jon.
     //! Basically if the user interacts with the select element,
@@ -118,6 +129,7 @@ document.getElementById('Job-Select').addEventListener('change', function () {
         footer.classList.remove("absolute-footer");
     }
 });
+
 
 document.getElementById('pdfInput').addEventListener('change', function (event) {
     //^ Event listener for the 'pdfInput' element

@@ -382,6 +382,99 @@ footer {
 /** END TOAST */
 
 /** RESUME */
+
+#Job-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Job-List {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    left: 15%;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+#Job-About {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    right: 15%;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+#Job-List,
+#Job-About {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+}
+
+#Job-About {
+    margin-left: 10px;
+}
+
+
+section#Job-List>div.container {
+    border-color: var(--text-color);
+    border-bottom: solid 2px;
+    color: var(--text-color);
+    /* ^Border will be invisible otherwise */
+}
+
+section#Job-List>div.container>h4{
+    word-spacing: 5px;
+}
+
+section#Job-List>div.container>*,
+section#Job-About>div.container>* {
+    color: var(--text-color);
+}
+
+section#Job-List>div.container>h1 {
+    text-decoration: underline;
+}
+
+
+
+
+
+
 #job-value {
     float: left;
 }
