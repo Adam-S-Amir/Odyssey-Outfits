@@ -270,12 +270,6 @@ window.toast = window.toast || (({
   window.scrollTo(0, 0);
 });
 
-window.alert = (message) => {
-  toast({
-    message
-  });
-}
-
 window.confirm = (message) => {
   toast({
     message
