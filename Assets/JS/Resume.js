@@ -3,17 +3,21 @@ function ShowJobInfo(element) {
     let stringWithoutDash = elementID.replace(/-/g, '');
     let stringWithoutLowercase = stringWithoutDash.replace(/[a-z]/g, '');
     let value = element.getAttribute('data-value');
-    let JobSelected = document.getElementById("Job-Selected");
-    let DepartmentDivisionSelected = document.getElementById("Department-Division-Selected");
-    let DescriptionSelected = document.getElementById("Description-Selected");
-    let KeyResponsibilitiesSelected = document.getElementById("Key-Responsibilities-Selected");
     let KRS = `Key-Responsibilities-${stringWithoutLowercase}`;
+    let JobAboutInner = document.getElementById("Job-About-Inner");
+    let JAB = [`
+                <h1 id="Selected-Job">Selected Job:</h1>
+                <span class='focused job-desc' aria-describedby="${elementID}"></span>
+                <h1 id="Department-Division">Department/Division:</h1>
+                <span class='focused job-desc' aria-describedby="${value}"></span>
+                <h1 id="Job-Description">Job Description:</h1>
+                <span id="${stringWithoutLowercase}"></span>
+                <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
+                <ul id="${KRS}"></ul>
+    `];
+    JobAboutInner.innerHTML = JAB;
     const JobAbout = document.getElementById("Job-About");
     JobAbout.scrollIntoView();
-    JobSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${elementID}"></span>`;
-    DepartmentDivisionSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${value}"></span>`;
-    DescriptionSelected.innerHTML = `<span id="${stringWithoutLowercase}"></span>`;
-    KeyResponsibilitiesSelected.innerHTML = `<ul id="${KRS}"></ul>`;
     updateContent();
 }
 
