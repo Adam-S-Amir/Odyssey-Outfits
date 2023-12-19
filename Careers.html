@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/root.css">
+    <link rel="stylesheet" href="./Assets/CSS/stylesheet.css">
+    <title>Odyssey Outfits | Resume</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Img/Favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="navbar" id="navbar">
+                <h1 class="title">Odyssey Outfits</h1>
+                <nav>
+                    <ul>
+                        <li><a id="nav-home" href="./index.html">Home</a></li>
+                        <li><a id="nav-about" href="./About.html">About</a></li>
+                        <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+                        <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
+                        <li>
+                            <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                                <option value="ar">العربية</option>
+                                <option value="da">Dansk</option>
+                                <option value="de">Deutsch</option>
+                                <option value="el">Ελληνικά</option>
+                                <option value="en">English</option>
+                                <option value="es">Español</option>
+                                <option value="fi">Suomi</option>
+                                <option value="fr">Français</option>
+                                <option value="he">עברית</option>
+                                <option value="hu">Magyar</option>
+                                <option value="it">Italiano</option>
+                                <option value="ja">日本語</option>
+                                <option value="ko">한국어</option>
+                                <option value="nb">Norsk Bokmål</option>
+                                <option value="nl">Nederlands</option>
+                                <option value="pl">Polski</option>
+                                <option value="pt">Português</option>
+                                <option value="ru">Русский</option>
+                                <option value="sk">Slovenčina</option>
+                                <option value="sl">Slovenščina</option>
+                                <option value="sv">Svenska</option>
+                                <option value="tr">Türkçe</option>
+                                <option value="zh">中文</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="Job-Container">
+        <section id="Job-List">
+            <div class="container">
+                <h1><a data-value="Upper-Management" id="Chief-Financial-Officer" onclick="ShowJobInfo(this)">Chief Financial Officer</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Upper-Management" id="Chief-Executive-Officer" onclick="ShowJobInfo(this)">Chief Executive Officer</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Upper-Management" id="Chief-Operating-Officer" onclick="ShowJobInfo(this)">Chief Operating Officer</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Lower-Management" id="Human-Resources" onclick="ShowJobInfo(this)">Human Resources</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Lower-Management" id="Regional-Manager" onclick="ShowJobInfo(this)">Regional Manager</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Lower-Management" id="Office-Manager" onclick="ShowJobInfo(this)">Office Manager</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Sales-Department" id="Regional-Sales-Director" onclick="ShowJobInfo(this)">Regional Sales Director</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Sales-Department" id="Account-Executive" onclick="ShowJobInfo(this)">Account Executive</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Sales-Department" id="Salesman" onclick="ShowJobInfo(this)">Salesman</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Financial-Department" id="Regional-Financial-Director" onclick="ShowJobInfo(this)">Regional Financial Director</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Financial-Department" id="Payroll-Administrator" onclick="ShowJobInfo(this)">Payroll Administrator</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="Financial-Department" id="Financial-Analyst" onclick="ShowJobInfo(this)">Financial Analyst</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="IT-Department" id="Fullstack-Developer" onclick="ShowJobInfo(this)">Fullstack Developer</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="IT-Department" id="Network-Administrator" onclick="ShowJobInfo(this)">Network Administrator</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+            <div class="container">
+                <h1><a data-value="IT-Department" id="Help-Desk-Administrator" onclick="ShowJobInfo(this)">Help Desk Administrator</a></h1>
+                <h4><img alt="Location&nbsp;" src="./Assets/Img/Location-512x512.png">Richmond, VA</h4>
+                <h4 aria-describedby="Full-Time"><img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time</h4>
+                <h4 aria-describedby="Date-Posted"><img alt="Time&nbsp;" src="./Assets/Img/Time-512x512.png">Posted 1 Week Ago</h4>
+                <h6>Odyssey Outfits&centerdot; RVA&centerdot; 23060</h6>
+            </div>
+        </section>
+
+        <section id="Job-About">
+            <div class="container" id="Job-About-Inner">
+                <h1 id="Selected-Job">Selected Job:</h1>
+                <span id="Job-Selected"></span>
+                <h1 id="Department-Division">Department/Division:</h1>
+                <span id="Department-Division-Selected"></span>
+                <h1 id="Job-Description">Job Description:</h1>
+                <span id="Description-Selected"></span>
+                <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
+                <span id="Key-Responsibilities-Selected"></span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p id="copyright">&copy; 2023 Odyssey Outfits.&nbsp;All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./Assets/JS/locales.js"></script>
+    <script src="./Assets/JS/index.js"></script>
+    <script src="./Assets/JS/Resume.js"></script>
+</body>
+
+</html>

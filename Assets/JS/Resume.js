@@ -6,9 +6,14 @@ function ShowJobInfo(element) {
     let JobSelected = document.getElementById("Job-Selected");
     let DepartmentDivisionSelected = document.getElementById("Department-Division-Selected");
     let DescriptionSelected = document.getElementById("Description-Selected");
+    let KeyResponsibilitiesSelected = document.getElementById("Key-Responsibilities-Selected");
+    let KRS = `Key-Responsibilities-${stringWithoutLowercase}`;
+    const JobAbout = document.getElementById("Job-About");
+    JobAbout.scrollIntoView();
     JobSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${elementID}"></span>`;
     DepartmentDivisionSelected.innerHTML = `<span class='focused job-desc' aria-describedby="${value}"></span>`;
     DescriptionSelected.innerHTML = `<span id="${stringWithoutLowercase}"></span>`;
+    KeyResponsibilitiesSelected.innerHTML = `<ul id="${KRS}"></ul>`;
     updateContent();
 }
 

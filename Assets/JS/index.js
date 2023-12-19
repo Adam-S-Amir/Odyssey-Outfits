@@ -92,7 +92,7 @@ function navbar() {
           <a id="nav-about" href="./About.html">About</a>
           <a id="nav-contact" href="./Contact.html">Contact</a>
           <a id="nav-faq" href="./FAQ.html">FAQ</a>
-          <a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a>
+          <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
           <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar">العربية</option>
                   <option value="da">Dansk</option>
@@ -125,6 +125,20 @@ function navbar() {
       </a>
   </div>
 `]
+  const JobContainer = document.querySelector('#Job-Container');
+  const JobList = document.querySelector('#Job-List');
+  const JobAbout = document.querySelector('#Job-About');
+  if (JobContainer) {
+    JobContainer.style.display = "block";
+    JobList.style.left = "10%";
+    JobList.style.width = "70%";
+    JobList.style.boxSizing = "unset";
+    JobAbout.style.left = "10%";
+    JobAbout.style.width = "70%";
+    JobAbout.style.boxSizing = "unset";
+    JobAbout.style.marginLeft = "unset";
+    JobAbout.style.flexDirection = "row";
+  }
   updateContent();
 }
 
@@ -140,7 +154,7 @@ function navbar_default() {
           <li><a id="nav-about" href="./About.html">About</a></li>
           <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
           <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
-          <li><a id="nav-resume" class="focused" href="./Resume.html">Upload a R&eacute;sum&eacute;</a></li>
+          <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
           <li>
               <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar">العربية</option>

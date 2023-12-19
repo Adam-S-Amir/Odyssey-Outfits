@@ -71,9 +71,6 @@ var TOSelement = document.getElementById('languageSelect_2');
 
 if (TOSelement) {
     TOSelement.value = currentLanguage;
-} else {
-    console.log('TOS Dialog is hidden');
 }
-
 // Update lang localization
 updateContent();

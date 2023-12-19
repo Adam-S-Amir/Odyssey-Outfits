@@ -1,6 +1,8 @@
 /** MAIN STYLES */
 * {
     outline: none;
+    overflow-wrap: anywhere;
+    scroll-behavior: smooth;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -388,65 +390,66 @@ footer {
     justify-content: space-between;
 }
 
-#Job-List {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 30%;
-    padding: 20px;
-    background-color: var(--alt-background-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    left: 15%;
-    border: 3px solid var(--focused);
-    border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
-}
-
-#Job-About {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 30%;
-    padding: 20px;
-    background-color: var(--alt-background-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    right: 15%;
-    border: 3px solid var(--focused);
-    border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
-}
-
 #Job-List,
 #Job-About {
+    height: fit-content;
     box-sizing: border-box;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
     background-color: var(--alt-background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto;
+    overflow-x: hidden;
     border: 3px solid var(--focused);
     border-radius: var(--border-radius-medium);
 }
 
+#Job-List {
+    overflow-x: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    left: 5%;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
 #Job-About {
+    /* height: auto; */
+    overflow-x: hidden;
+    margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    padding: 20px;
+    background-color: var(--alt-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    right: 5%;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 
@@ -457,8 +460,15 @@ section#Job-List>div.container {
     /* ^Border will be invisible otherwise */
 }
 
-section#Job-List>div.container>h4{
+section#Job-List>div.container>h4 {
     word-spacing: 5px;
+}
+
+section#Job-List>div.container>h4>img {
+    height: 32px;
+    width: 32px;
+    top: 10px;
+    position: relative;
 }
 
 section#Job-List>div.container>*,
