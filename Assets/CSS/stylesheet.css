@@ -33,10 +33,6 @@ a {
     color: var(--focused);
 }
 
-/* .nav-container {
-    width: 80%;
-} */
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -45,7 +41,6 @@ a {
 
 header {
     color: var(--text-color);
-    /* padding: 1em 0; */
 }
 
 header h1 {
@@ -54,7 +49,6 @@ header h1 {
 
 .navbar {
     background-color: var(--alt-background-color);
-    /* width: 80%; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -158,17 +152,8 @@ button {
     color: var(--alt-text-color);
     background-color: var(--button-background-color);
     height: 35px;
-    /* width: 70px; */
-    /* min-width: 70px; */
     text-align: center;
     position: relative;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%); */
     border: 3px solid var(--border-color);
     border-radius: var(--border-radius-medium);
     -webkit-border-radius: var(--border-radius-medium);
@@ -180,8 +165,6 @@ button {
 .languageSelect {
     margin-bottom: 5px;
     outline: transparent;
-    /*padding: 0.6em 0.4em;
-    */
     font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
@@ -433,7 +416,6 @@ footer {
 }
 
 #Job-About {
-    /* height: auto; */
     overflow-x: hidden;
     margin-top: 20px;
     margin-left: 10px;
@@ -487,7 +469,7 @@ section#Job-List>div.container>h1:hover {
     -o-transform: translateX(15px);
 }
 
-section#Job-List>div.container>h4 {
+section#Job-List>div.container>h4:first-of-type {
     word-spacing: 5px;
 }
 
@@ -537,8 +519,6 @@ section#Job-About>div#Job-About-Inner>ul>li {
 #Job-Select {
     outline: transparent;
     padding: 0.6em 0.4em;
-    /*width: 150px;
-    */
     font-weight: bold;
     font-size: 16px;
     background-color: var(--alt-background-color);
