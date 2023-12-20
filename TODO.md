@@ -1,5 +1,7 @@
 # REQUIREMENTS
 
+- [ ] Scroll to top button
+
 - [ ] Finish pages
   - [ ] Home
   - [ ] About
