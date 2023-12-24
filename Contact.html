@@ -22,7 +22,7 @@
                         <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
                         <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
                         <li>
-                            <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                            <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                                 <option value="ar">العربية</option>
                                 <option value="da">Dansk</option>
                                 <option value="de">Deutsch</option>
@@ -49,7 +49,7 @@
                             </select>
                         </li>
                         <li>
-                            <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
+                            <button id='ADA-Toggle' title="Toggle Site Theme" onclick='changeRootStyles()'></button>
                         </li>
                     </ul>
                 </nav>
@@ -70,7 +70,7 @@
 
                     <label id="label-contact-message">Message:</label>
                     <br>
-                    <textarea name="contact-message" id="contact-message" cols="30" rows="10" required></textarea>
+                    <textarea title="Your Message Goes Here" name="contact-message" id="contact-message" rows="10" required></textarea>
                     <div class="submit-div">
                         <button type="submit">Submit</button>
                     </div>

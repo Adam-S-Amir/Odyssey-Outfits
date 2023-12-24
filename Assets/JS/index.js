@@ -93,7 +93,7 @@ function navbar() {
           <a id="nav-contact" href="./Contact.html">Contact</a>
           <a id="nav-faq" href="./FAQ.html">FAQ</a>
           <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
-          <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+          <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar">العربية</option>
                   <option value="da">Dansk</option>
                   <option value="de">Deutsch</option>
@@ -118,7 +118,7 @@ function navbar() {
                   <option value="tr">Türkçe</option>
                   <option value="zh">中文</option>
           </select>
-          <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
+          <button id='ADA-Toggle' title="Toggle Site Theme" onclick='changeRootStyles()'></button>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
           <i class="mobile mobile-bars"></i>
@@ -156,7 +156,7 @@ function navbar_default() {
           <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
           <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
           <li>
-              <select id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+              <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar">العربية</option>
                   <option value="da">Dansk</option>
                   <option value="de">Deutsch</option>
@@ -183,7 +183,7 @@ function navbar_default() {
               </select>
           </li>
           <li>
-              <button id='ADA-Toggle' onclick='changeRootStyles()'></button>
+              <button id='ADA-Toggle' title="Toggle Site Theme" onclick='changeRootStyles()'></button>
           </li>
       </ul>
   </nav>
