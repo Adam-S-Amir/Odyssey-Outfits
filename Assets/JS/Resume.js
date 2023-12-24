@@ -6,14 +6,14 @@ function ShowJobInfo(element) {
     let KRS = `Key-Responsibilities-${stringWithoutLowercase}`;
     let JobAboutInner = document.getElementById("Job-About-Inner");
     let JAB = [`
-                <h1 id="Selected-Job">Selected Job:</h1>
-                <span class='focused job-desc' aria-describedby="${elementID}"></span>
-                <h1 id="Department-Division">Department/Division:</h1>
-                <span class='focused job-desc' aria-describedby="${value}"></span>
-                <h1 id="Job-Description">Job Description:</h1>
-                <span id="${stringWithoutLowercase}"></span>
-                <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
-                <ul id="${KRS}"></ul>
+        <h1 id="Selected-Job">Selected Job:</h1>
+        <span class='focused job-desc' aria-describedby="${elementID}"></span>
+        <h1 id="Department-Division">Department/Division:</h1>
+        <span class='focused job-desc' aria-describedby="${value}"></span>
+        <h1 id="Job-Description">Job Description:</h1>
+        <span id="${stringWithoutLowercase}"></span>
+        <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
+        <ul id="${KRS}"></ul>
     `];
     JobAboutInner.innerHTML = JAB;
     const JobAbout = document.getElementById("Job-About");
@@ -170,8 +170,8 @@ document.getElementById('pdfInput').addEventListener('change', function (event) 
     } else {
         //* if user didn't select a PDF file, this will run
         let msg = [`
-                    <p id='pdf-file-error'>Please select a valid PDF file:</p>
-                `]
+            <p id='pdf-file-error'>Please select a valid PDF file:</p>
+        `]
 
         window.toast({
             message: msg,
@@ -231,9 +231,9 @@ function sendEmail() {
     //* Function to display a confirmation toast
     function confirmation() {
         let msg = [`
-                    <h1 id='application-sent'>Application Sent!</h1>
-                    <p id='received-application'>Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
-                `]
+            <h1 id='application-sent'>Application Sent!</h1>
+            <p id='received-application'>Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
+        `]
 
         window.toast({
             message: msg,
@@ -245,9 +245,9 @@ function sendEmail() {
     //* Function to display an error toast
     function emailError() {
         let msg = [`
-                    <h1 id='application-not-sent'>Application Not Sent!</h1>
-                    <p id='not-received-application'>Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
-                `]
+            <h1 id='application-not-sent'>Application Not Sent!</h1>
+            <p id='not-received-application'>Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
+        `]
 
         window.toast({
             message: msg,
