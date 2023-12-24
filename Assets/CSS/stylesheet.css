@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -71,7 +71,7 @@ div.navbar h1.title {
 }
 
 div.navbar nav ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-family);
     font-size: larger;
     list-style: none;
     padding: 0;
@@ -147,7 +147,7 @@ section>.container>ul>li:hover {
 }
 
 button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-family);
     font-size: 15px;
     color: var(--alt-text-color);
     background-color: var(--button-background-color);
@@ -497,60 +497,19 @@ section#Job-About>div#Job-About-Inner>ul>li {
     text-indent: 0px;
 }
 
-#job-value {
-    float: left;
+section#Job-About>div#Job-About-Inner>button#Apply-Now {
+    width: 100%;
+    color: var(--alt-text-color);
 }
 
-#job-desc {
-    float: right;
+#fileInputLabel {
+    display: block;
 }
 
-.job-desc {
-    font-size: large;
-}
-
-#fileInputLabel,
 #pdfInput,
 #pdfViewer,
 #submit-resume {
     display: none;
-}
-
-#Job-Select {
-    outline: transparent;
-    padding: 0.6em 0.4em;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: var(--alt-background-color);
-    color: var(--text-color);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    border: 3px solid var(--focused);
-    border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
-}
-
-select#Job-Select>option,
-select#Job-Select>optgroup,
-select#Job-Select>optgroup>option {
-    background-color: var(--alt-background-color);
-}
-
-select#Job-Select>option {
-    border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
 }
 
 #pdfViewer {
@@ -573,74 +532,63 @@ select#Job-Select>option {
     content: "PDF Viewer";
 }
 
-#Job-Select:hover,
 #fileInputLabel:hover,
 #submit-resume:hover {
     background-color: var(--focused);
 }
 
-div.overlay {
-    display: none;
+div#Job-Overlay {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+div#Job-Form.overlay {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 50%;
+    left: 22%;
     padding: 20px;
     background-color: var(--alt-background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
     border: 3px solid var(--focused);
     border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
 }
 
-div.overlay form {
+div#Job-Form.overlay form {
     color: var(--text-color);
     flex-direction: column;
+    width: 100%;
 }
 
 div.overlay label {
     margin-bottom: 8px;
 }
 
-div.overlay input {
-    display: flex;
+div#Job-Form.overlay input,
+div#Job-Form.overlay select {
+    width: calc(100%);
+    margin-bottom: 5px;
     padding: 8px;
-    margin-bottom: 5px;
+    box-sizing: border-box;
     border: 3px solid var(--focused);
     border-radius: var(--border-radius-medium);
     -webkit-border-radius: var(--border-radius-medium);
     -moz-border-radius: var(--border-radius-medium);
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: var(--border-radius-medium);
-}
-
-div.overlay select {
-    display: flex;
-    margin-bottom: 5px;
-    outline: transparent;
-    padding: 0.6em 0.4em;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: var(--alt-background-color);
-    color: var(--text-color);
-    border: 3px solid var(--focused);
-    border-radius: var(--border-radius-medium);
-    -webkit-border-radius: var(--border-radius-medium);
-    -moz-border-radius: var(--border-radius-medium);
-    -ms-border-radius: var(--border-radius-medium);
-    -o-border-radius: var(--border-radius-medium);
+    resize: none;
 }
 
 .submit-div {
@@ -649,7 +597,6 @@ div.overlay select {
     align-items: flex-end;
 }
 
-#fileInputLabel,
 #pdfInput {
     bottom: 0;
     padding: 10px;
@@ -665,9 +612,28 @@ div.overlay select {
     -o-border-radius: var(--border-radius-small);
 }
 
+#fileInputLabel{
+    padding-top: 15px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: var(--alt-text-color);
+    background-color: var(--button-background-color);
+    height: 35px;
+    text-align: center;
+    position: relative;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
 #submit-resume {
     outline: transparent;
-    padding: 0.6em 0.4em;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
@@ -699,8 +665,12 @@ div.overlay select {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
     text-align: center;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
 }
 
 div#Contact-Form.overlay {
@@ -710,6 +680,8 @@ div#Contact-Form.overlay {
     align-items: center;
     position: relative;
     width: 50%;
+    left: 22%;
+    padding: 20px;
     background-color: var(--alt-background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;

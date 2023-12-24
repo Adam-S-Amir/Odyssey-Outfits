@@ -290,6 +290,7 @@ function changeRootStyles() {
     rootElement.style.setProperty('--overlay', '#FFFFFF');
     rootElement.style.setProperty('--scrollbar-track', '#000000');
     rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
+    rootElement.style.setProperty('--font-family', "Times New Roman");
     const styleElement = document.createElement('style');
     styleElement.textContent = [`
       *{

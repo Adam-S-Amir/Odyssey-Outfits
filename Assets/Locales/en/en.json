@@ -78,6 +78,7 @@
 
   "Full-Time": "<img alt='Briefcase&nbsp;' src='./Assets/Img/Briefcase-512x512.png'>Full Time",
   "Date-Posted": "<img alt='Time&nbsp;' src='./Assets/Img/Time-512x512.png'>Posted 1 Week Ago",
+  "Apply-Now": "Apply Now",
 
   "label-form-name": "First Name:",
   "label-form-lname": "Last Name:",
@@ -85,9 +86,9 @@
   "label-form-phone": "Phone Number:",
   "label-form-linkedin": "Linkedin:",
   "label-form-address": "Current Address:",
-  "label-form-legal": "Are you legally authorized<br>to work in the United States?",
-  "label-form-education": "Have you completed the following level<br>of education: Bachelor's Degree?",
-  "fileInputLabel": "Upload Your Résumé",
+  "label-form-legal": "Are you legally authorized to work in the United States?",
+  "label-form-education": "Have you completed the following level of education: Bachelor's Degree?",
+  "fileInputLabel": "Upload&nbsp;Your Résumé",
   "pdf-file-error": "Please upload a valid PDF file.",
   "submit-resume": "Submit Your Application",
 
