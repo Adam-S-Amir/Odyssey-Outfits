@@ -6,6 +6,8 @@
 
 - [ ] Finish pages
   - [ ] Home
+    - [ ] Needs to have more stuff
+    - [ ] Needs to look good on mobile/tablet
   - [ ] About
   - [ ] Services
   - [ ] Contact

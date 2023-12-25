@@ -115,6 +115,10 @@ section {
     min-height: 100%;
 }
 
+section>.container>h1 {
+    color: var(--focused);
+}
+
 section>.container>h2 {
     color: var(--focused);
 }
@@ -237,6 +241,53 @@ footer {
 }
 
 /** END MAIN STYLES */
+
+/** HOME PAGE */
+section#home>div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#home>div.container>div>h1#Motto {
+    left: 5%;
+    display: block;
+    position: relative;
+    margin-top: 5%;
+    font-size: 45px;
+    color: var(--focused);
+}
+
+section#home>div.container>div>p#Bio {
+    left: 5%;
+    position: relative;
+    margin-bottom: 4%;
+    white-space: normal;
+    text-wrap: balance;
+    width: 40%;
+}
+
+section#home>div.container>div>a#Explore-Careers {
+    left: 5%;
+    text-decoration: none;
+    padding-inline: 6px;
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: var(--alt-text-color);
+    background-color: var(--button-background-color);
+    height: 35px;
+    text-align: center;
+    position: relative;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+/** END HOME PAGE */
 
 /** MOBILE NAVBAR */
 .topnav {
@@ -628,7 +679,7 @@ div#Job-Form.overlay select {
     -o-border-radius: var(--border-radius-small);
 }
 
-#fileInputLabel{
+#fileInputLabel {
     padding-top: 15px;
     margin-top: 20px;
     width: 100%;
