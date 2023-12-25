@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       action: () => TOS(),
     });
   };
+
   function TOS() {
     localStorage.setItem("TOS", "accepted")
   }
@@ -55,8 +56,36 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+let scrolled = false;
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+// Show the button when scrolling down and hide it when at the top
+window.onscroll = function () {
+  if (!scrolled) {
+    let scrollTop = document.createElement("button");
+    scrollTop.id = "scrollToTopBtn";
+    scrollTop.innerText = "Scroll to Top"; // Set button text
+    scrollTop.addEventListener('click', scrollToTop);
+    document.body.appendChild(scrollTop);
+    scrolled = true;
+  }
+
+  const btn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+
 function detectDeviceType() {
   const userAgent = navigator.userAgent;
+
   function isiPadAir() {
     const userAgent = navigator.userAgent;
     return /iPad/i.test(userAgent) && /AppleWebKit/i.test(userAgent) && /CriOS/i.test(userAgent);
@@ -239,7 +268,7 @@ window.toast = window.toast || (({
   newButton.onclick = function () {
     // If action is defined and is a function, execute it before removing the toast
     if (action && typeof action === 'function') {
-      action();  // Call the function when the button is clicked
+      action(); // Call the function when the button is clicked
     };
     removeToast();
   };

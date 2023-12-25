@@ -1,6 +1,8 @@
 # REQUIREMENTS
 
-- [ ] Scroll to top button
+- [x] Scroll to top button
+
+- [ ] Cookie Policy
 
 - [ ] Finish pages
   - [ ] Home

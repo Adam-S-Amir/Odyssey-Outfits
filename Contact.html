@@ -22,7 +22,8 @@
                         <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
                         <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
                         <li>
-                            <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+                            <select title="Change Site Language" id="languageSelect" class="languageSelect"
+                                onchange="changeLanguage(this.value)">
                                 <option value="ar">العربية</option>
                                 <option value="da">Dansk</option>
                                 <option value="de">Deutsch</option>
@@ -71,10 +72,10 @@
                     <label id="label-contact-message">Message:</label>
                     <br>
                     <textarea title="Your Message Goes Here" name="contact-message" id="contact-message" rows="10" required></textarea>
-                    <div class="submit-div">
-                        <button type="submit">Submit</button>
-                    </div>
                 </form>
+                <div class="submit-div">
+                    <button type="submit" onclick="sendEmail()">Submit</button>
+                </div>
             </div>
         </div>
     </section>
@@ -84,8 +85,10 @@
             <p id="copyright">&copy; 2023 Odyssey Outfits.&nbsp;All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./Assets/JS/locales.js"></script>
     <script src="./Assets/JS/index.js"></script>
+    <script src="./Assets/JS/Contact.js"></script>
 </body>
 
 </html>

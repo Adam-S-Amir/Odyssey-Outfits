@@ -200,6 +200,21 @@ button {
     position: relative;
 }
 
+#scrollToTopBtn {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--focused);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 footer {
     background-color: var(--alt-background-color);
     color: var(--text-color);
@@ -208,6 +223,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .absolute-footer {
@@ -716,7 +732,7 @@ div#Contact-Form.overlay textarea {
     resize: none;
 }
 
-div#Contact-Form.overlay>form>div.submit-div>button {
+div#Contact-Form.overlay>div.submit-div>button {
     width: 100%;
     padding: 8px;
     /* Added padding for better visual appearance */
