@@ -264,7 +264,7 @@ section#home>div.container>div>p#Bio {
     margin-bottom: 4%;
     white-space: normal;
     text-wrap: balance;
-    width: 40%;
+    /* width: 40%; */
 }
 
 section#home>div.container>div>a#Explore-Careers {
