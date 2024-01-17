@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <option value="tr">Türkçe</option>
           <option value="zh">中文</option>
       </select>
-      <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act), as a result you may click the eye icon located in the top right corner to toggle ADA compliance mode.</p>
+      <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
       <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
       <a id='TOS-TOS' href="./TOS.html" target="_blank">Terms Of Service</a>
       <br>
@@ -103,6 +103,15 @@ function detectDeviceType() {
     navbar_default();
     console.log("Device Type: Computer");
   };
+}
+
+function getDeviceWidth() {
+  return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+function HomeBanner() {
+  let x = document.querySelector(".Home-Banner")
+  x.style.backgroundSize = getDeviceWidth();
 }
 
 function navbar() {
