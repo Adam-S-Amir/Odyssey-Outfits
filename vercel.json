@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/Assets/:file*",
+            "destination": "/404.html",
+            "statusCode": 404
+        }
+    ]
+}

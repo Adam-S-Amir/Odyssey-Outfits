@@ -935,3 +935,11 @@ div#Contact-Form.overlay>div.submit-div>button {
 
 
 /** END CONTACT PAGE */
+
+/** ABOUT PAGE */
+
+section>div.container>h1.about-header {
+    text-align: center;
+}
+
+/** END ABOUT PAGE */
