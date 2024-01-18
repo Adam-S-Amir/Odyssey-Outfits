@@ -2,6 +2,8 @@
 
 - [x] Scroll to top button
 
+- [ ] Proof-read wiki
+
 - [x] Cookie/Data Collection Policy
 - [x] Noscript - rip from MagnusWare
 - [x] Button hover ADA style fix
