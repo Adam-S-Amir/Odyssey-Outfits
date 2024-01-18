@@ -3,7 +3,7 @@
 - [x] Scroll to top button
 
 - [ ] Cookie Policy
-- [ ] Noscript - rip from MagnusWare
+- [x] Noscript - rip from MagnusWare
 - [ ] Button hover ADA style fix
 
 - [ ] Finish pages

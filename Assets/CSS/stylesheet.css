@@ -29,6 +29,24 @@ body {
     height: 100%;
 }
 
+noscript {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+noscript::after {
+    content: "This website requires JavaScript. Please enable JavaScript in your browser settings.";
+}
+
 a {
     color: var(--focused);
 }
