@@ -115,7 +115,9 @@ function ApplyNow() {
             })
         }
     });
-    document.getElementById("submit-resume").scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("submit-resume").scrollIntoView({
+        behavior: 'smooth'
+    });
     updateContent();
 }
 

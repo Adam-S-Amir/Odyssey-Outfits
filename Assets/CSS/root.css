@@ -11,6 +11,7 @@
     --scrollbar-thumb: #DDD0C8;
     --ADA-black: #000000;
     --ADA-white: #FFFFFF;
+    --text-background-color-overlay: rgba(0, 0, 0, 0.5);
     --border-radius-xlarge: 1vmax;
     --border-radius-large: 1vmin;
     --border-radius-medium: 5px;

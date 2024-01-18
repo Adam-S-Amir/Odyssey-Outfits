@@ -109,9 +109,32 @@ function getDeviceWidth() {
   return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
 
-function HomeBanner() {
-  let x = document.querySelector(".Home-Banner")
-  x.style.backgroundSize = getDeviceWidth();
+function HomePage() {
+  const HomeBanner = document.querySelector("#Home-Banner")
+  const HomeHeader = document.querySelector("#Home-Header");
+  const HomeBio = document.querySelector("#Home-Bio");
+  if (HomeBanner) {
+    HomeBanner.style.backgroundPosition = "right";
+    HomeHeader.style.width = "90%";
+    HomeBio.style.width = "60%";
+  }
+}
+
+function CareerPage() {
+  const JobContainer = document.querySelector('#Job-Container');
+  const JobList = document.querySelector('#Job-List');
+  const JobAbout = document.querySelector('#Job-About');
+  if (JobContainer) {
+    JobContainer.style.display = "block";
+    JobList.style.left = "10%";
+    JobList.style.width = "70%";
+    JobList.style.boxSizing = "unset";
+    JobAbout.style.left = "10%";
+    JobAbout.style.width = "70%";
+    JobAbout.style.boxSizing = "unset";
+    JobAbout.style.marginLeft = "unset";
+    JobAbout.style.flexDirection = "row";
+  };
 }
 
 function navbar() {
@@ -159,20 +182,8 @@ function navbar() {
         </a>
     </div>
   `];
-  const JobContainer = document.querySelector('#Job-Container');
-  const JobList = document.querySelector('#Job-List');
-  const JobAbout = document.querySelector('#Job-About');
-  if (JobContainer) {
-    JobContainer.style.display = "block";
-    JobList.style.left = "10%";
-    JobList.style.width = "70%";
-    JobList.style.boxSizing = "unset";
-    JobAbout.style.left = "10%";
-    JobAbout.style.width = "70%";
-    JobAbout.style.boxSizing = "unset";
-    JobAbout.style.marginLeft = "unset";
-    JobAbout.style.flexDirection = "row";
-  };
+  CareerPage();
+  HomePage();
   updateContent();
 }
 
@@ -326,6 +337,7 @@ function changeRootStyles() {
     rootElement.style.setProperty('--button-background-color', '#FFFFFF');
     rootElement.style.setProperty('--border-color', '#000000');
     rootElement.style.setProperty('--overlay', '#FFFFFF');
+    rootElement.style.setProperty('--text-background-color-overlay', '#FFFFFF');
     rootElement.style.setProperty('--scrollbar-track', '#000000');
     rootElement.style.setProperty('--scrollbar-thumb', '#FFFFFF');
     rootElement.style.setProperty('--font-family', "Times New Roman");
@@ -334,11 +346,15 @@ function changeRootStyles() {
       *{
         font-family: "Times New Roman", Times, serif;
       }
-      *:hover {
-          background-color: #FFFFFF !important;
-          border-color: #000000 !important;
+      nav>ul>li>a:hover {
+          background-color: white !important;
+          border-color: black !important;
       }
-    `];
+      section#Job-About>div#Job-About-Inner>button#Apply-Now {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }    `];
     localStorage.setItem("ada", "on");
     document.head.appendChild(styleElement);
     document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-On.png) center/cover no-repeat";

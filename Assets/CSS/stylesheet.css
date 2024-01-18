@@ -214,13 +214,18 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--focused);
-    color: var(--background-color);
+    background-color: var(--button-background-color);
+    color: var(--alt-text-color);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--alt-background-color);
+    color: var(--focused);
 }
 
 footer {
@@ -257,6 +262,7 @@ section#home>div.container>div.Home-Banner {
     background-image: url(../Img/F01.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     width: 100%;
     height: 100%;
     display: block;
@@ -264,9 +270,13 @@ section#home>div.container>div.Home-Banner {
     top: 0;
     left: 0;
     transform: translate(0%, -38.5px);
+    -webkit-transform: translate(0%, -38.5px);
+    -moz-transform: translate(0%, -38.5px);
+    -ms-transform: translate(0%, -38.5px);
+    -o-transform: translate(0%, -38.5px);
 }
 
-section#home>div.container>div.Home-Banner>h1#Motto {
+section#home>div.container>div.Home-Banner>h1 {
     left: 5%;
     display: inline-block;
     position: relative;
@@ -274,18 +284,30 @@ section#home>div.container>div.Home-Banner>h1#Motto {
     font-size: 50px;
     color: var(--focused);
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-section#home>div.container>div.Home-Banner>p#Bio {
+section#home>div.container>div.Home-Banner>p {
     left: 5%;
     position: relative;
     margin-bottom: 4%;
     white-space: normal;
     text-wrap: balance;
+    color: var(--alt-text-color);
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
+
+section#home>div.container>div.Home-Banner>h1>span.title-text,
+section#home>div.container>div.Home-Banner>p>span.title-text {
+    background-color: var(--text-background-color-overlay);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-radius: var(--border-radius-small);
+    -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: var(--border-radius-small);
+}
+
 
 section#home>div.container>div.Home-Banner>a#Explore-Careers {
     display: inline-block;
@@ -295,11 +317,22 @@ section#home>div.container>div.Home-Banner>a#Explore-Careers {
     padding: 10px 20px;
     font-family: var(--font-family);
     font-size: 15px;
-    color: var(--alt-text-color);
-    background-color: var(--button-background-color);
     text-align: center;
     position: relative;
+    background-color: var(--button-background-color);
+    color: var(--alt-text-color);
     border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+}
+
+section#home>div.container>div.Home-Banner>a#Explore-Careers:hover {
+    background-color: var(--alt-background-color);
+    color: var(--focused);
+    border: 3px solid var(--focused);
     border-radius: var(--border-radius-medium);
     -webkit-border-radius: var(--border-radius-medium);
     -moz-border-radius: var(--border-radius-medium);
@@ -586,6 +619,7 @@ section#Job-About>div#Job-About-Inner>ul>li {
 
 section#Job-About>div#Job-About-Inner>button#Apply-Now {
     width: 100%;
+    background-color: var(--focused);
     color: var(--alt-text-color);
 }
 
@@ -621,7 +655,14 @@ section#Job-About>div#Job-About-Inner>button#Apply-Now {
 
 #fileInputLabel:hover,
 #submit-resume:hover {
-    background-color: var(--focused);
+    background-color: var(--alt-background-color);
+    color: var(--focused);
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
 }
 
 div#Job-Overlay {
@@ -724,8 +765,8 @@ div#Job-Form.overlay select {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
-    background-color: var(--alt-background-color);
-    color: var(--text-color);
+    background-color: var(--button-background-color);
+    color: var(--alt-text-color);
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

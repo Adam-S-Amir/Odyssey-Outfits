@@ -3,6 +3,7 @@
 - [x] Scroll to top button
 
 - [ ] Cookie Policy
+- [ ] Noscript - rip from MagnusWare
 
 - [ ] Finish pages
   - [ ] Home
