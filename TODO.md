@@ -31,8 +31,6 @@
 
 - [ ] Text to speech on mouse hover?
 
-- [ ] Implement a ton of JS and other libs/frameworks
-
 - [ ] Update SECURITY.md
 
 - [x] ADA mode should be Times New Roman
