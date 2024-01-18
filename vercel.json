@@ -1,8 +1,40 @@
 {
   "rewrites": [
     {
-      "source": "/index.html",
-      "destination": "/404"
+      "source": "/:path*.js",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.md",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.txt",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.htm",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.json",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.css",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.png",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.ico",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/:path*.ttf",
+      "destination": "/404.html"
     }
   ]
 }
