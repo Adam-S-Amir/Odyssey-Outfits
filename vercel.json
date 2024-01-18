@@ -1,4 +1,14 @@
 {
+    "security": {
+        "headers": {
+            "X-Frame-Options": "DENY",
+            "Content-Security-Policy": "frame-ancestors 'none'",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "no-referrer",
+            "feature-policy": "none"
+        }
+    },
+
     "redirects": [
         {
             "source": "/Assets/:file*",
