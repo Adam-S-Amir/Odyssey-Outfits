@@ -20,6 +20,7 @@
                         <li><a id="nav-home" href="./index.html">Home</a></li>
                         <li><a id="nav-about" href="./About.html">About</a></li>
                         <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+                        <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
                         <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
                         <li>
                             <select title="Change Site Language" id="languageSelect" class="languageSelect"
@@ -60,7 +61,7 @@
 
     <section id="contact">
         <div class="container">
-            <h1>Contact Us!</h1>
+            <h1 id="contact-us">Contact Us!</h1>
             <div class="overlay" id="Contact-Form">
                 <form>
                     <label for="contact-name" id="label-contact-name">Name:</label>
@@ -74,7 +75,7 @@
                     <textarea title="Your Message Goes Here" name="contact-message" id="contact-message" rows="10" required></textarea>
                 </form>
                 <div class="submit-div">
-                    <button type="submit" onclick="sendEmail()">Submit</button>
+                    <button id="contact-submit" type="submit" onclick="sendEmail()">Submit</button>
                 </div>
             </div>
         </div>

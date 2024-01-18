@@ -4,13 +4,13 @@
 
 - [ ] Cookie Policy
 - [ ] Noscript - rip from MagnusWare
+- [ ] Button hover ADA style fix
 
 - [ ] Finish pages
-  - [ ] Home
-    - [ ] Needs to have more stuff
-    - [ ] Needs to look good on mobile/tablet
+  - [x] Home
+    - [x] Needs to have more stuff
+    - [x] Needs to look good on mobile/tablet
   - [ ] About
-  - [ ] Services
   - [ ] Contact
   - [x] Resume
   - [ ] Privacy Policy/Terms Of Service

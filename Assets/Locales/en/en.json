@@ -15,10 +15,13 @@
   "nav-home": "Home",
   "nav-about": "About",
   "nav-contact": "Contact",
+  "nav-faq": "FAQ",
   "nav-careers": "Careers",
 
   "Motto": "Start your career<br>at Odyssey Outfits",
   "Bio": "We will provide you with opportunities to learn,<br>grow, and contribute to a greener future.",
+  "Explore-Careers": "Explore our Careers",
+  "why-us": "Why Us?",
   "Learning-and-Growth-Opportunities-1": "Learning and Growth Opportunities",
   "Learning-and-Growth-Opportunities-2": "Learning and Growth Opportunities",
   "Learning-and-Growth-Opportunities-3": "We will provide you with the tools and resources you need to keep you ahead in your field. Join our team that values creativity and innovation. Our work environment encourages out-of-the-box thinking, empowering you to contribute ideas that shape the future of sustainable fashion.",
@@ -31,7 +34,13 @@
   "Healthy-Workplace-1": "Healthy Workplace",
   "Healthy-Workplace-2": "Healthy Workplace",
   "Healthy-Workplace-3": "Our team is committed to cultivating a healthy and diverse workplace. We believe that a diverse team brings a wealth of perspectives and creativity, fostering innovation in our sustainable fashion endeavors. Our inclusive environment celebrates differences, embracing a culture that promotes mutual respect and understanding.",
-  "": "",
+
+
+  "contact-us": "Contact Us!",
+  "contact-name": "Name:",
+  "contact-email": "Email:",
+  "label-contact-message": "Message:",
+  "contact-submit": "Submit",
 
   "Select-a-Job": "Select a Job",
   "Upper-Management": "Upper Management",
