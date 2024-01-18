@@ -2,9 +2,9 @@
 
 - [x] Scroll to top button
 
-- [ ] Cookie Policy
+- [x] Cookie/Data Collection Policy
 - [x] Noscript - rip from MagnusWare
-- [ ] Button hover ADA style fix
+- [x] Button hover ADA style fix
 
 - [ ] Finish pages
   - [x] Home

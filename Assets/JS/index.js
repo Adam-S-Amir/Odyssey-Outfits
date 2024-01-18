@@ -359,7 +359,20 @@ function changeRootStyles() {
         width: 100%;
         background-color: black;
         color: white;
-    }    `];
+    }
+    .tab>button.tab-links:hover {
+      background-color: black;
+      color: white;
+    }
+    #scrollToTopBtn {
+      background-color: black;
+      color: white;
+    }
+    #scrollToTopBtn:hover {
+      background-color: black;
+      color: white;
+    }
+    `];
     localStorage.setItem("ada", "on");
     document.head.appendChild(styleElement);
     document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-On.png) center/cover no-repeat";
