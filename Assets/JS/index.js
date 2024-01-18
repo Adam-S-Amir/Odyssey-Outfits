@@ -113,10 +113,12 @@ function HomePage() {
   const HomeBanner = document.querySelector("#Home-Banner")
   const HomeHeader = document.querySelector("#Home-Header");
   const HomeBio = document.querySelector("#Home-Bio");
+  const Tab = document.querySelector(".tab");
   if (HomeBanner) {
     HomeBanner.style.backgroundPosition = "right";
     HomeHeader.style.width = "90%";
     HomeBio.style.width = "60%";
+    Tab.style.display = "grid";
   }
 }
 

@@ -340,6 +340,71 @@ section#home>div.container>div.Home-Banner>a#Explore-Careers:hover {
     -o-border-radius: var(--border-radius-medium);
 }
 
+section#why-odyssey>div.container>h1.why-header {
+    text-align: center;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alt-background-color);
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+button.tab-links {
+    background-color: transparent;
+    text-align: center;
+    color: var(--text-color);
+    border: none;
+    margin: 5px;
+    font-size: 17px;
+}
+
+.tab>button.tab-links:hover {
+    background-color: var(--focused);
+    color: var(--alt-text-color);
+}
+
+.tab>button.tab-links.active {
+    background-color: var(--background-color);
+    color: var(--focused);
+}
+
+#tab-content {
+    padding: 6px 12px;
+    border: 3px solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tab-content>h3 {
+    margin-bottom: 20px;
+}
+
+#tab-content>p {
+    text-align: center;
+    width: 70%;
+}
+
 /** END HOME PAGE */
 
 /** MOBILE NAVBAR */
