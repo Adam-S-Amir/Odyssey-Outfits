@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+function redirectToHomepage() {
+  window.location.href = "./index.html";
+}
 let scrolled = false;
 
 function scrollToTop() {
@@ -177,7 +180,7 @@ function navbar() {
                     <option value="tr">Türkçe</option>
                     <option value="zh">中文</option>
             </select>
-            <button id='ADA-Toggle' title="Toggle Site Theme" onclick='changeRootStyles()'></button>
+            <button id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
             <i class="mobile mobile-bars"></i>
@@ -194,7 +197,7 @@ function navbar_default() {
   let navbarclass = document.getElementById("navbar");
   navbarclass.classList.add("navbar");
   navbar.innerHTML = [`
-    <h1 class="title">Odyssey Outfits</h1>
+    <h1 onclick="redirectToHomepage()" class="title">Odyssey Outfits</h1>
     <nav>
         <ul>
             <li><a id="nav-home" href="./index.html">Home</a></li>
@@ -230,7 +233,7 @@ function navbar_default() {
                 </select>
             </li>
             <li>
-                <button id='ADA-Toggle' title="Toggle Site Theme" onclick='changeRootStyles()'></button>
+                <button id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
             </li>
         </ul>
     </nav>
