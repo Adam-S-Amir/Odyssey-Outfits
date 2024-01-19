@@ -311,6 +311,7 @@ window.confirm = (message) => {
     message
   });
 }
+
 const ADACheckbox = document.getElementById('ADA');
 var toggle = 0;
 //* Function to change root styles
@@ -346,14 +347,17 @@ function changeRootStyles() {
     rootElement.style.setProperty('--font-family', "Times New Roman");
     const styleElement = document.createElement('style');
     styleElement.textContent = [`
-      *{
+    img {
+      filter: grayscale(100%);
+    }
+    *{
         font-family: "Times New Roman", Times, serif;
-      }
-      nav>ul>li>a:hover {
+    }
+    nav>ul>li>a:hover {
           background-color: white !important;
           border-color: black !important;
-      }
-      section#Job-About>div#Job-About-Inner>button#Apply-Now {
+    }
+    section#Job-About>div#Job-About-Inner>button#Apply-Now {
         width: 100%;
         background-color: black;
         color: white;
@@ -370,7 +374,11 @@ function changeRootStyles() {
       background-color: black;
       color: white;
     }
-    `];
+    section#why-odyssey>div.container>div.tab>button.tab-links:hover {
+      background-color: black;
+      color: white;
+    }
+      `];
     localStorage.setItem("ada", "on");
     document.head.appendChild(styleElement);
     document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-On.png) center/cover no-repeat";
