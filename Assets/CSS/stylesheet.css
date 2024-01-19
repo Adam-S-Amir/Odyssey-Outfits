@@ -938,7 +938,13 @@ div#Contact-Form.overlay>div.submit-div>button {
 
 /** ABOUT PAGE */
 
-section>div.container>h1.about-header {
+section>div.container>h1.legal-header {
+    color: var(--alt-text-color);
+    text-align: center;
+}
+
+section>div.container>a {
+    display: block;
     text-align: center;
 }
 

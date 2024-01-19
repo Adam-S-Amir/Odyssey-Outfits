@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/root.css">
+    <link rel="stylesheet" href="./Assets/CSS/stylesheet.css">
+    <title>Odyssey Outfits | PAGE NAME</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Img/Favicon.ico">
+</head>
+
+<body>
+    <noscript></noscript>
+    <header>
+        <div class="nav-container">
+            <div class="navbar" id="navbar">
+                <h1 onclick="redirectToHomepage()" class="title">Odyssey Outfits</h1>
+                <nav>
+                    <ul>
+                        <li><a id="nav-home" href="./index.html">Home</a></li>
+                        <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+                        <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
+                        <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
+                        <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
+                        <li>
+                            <select title="Change Site Language" id="languageSelect" class="languageSelect"
+                                onchange="changeLanguage(this.value)">
+                                <option value="ar">العربية</option>
+                                <option value="da">Dansk</option>
+                                <option value="de">Deutsch</option>
+                                <option value="el">Ελληνικά</option>
+                                <option value="en">English</option>
+                                <option value="es">Español</option>
+                                <option value="fi">Suomi</option>
+                                <option value="fr">Français</option>
+                                <option value="he">עברית</option>
+                                <option value="hu">Magyar</option>
+                                <option value="it">Italiano</option>
+                                <option value="ja">日本語</option>
+                                <option value="ko">한국어</option>
+                                <option value="nb">Norsk Bokmål</option>
+                                <option value="nl">Nederlands</option>
+                                <option value="pl">Polski</option>
+                                <option value="pt">Português</option>
+                                <option value="ru">Русский</option>
+                                <option value="sk">Slovenčina</option>
+                                <option value="sl">Slovenščina</option>
+                                <option value="sv">Svenska</option>
+                                <option value="tr">Türkçe</option>
+                                <option value="zh">中文</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 id="hosting">Hosting</h2>
+            <ol>
+                <li>Mr. Amir and Mr. Krug, (hereby referred to as &quot;The Developers&quot;), explicitly state that &quot;Odyssey Outfits&quot;, (hereby referred to as &quot;The Service&quot;), is <strong>NOT</strong> a registered LLC and lacks legal or retail authority to manufacture, sell, or provide any products or services.</li>
+                <li>The repository for The Service is hosted on GitHub, and the The Service is powered by Vercel.com, (hereby referred to as &quot;Vercel&quot;).</li>
+                <li>As per GitHub.com&#39;s, (hereby referred to as &quot;GitHub&quot;), licensing documentation (Section 1, §2 - &quot;<a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license">Licensing a Repository</a>&quot;), it is explicitly stated that &quot;<em>...without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you&#39;re creating an open source project, we strongly encourage you to include an open source license.</em>&quot; Please be informed that this repository and any associated websites are designated strictly for PERSONAL and PRIVATE use, as it is shared property between The Developers.</li>
+                <li>The Developers are in compliance with both GitHub and Vercel&#39;s minimum age requirements.</li>
+                <li>Under Vercel&#39;s Terms of Service (Section 2, - &quot;<a href="https://vercel.com/legal/terms">Temporary Use License</a>&quot;), it is explicitly stated that &quot;<em>...subject to your compliance with the terms of this Agreement, you are granted a personal, non-sublicensable, non-exclusive, non-transferable, limited license, to use the Services for your internal business or personal purposes according to the service capacity of your account. Any rights not expressly granted herein are reserved and no license or right to use any trademark of Vercel or any third-party is granted to you in connection with the Services.</em>&quot; While Vercel permits the use of its services for business purposes, it is imperative to clarify that the website, powered by Vercel and hosted on GitHub, is exclusively designated for personal use by The Developers. Any utilization beyond this scope is and shall continue to be unauthorized. </li>
+            </ol>
+            <h2 id="third-party-terms-of-service-compliance">Third-Party Terms of Service Compliance</h2>
+            <ol>
+                <li>The Developers are in strict compliance with any and all third-party services which have been used for their personal project.</li>
+                <li>The Service has utilized Yandex.com&#39;s, (hereby referred to as &quot;Yandex&quot;), online translator. The Developers are both in compliance with Yandex&#39;s Terms of Service documentation (Section 2, §2 - &quot;<a href="https://yandex.com/legal/translate_termsofuse/">Use of the Service</a>&quot;), &quot;<em>The Service is provided to the User for personal noncommercial use.</em>&quot; As The Developers have strictly stated this project is for personal use only.</li>
+                <li>The Developers has utilized EmailJS.com&#39;s, (hereby referred to as &quot;EmailJS&quot;), JavaScript emailing service. The Terms of Service provided by EmailJS do not implicitly implicate the appropriateness of their service for use in either private or commercial contexts, <strong>HOWEVER</strong> The Developers have stated the use of EmailJS&#39;s services are strictly for personal use.</li>
+            </ol>
+            <h2 id="children-s-online-privacy-protection-act-compliance">Children&#39;s Online Privacy Protection Act Compliance</h2>
+            <ol>
+                <li>This project in compliance with the requirements of COPPA (<a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa">Children&#39;s Online Privacy Protection Act</a>). It is and will continue to be designed for individuals aged 16 years or older, specifically for private, non-commercial use.</li>
+            </ol>
+            <h2 id="copyright-infringement-and-dmca-policy-compliance">Copyright Infringement and DMCA Policy Compliance</h2>
+            <ol>
+                <li>The Developers are in compliance with GitHub&#39;s <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#f-copyright-infringement-and-dmca-policy">Copyright Infringement and DMCA Policy</a></li>
+            </ol>
+            <h2 id="collection-and-usage-of-user-data">Collection and Usage of User Data</h2>
+            <ol>
+                <li>While The Service is a fictitious business, the website is used to demonstrate the standards modern websites should utilize. Any and all functions and API&#39;s implied to be used by the site are strictly used for testing purposes.</li>
+                <li>The Service does not store data such as email addresses, geological addresses, phone numbers, names, external documents, or external links provided by the user. Each of these data types are used as temporary data for the &quot;Contact Us&quot; and &quot;Upload a Resume&quot; which becomes nonexistent to The Developers.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p id="copyright">&copy; 2024 Odyssey Outfits.&nbsp;All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./Assets/JS/locales.js"></script>
+    <script src="./Assets/JS/index.js"></script>
+</body>
+
+</html>

@@ -45,8 +45,9 @@
     background-color: var(--scrollbar-thumb);
 }
 
+
 @font-face {
-	font-family: 'Archivo';
-	font-style: normal;
+    font-family: 'Archivo';
+    font-style: normal;
     src: url(../Font/Archivo.ttf);
 }

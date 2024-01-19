@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </select>
       <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
       <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
-      <a id='TOS-TOS' href="./TOS.html" target="_blank">Terms Of Service</a>
+      <a id='TOS-TOS' href="./TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
       <br>
       <br>
     `];
@@ -151,9 +151,9 @@ function navbar() {
         <h1>Odyssey Outfits</h1>
         <div id="Links">
             <a id="nav-home" href="./index.html">Home</a>
-            <a id="nav-about" href="./About.html">About</a>
             <a id="nav-contact" href="./Contact.html">Contact</a>
             <a id="nav-faq" href="./FAQ.html">FAQ</a>
+            <a id="nav-legal" href="./Legal.html">Legal</a>
             <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
             <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                     <option value="ar">العربية</option>
@@ -201,9 +201,9 @@ function navbar_default() {
     <nav>
         <ul>
             <li><a id="nav-home" href="./index.html">Home</a></li>
-            <li><a id="nav-about" href="./About.html">About</a></li>
             <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
             <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
+            <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
             <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
             <li>
                 <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
