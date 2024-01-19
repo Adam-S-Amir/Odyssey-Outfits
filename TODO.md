@@ -2,20 +2,20 @@
 
 - [x] Scroll to top button
 
-- [ ] Proof-read wiki
+- [x] Proof-read wiki
 
 - [x] Cookie/Data Collection Policy
 - [x] Noscript - rip from MagnusWare
 - [x] Button hover ADA style fix
 
-- [ ] Finish pages
+- [x] Finish pages
   - [x] Home
     - [x] Needs to have more stuff
     - [x] Needs to look good on mobile/tablet
-  - [ ] About
-  - [ ] Contact
+  - [x] Legal
+  - [x] Contact
   - [x] Resume
-  - [ ] Privacy Policy/Terms Of Service
+  - [x] Privacy Policy/Terms Of Service
 
 - [x] ADA stuffs (:root must be dynamic)
   - [x] Must be able to select between normal and black and white
@@ -27,13 +27,13 @@
 
 - [x] Toast notification to ask to allow cookies on site load
 
-- [ ] Language localizations
+- [x] Language localizations
   - [x] Test page works
   - [x] Toast notification to select language on site load
 
 - [ ] Text to speech on mouse hover?
 
-- [ ] Update SECURITY.md
+- [x] Update SECURITY.md
 
 - [x] ADA mode should be Times New Roman
   - [ ] [junk](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app&gclid=Cj0KCQiAtICdBhCLARIsALUBFcFVpgDiJYIUMf0qVdD3ss0R5ZQoM_6AkWo2sMbMFhiQwviWFCRKDH0aAtRGEALw_wcB)

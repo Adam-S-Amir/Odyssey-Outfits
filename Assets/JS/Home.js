@@ -1,12 +1,18 @@
+// Function to handle tab selection
 function WhyUs(evt, selected) {
+    // Get the element with the id "tab-content"
     let tabContent = document.getElementById("tab-content");
+    // Declare a variable to be used in the loop
     var i;
+    // Get all elements with the class "tab-links"
     let tabLinks = document.getElementsByClassName("tab-links");
+    // Loop through all tab links and remove the "active" class
     for (i = 0; i < tabLinks.length; i++) {
         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
+    // Add the "active" class to the clicked tab link
     evt.currentTarget.className += " active";
-
+    // Check the selected tab and update the tab content accordingly
     if (selected === "Learning-and-Growth-Opportunities") {
         tabContent.innerHTML = `
         <h3 id="Learning-and-Growth-Opportunities-2">Learning and Growth Opportunities</h3>

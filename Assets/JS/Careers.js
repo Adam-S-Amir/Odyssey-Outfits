@@ -32,7 +32,6 @@ function ShowJobInfo(element) {
 function ApplyNow() {
     console.log(job, division)
     let JobContainer = document.getElementById("Job-Container");
-    let JobOverlay = document.createElement("div");
     let JobForm = [`
         <section id="Job-Overlay">
             <div class="container">
@@ -82,30 +81,22 @@ function ApplyNow() {
     JobContainer.removeAttribute("id");
     JobContainer.innerHTML = JobForm;
     document.getElementById('pdfInput').addEventListener('change', function (event) {
-        //^ Event listener for the 'pdfInput' element
 
         const fileInput = event.target;
         const file = fileInput.files[0];
-        //^ using const so vars will NEVER be redeclared
 
-        //* Check if the selected file is a valid PDF
         if (file && file.type === 'application/pdf') {
             const reader = new FileReader();
-            //^ Handle PDF file display
             document.getElementById('submit-resume').style.display = "block";
             document.getElementById('pdfViewer').style.display = "block";
-            // document.getElementById("fileInputLabel").style.display = "none";
 
-            //* Read PDF file and display in the viewer
             reader.onload = function (e) {
                 pdfViewer.src = e.target.result;
             };
 
             reader.readAsDataURL(file);
-            //^ Read file and display it as such
 
         } else {
-            //* if user didn't select a PDF file, this will run
             let msg = [`
                 <p id='pdf-file-error'>Please select a valid PDF file:</p>
             `]
@@ -121,7 +112,6 @@ function ApplyNow() {
     updateContent();
 }
 
-//* Function to send an email based on the user's selected job and form input
 function sendEmail() {
     let formname = document.getElementById("form-name").value;
     let formlname = document.getElementById("form-lname").value;
@@ -129,8 +119,6 @@ function sendEmail() {
     var legalSelect = document.getElementById("form-legal");
     var educationSelect = document.getElementById("form-education");
 
-    //* Check if either option is not selected
-    //* Send confirmation email
     if (legalSelect.value === "No" || educationSelect.value === "No") {
         emailjs.send("service_swxg0ob", "template_yskewix", {
             to_name: `${formname} ${formlname}`,
@@ -147,7 +135,6 @@ function sendEmail() {
             emailError();
             console.error("Email failed to send:", error);
         });
-        //* Send rejection email
     } else {
         emailjs.send("service_swxg0ob", "template_yskewix", {
             to_name: `${formname} ${formlname}`,
@@ -165,7 +152,6 @@ function sendEmail() {
         });
     }
 
-    //* Function to display a confirmation toast
     function confirmation() {
         let msg = [`
             <h1 id='application-sent'>Application Sent!</h1>
@@ -179,7 +165,6 @@ function sendEmail() {
         })
     }
 
-    //* Function to display an error toast
     function emailError() {
         let msg = [`
             <h1 id='application-not-sent'>Application Not Sent!</h1>
@@ -196,4 +181,3 @@ function sendEmail() {
 }
 
 emailjs.init("pNW2vDHr-8gYtWcXy");
-//^ Initialize Email.js

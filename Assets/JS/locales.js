@@ -1,71 +1,75 @@
-// Function to handle URL changes
+// Function to handle changes in the URL hash
 function handleUrlChange() {
-    // Get the current language from the URL hash
+    // Extract the language code from the URL hash
     const languageFromUrl = window.location.hash.substr(1);
-    // Set the language based on the URL hash
+    // Set the language based on the extracted code
     setLanguage(languageFromUrl);
 }
-// Add an event listener for the popstate event
+
+// Add an event listener for changes in the browser's history (back/forward buttons)
 window.addEventListener('popstate', handleUrlChange);
-// Function to set language
+
+// Function to set the current language
 function setLanguage(language) {
+    // Update the currentLanguage variable
     currentLanguage = language;
-    localStorage.setItem('selectedLanguage', language); // Store the selected language
+    // Store the selected language in local storage
+    localStorage.setItem('selectedLanguage', language);
+    // Update the URL hash to reflect the selected language
     window.location.hash = language;
+    // Update the content on the page
     updateContent();
 }
-// Function to update content based on the current language
+
+// Function to update content on the page based on the selected language
 function updateContent() {
-    // Set the selected option on page load
+    // Set the value of the language select dropdown to the current language
     document.getElementById('languageSelect').value = currentLanguage;
-    window.location.hash = currentLanguage;
-    var TOSelement = document.getElementById('languageSelect_2');
-    if (TOSelement) {
-        TOSelement.value = currentLanguage;
+
+    // Update the value of an additional language select dropdown if it exists
+    var TOSElement = document.getElementById('languageSelect_2');
+    if (TOSElement) {
+        TOSElement.value = currentLanguage;
     }
-    // Check if the title contains a hashtag followed by two characters
+
+    // Match the language code from the URL hash and set it if valid
     const titleMatch = window.location.href.match(/#([a-zA-Z]{2})/);
-    // Define an array of valid locales
     const locales = ['ar', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'he', 'hu', 'it', 'ja', 'ko', 'nb', 'nl', 'pl', 'pt', 'ru', 'sk', 'sl', 'sv', 'tr', 'zh'];
-    //^ Added valid locales
     if (titleMatch) {
         const hashtagLocale = titleMatch[1].toLowerCase();
-        // Check if the locale exists
         if (locales.includes(hashtagLocale)) {
-            currentLanguage = hashtagLocale; // Set language to matched locale
+            currentLanguage = hashtagLocale;
+            // Set the HTML lang attribute to the matched language
+            document.documentElement.lang = hashtagLocale;
         } else {
+            // Display an alert for an invalid locale and reload the page
             localStorage.removeItem("selectedLanguage");
             window.alert(`Locale ${hashtagLocale} doesn't exist!`);
-            // Specify the URL you want to open
             location.reload();
         }
     }
+
+    // Fetch and load the JSON file for the current language
     fetch(`./Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
-        .then(response => response.json()).then(data => {
-            // Loop through the keys in the JSON data
+        .then(response => response.json())
+        .then(data => {
+            // Iterate over the keys in the JSON data and update corresponding elements
             Object.keys(data).forEach(key => {
-                // Find the corresponding HTML element by ID
                 const element = document.getElementById(key);
                 if (element) {
-                    // Check if the element is an optgroup
-                    if (element.tagName.toLowerCase() === "option") {
-                        element.setAttribute('label', data[key]);
-                    } else if (element.tagName.toLowerCase() === "optgroup") {
+                    if (element.tagName.toLowerCase() === "option" || element.tagName.toLowerCase() === "optgroup") {
+                        // Set 'label' attribute for <option> and <optgroup> elements
                         element.setAttribute('label', data[key]);
                     } else {
-                        // Update the text content of regular elements
+                        // Set innerHTML for other elements
                         element.innerHTML = data[key];
                     }
                 }
-                // Get all elements with aria-describedby attribute
+                // Update elements with 'aria-describedby' attribute
                 const allElementsWithAria = document.querySelectorAll('[aria-describedby]');
-                // Loop through elements with aria-describedby attribute
                 allElementsWithAria.forEach(ariaElement => {
-                    // Get the value of the aria-describedby attribute
                     const ariaValue = ariaElement.getAttribute('aria-describedby');
-                    // Check if the aria-describedby value is a key in the JSON data
                     if (data.hasOwnProperty(ariaValue)) {
-                        // Set the innerHTML of the element to the corresponding JSON data key
                         ariaElement.innerHTML = data[ariaValue];
                     }
                 });
@@ -73,20 +77,28 @@ function updateContent() {
         })
         .catch(error => console.error('Error loading language file:', error));
 }
-// Function to change language based on select value
+
+// Function to change the language based on user selection
 function changeLanguage(selectedLanguage) {
     setLanguage(selectedLanguage);
 }
-// Function to get the language from localStorage or use default
+
+// Function to retrieve the stored language from local storage
 function getStoredLanguage() {
     return localStorage.getItem('selectedLanguage') || 'en';
 }
-// Set the initial language from localStorage or use default
+
+// Initialize the currentLanguage variable with the stored language or default to 'en'
 let currentLanguage = getStoredLanguage();
+
+// Set the value of the language select dropdown to the current language
 document.getElementById('languageSelect').value = currentLanguage;
-var TOSelement = document.getElementById('languageSelect_2');
-if (TOSelement) {
-    TOSelement.value = currentLanguage;
+
+// Update the value of an additional language select dropdown if it exists
+var TOSElement = document.getElementById('languageSelect_2');
+if (TOSElement) {
+    TOSElement.value = currentLanguage;
 }
-// Update lang localization
+
+// Initial update of content based on the selected language
 updateContent();
