@@ -152,7 +152,6 @@ function navbar() {
         <div id="Links">
             <a id="nav-home" href="./index.html">Home</a>
             <a id="nav-contact" href="./Contact.html">Contact</a>
-            <a id="nav-faq" href="./FAQ.html">FAQ</a>
             <a id="nav-legal" href="./Legal.html">Legal</a>
             <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
             <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
@@ -202,7 +201,6 @@ function navbar_default() {
         <ul>
             <li><a id="nav-home" href="./index.html">Home</a></li>
             <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
-            <li><a id="nav-faq" href="./FAQ.html">FAQ</a></li>
             <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
             <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
             <li>

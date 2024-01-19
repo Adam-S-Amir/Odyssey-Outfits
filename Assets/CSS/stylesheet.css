@@ -930,9 +930,7 @@ div#Contact-Form.overlay textarea {
 div#Contact-Form.overlay>div.submit-div>button {
     width: 100%;
     padding: 8px;
-    /* Added padding for better visual appearance */
 }
-
 
 /** END CONTACT PAGE */
 
