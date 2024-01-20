@@ -24,25 +24,74 @@ In order to support old, we need to include specific styling in case the :root s
 
 Example:
 
+``
 section#why-odyssey>div.container>div.tab>button.tab-links {
-    background-color: transparent;
-    text-align: center;
-    color: var(--text-color);
-    border: none;
-    margin: 5px;
-    font-size: 17px;
+``
+
+``
+background-color: transparent;
+``
+
+``
+text-align: center;
+``
+
+``
+color: var(--text-color);
+``
+
+``
+border: none;  
+``
+
+``
+margin: 5px;
+``
+
+``
+font-size: 17px;
+``
+
+``
 }
+``
 
 Should now look like this:
 
+``
 section#why-odyssey>div.container>div.tab>button.tab-links {
-    background-color: transparent;
-    text-align: center;
-    color: #073632; /* Because var(--text-color)'s value is #073632 */
-    color: var(--text-color);
-    border: none;
-    margin: 5px;
-    font-size: 17px;
+``
+
+``
+background-color: transparent;
+``
+
+``
+text-align: center;
+``
+
+``
+color: #073632; /* Because var(--text-color)'s value is #073632 */
+``
+
+``
+color: var(--text-color);
+``
+
+``
+border: none;
+``
+
+``
+margin: 5px;
+``
+
+``
+font-size: 17px;
+``
+
+``
 }
+``
 
 Always put the property with the value of the var before the var is declared like how it is above.
