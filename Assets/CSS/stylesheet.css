@@ -584,6 +584,7 @@ section#why-odyssey>div.container>#tab-content>p {
 .mobile-bars:before {
     content: "≡";
     color: black;
+    color: var(--ADA-black);
     font-weight: 1000;
     font-size: 20px;
 }
@@ -594,6 +595,7 @@ section#why-odyssey>div.container>#tab-content>p {
 
 .toast-overlay {
     z-index: 9999998;
+    background-color: rgba(85, 85, 85, 0.8); 
     background-color: var(--overlay);
     position: absolute;
     bottom: 0;
@@ -603,18 +605,26 @@ section#why-odyssey>div.container>#tab-content>p {
 }
 
 .toast {
+    color: #DDD0C8;
     color: var(--alt-text-color);
     z-index: 9999999;
     width: 60%;
+    background-color: #073632;
     background-color: var(--background-color);
     position: fixed;
     top: 50%;
     left: 20%;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 1vmax;
     border-radius: var(--border-radius-xlarge);
+    -webkit-border-radius: 1vmax;
     -webkit-border-radius: var(--border-radius-xlarge);
+    -moz-border-radius: 1vmax;
     -moz-border-radius: var(--border-radius-xlarge);
+    -ms-border-radius: 1vmax;
     -ms-border-radius: var(--border-radius-xlarge);
+    -o-border-radius: 1vmax;
     -o-border-radius: var(--border-radius-xlarge);
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
@@ -637,6 +647,7 @@ section#why-odyssey>div.container>#tab-content>p {
 }
 
 .toast-button {
+    background-color: #B87100;
     background-color: var(--button-background-color);
     width: 70px;
     min-width: 70px;
@@ -650,10 +661,15 @@ section#why-odyssey>div.container>#tab-content>p {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     border: 3px solid var(--border-color);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
 }
 
