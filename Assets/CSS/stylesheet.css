@@ -339,6 +339,7 @@ section#home>div.container>div.Home-Banner>h1 {
     position: relative;
     margin-top: 5%;
     font-size: 50px;
+    color: #B87100;
     color: var(--focused);
     width: 50%;
 }
@@ -349,19 +350,26 @@ section#home>div.container>div.Home-Banner>p {
     margin-bottom: 4%;
     white-space: normal;
     text-wrap: balance;
+    color: #DDD0C8;
     color: var(--alt-text-color);
     width: 50%;
 }
 
 section#home>div.container>div.Home-Banner>h1>span.title-text,
 section#home>div.container>div.Home-Banner>p>span.title-text {
+    background-color: rgba(0, 0, 0, 0.5);
     background-color: var(--text-background-color-overlay);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    border-radius: 3px;
     border-radius: var(--border-radius-small);
+    -webkit-border-radius: 3px;
     -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: 3px;
     -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: 3px;
     -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: 3px;
     -o-border-radius: var(--border-radius-small);
 }
 
