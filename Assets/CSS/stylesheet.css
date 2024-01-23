@@ -433,14 +433,21 @@ section#why-odyssey>div.container>div.tab {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     text-align: center;
     overflow: hidden;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -449,6 +456,7 @@ section#why-odyssey>div.container>div.tab {
 section#why-odyssey>div.container>div.tab>button.tab-links {
     background-color: transparent;
     text-align: center;
+    color: #073632;
     color: var(--text-color);
     border: none;
     margin: 5px;
@@ -456,7 +464,9 @@ section#why-odyssey>div.container>div.tab>button.tab-links {
 }
 
 section#why-odyssey>div.container>div.tab>button.tab-links:hover {
+    background-color: #B87100;
     background-color: var(--focused);
+    color: #DDD0C8;
     color: var(--alt-text-color);
 }
 
