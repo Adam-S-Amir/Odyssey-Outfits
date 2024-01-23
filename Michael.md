@@ -22,7 +22,7 @@ When you finish completely translating one .JSON file, immediately commit to Git
 
 DO NOT REMOVE HTML TAGS FROM KEY VALUES!!!
 
-- [ ] Cross Browser CSS Support
+- [x] Cross Browser CSS Support
 
 In order to support old, we need to include specific styling in case the ``:root`` selector isn't supported.
 
