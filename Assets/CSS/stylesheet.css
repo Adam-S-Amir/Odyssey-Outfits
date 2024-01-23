@@ -935,11 +935,17 @@ div#Job-Form.overlay select {
     margin-bottom: 5px;
     padding: 8px;
     box-sizing: border-box;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     resize: none;
 }
@@ -953,15 +959,22 @@ div.submit-div {
 div.submit-div>input#pdfInput {
     bottom: 0;
     padding: 10px;
+    background-color: #073632;
     background-color: var(--background-color);
+    color: #DDD0C8;
     color: var(--alt-text-color);
     cursor: pointer;
     position: relative;
     border: none;
+    border-radius: 3px;
     border-radius: var(--border-radius-small);
+    -webkit-border-radius: 3px;
     -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: 3px;
     -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: 3px;
     -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: 3px;
     -o-border-radius: var(--border-radius-small);
 }
 
@@ -971,18 +984,27 @@ div.submit-div>label#fileInputLabel {
     margin-top: 20px;
     width: 100%;
     font-weight: bold;
+    font-family: 'Archivo', sans-serif;
     font-family: var(--font-family);
     font-size: 15px;
+    color: #DDD0C8;
     color: var(--alt-text-color);
+    background-color: #B87100;
     background-color: var(--button-background-color);
     height: 35px;
     text-align: center;
     position: relative;
+    border: 3px solid #DDD0C8;
     border: 3px solid var(--border-color);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
 }
 
@@ -991,7 +1013,9 @@ section#pdf-viewer>div.container>button#submit-resume {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    background-color: #B87100;
     background-color: var(--button-background-color);
+    color: #DDD0C8;
     color: var(--alt-text-color);
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1002,11 +1026,17 @@ section#pdf-viewer>div.container>button#submit-resume {
     position: relative;
     width: 100%;
     bottom: -30px;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
 }
 
@@ -1035,14 +1065,18 @@ div#Contact-Form.overlay {
     width: 50%;
     left: 22%;
     padding: 20px;
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
 }
 
 div#Contact-Form.overlay form {
+    color: #073632;
     color: var(--text-color);
     flex-direction: column;
     width: 100%;
@@ -1060,11 +1094,17 @@ div#Contact-Form.overlay textarea {
     margin-bottom: 5px;
     padding: 8px;
     box-sizing: border-box;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     resize: none;
 }
@@ -1079,6 +1119,7 @@ div#Contact-Form.overlay>div.submit-div>button {
 /** ABOUT PAGE */
 
 section>div.container>h1.legal-header {
+    color: #DDD0C8;
     color: var(--alt-text-color);
     text-align: center;
 }
