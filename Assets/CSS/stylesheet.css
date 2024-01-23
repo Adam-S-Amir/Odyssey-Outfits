@@ -513,6 +513,7 @@ section#why-odyssey>div.container>#tab-content>p {
 /** MOBILE NAVBAR */
 .topnav {
     overflow: hidden;
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     position: relative;
 }
@@ -523,6 +524,7 @@ section#why-odyssey>div.container>#tab-content>p {
 
 .topnav a,
 .topnav h1 {
+    color: #073632;
     color: var(--text-color);
     padding: 14px 16px;
     text-decoration: none;
@@ -551,7 +553,9 @@ section#why-odyssey>div.container>#tab-content>p {
 }
 
 .topnav a:hover {
+    background-color: #B87100;
     background-color: var(--focused);
+    color: #073632;
     color: var(--text-color);
 }
 
