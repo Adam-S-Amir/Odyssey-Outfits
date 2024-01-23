@@ -19,10 +19,13 @@ html {
 }
 
 body {
+    font-family: 'Archivo', sans-serif;
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+    background-color: #073632;
     background-color: var(--background-color);
+    color: #DDD0C8;
     color: var(--alt-text-color);
     display: flex;
     flex-direction: column;
