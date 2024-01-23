@@ -48,6 +48,7 @@ noscript::after {
 }
 
 a {
+    color: #B87100;
     color: var(--focused);
 }
 
@@ -62,6 +63,7 @@ a {
 }
 
 header {
+    color: #073632;
     color: var(--text-color);
 }
 
@@ -82,6 +84,7 @@ h1.title {
 }
 
 div.navbar {
+    color: #073632;
     color: var(--text-color);
     padding: 1em 0;
     text-align: center;
@@ -93,6 +96,7 @@ div.navbar h1.title {
 }
 
 div.navbar nav ul {
+    font-family: 'Archivo', sans-serif;
     font-family: var(--font-family);
     font-size: larger;
     list-style: none;
@@ -108,26 +112,35 @@ div.navbar nav li {
 
 div.navbar a {
     text-decoration: none;
+    color: #073632;
     color: var(--text-color);
     padding: 10px 15px;
+    border-radius: 1vmin;
     border-radius: var(--border-radius-large);
+    -webkit-border-radius: 1vmin;
     -webkit-border-radius: var(--border-radius-large);
+    -moz-border-radius: 1vmin;
     -moz-border-radius: var(--border-radius-large);
+    -ms-border-radius: 1vmin;
     -ms-border-radius: var(--border-radius-large);
+    -o-border-radius: 1vmin;
     -o-border-radius: var(--border-radius-large);
     transition: background-color 0.3s ease;
 }
 
 div.navbar a:hover {
+    background-color: #B87100;
     background-color: var(--focused);
     color: var(--alt-text-color);
 }
 
 div.navbar .focused {
+    color: #B87100;
     color: var(--focused);
 }
 
 .focused {
+    color: #B87100;
     color: var(--focused);
 }
 
@@ -138,10 +151,12 @@ section {
 }
 
 section>.container>h1 {
+    color: #B87100;
     color: var(--focused);
 }
 
 section>.container>h2 {
+    color: #B87100;
     color: var(--focused);
 }
 
@@ -173,18 +188,27 @@ section>.container>ul>li:hover {
 }
 
 button {
+    font-family: 'Archivo', sans-serif;
     font-family: var(--font-family);
     font-size: 15px;
+    color: #DDD0C8;
     color: var(--alt-text-color);
+    background-color: #073632;
     background-color: var(--button-background-color);
     height: 35px;
     text-align: center;
     position: relative;
+    border: 3px solid #DDD0C8;
     border: 3px solid var(--border-color);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
 }
 
@@ -193,13 +217,21 @@ button {
     outline: transparent;
     font-weight: bold;
     font-size: 16px;
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
+    color: #073632;
     color: var(--text-color);
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
     -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
     -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
     -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
 }
 
@@ -232,7 +264,9 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    background-color: #B87100;
     background-color: var(--button-background-color);
+    color: #DDD0C8;
     color: var(--alt-text-color);
     border: none;
     padding: 10px 20px;
@@ -242,12 +276,15 @@ button {
 }
 
 #scrollToTopBtn:hover {
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     color: var(--focused);
 }
 
 footer {
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
+    color: #073632;
     color: var(--text-color);
     text-align: center;
     padding: 1em 0;
@@ -258,7 +295,9 @@ footer {
 }
 
 .absolute-footer {
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
+    color: #073632;
     color: var(--text-color);
     text-align: center;
     padding: 1em 0;
