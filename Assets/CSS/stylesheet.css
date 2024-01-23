@@ -471,12 +471,15 @@ section#why-odyssey>div.container>div.tab>button.tab-links:hover {
 }
 
 section#why-odyssey>div.container>div.tab>button.tab-links.active {
+    background-color: #073632;
     background-color: var(--background-color);
+    color: #B87100;
     color: var(--focused);
 }
 
 section#why-odyssey>div.container>div#tab-content {
     padding: 6px 12px;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
     border-radius: var(--border-radius-medium);
     -webkit-border-radius: var(--border-radius-medium);
