@@ -693,10 +693,13 @@ section#Job-About {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
+    background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-x: hidden;
+    border: 3px solid #B87100;
     border: 3px solid var(--focused);
+    border-radius: 5px;
     border-radius: var(--border-radius-medium);
 }
 
