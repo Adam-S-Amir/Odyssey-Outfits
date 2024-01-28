@@ -1,4 +1,4 @@
-# REQUIREMENTS
+# TODO
 
 - [x] Scroll to top button
 - [x] ADA Compliance mode
@@ -17,12 +17,9 @@
 - [x] Toast notification to ask to allow cookies/select language on site load
 - [x] Language localizations
 - [ ] Text to speech on mouse hover?
-
-- [x] ADA mode
-  - [ ] [junk](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app&gclid=Cj0KCQiAtICdBhCLARIsALUBFcFVpgDiJYIUMf0qVdD3ss0R5ZQoM_6AkWo2sMbMFhiQwviWFCRKDH0aAtRGEALw_wcB)
-  - [ ] [more junk](https://www.reddit.com/r/webdev/comments/111q1d5/when_building_a_website_do_you_consider_ada/)
-
 - [x] GitHub wiki
 - [x] Meta tags
 
 - [ ] Comments site-wide (backend)
+- [ ] ADA mode
+  - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
