@@ -16,10 +16,10 @@
     - [x] Font-size changes
 - [x] Toast notification to ask to allow cookies/select language on site load
 - [x] Language localizations
-- [ ] Text to speech on mouse hover?
 - [x] GitHub wiki
 - [x] Meta tags
 
 - [ ] Comments site-wide (backend)
 - [ ] ADA mode
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
+- [ ] Text to speech on mouse hover?
