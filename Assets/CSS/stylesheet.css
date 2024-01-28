@@ -255,7 +255,7 @@ button {
     width: 32px;
     height: 32px;
     border: none;
-    background: url(.https://odysseyoutfits.vercel.app/Img/Eye-Off.png) center/cover no-repeat;
+    background: url(https://odysseyoutfits.vercel.app/Img/Eye-Off.png) center/cover no-repeat;
     display: inline-block;
     bottom: -10px;
     position: relative;
@@ -319,7 +319,7 @@ section#home>div.container {
 }
 
 section#home>div.container>div.Home-Banner {
-    background-image: url(.https://odysseyoutfits.vercel.app/Img/F01.png);
+    background-image: url(https://odysseyoutfits.vercel.app/Img/F01.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
