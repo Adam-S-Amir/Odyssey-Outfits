@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </select>
       <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
       <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
-      <a id='TOS-TOS' href="https://odysseyoutfits.vercel.app/TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
+      <a id='TOS-TOS' href="./TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
       <br>
       <br>
     `];
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirectToHomepage() {
-  window.location.href = "https://odysseyoutfits.vercel.app/index.html";
+  window.location.href = "./index.html";
 }
 let scrolled = false;
 
@@ -150,10 +150,10 @@ function navbar() {
     <div class="topnav">
         <h1>Odyssey Outfits</h1>
         <div id="Links">
-            <a id="nav-home" href="https://odysseyoutfits.vercel.app/index.html">Home</a>
-            <a id="nav-contact" href="https://odysseyoutfits.vercel.app/Contact.html">Contact</a>
-            <a id="nav-legal" href="https://odysseyoutfits.vercel.app/Legal.html">Legal</a>
-            <a id="nav-careers" class="focused" href="https://odysseyoutfits.vercel.app/Careers.html">Careers</a>
+            <a id="nav-home" href="./index.html">Home</a>
+            <a id="nav-contact" href="./Contact.html">Contact</a>
+            <a id="nav-legal" href="./Legal.html">Legal</a>
+            <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
             <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                     <option value="ar">العربية</option>
                     <option value="da">Dansk</option>
@@ -199,10 +199,10 @@ function navbar_default() {
     <h1 onclick="redirectToHomepage()" class="title">Odyssey Outfits</h1>
     <nav>
         <ul>
-            <li><a id="nav-home" href="https://odysseyoutfits.vercel.app/index.html">Home</a></li>
-            <li><a id="nav-contact" href="https://odysseyoutfits.vercel.app/Contact.html">Contact</a></li>
-            <li><a id="nav-legal" href="https://odysseyoutfits.vercel.app/Legal.html">Legal</a></li>
-            <li><a id="nav-careers" class="focused" href="https://odysseyoutfits.vercel.app/Careers.html">Careers</a></li>
+            <li><a id="nav-home" href="./index.html">Home</a></li>
+            <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
+            <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
+            <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
             <li>
                 <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                     <option value="ar">العربية</option>
@@ -381,12 +381,12 @@ function changeRootStyles() {
       `];
     localStorage.setItem("ada", "on");
     document.head.appendChild(styleElement);
-    document.getElementById("ADA-Toggle").style.background = "url(https://odysseyoutfits.vercel.app/Assets/Img/Eye-On.png) center/cover no-repeat";
+    document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-On.png) center/cover no-repeat";
   } else if (toggle === 1) {
     console.log("ADA Mode is disabled.");
     localStorage.removeItem("ada");
     toggle = 0;
-    document.getElementById("ADA-Toggle").style.background = "url(https://odysseyoutfits.vercel.app/Assets/Img/Eye-Off.png) center/cover no-repeat";
+    document.getElementById("ADA-Toggle").style.background = "url(./Assets/Img/Eye-Off.png) center/cover no-repeat";
     let msg = [`
       <h1 id='ada-disabled'>You have disabled ADA Mode.</h1>
       <p id='ada-disabled-continue'>It seems you've disabled ADA mode, you will need to refresh in order to continue.</p>
