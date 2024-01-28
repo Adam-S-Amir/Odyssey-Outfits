@@ -65,12 +65,15 @@ function updateContent() {
                         element.innerHTML = data[key];
                     }
                 }
-                // Update elements with 'aria-describedby' attribute
-                const allElementsWithAria = document.querySelectorAll('[aria-describedby]');
-                allElementsWithAria.forEach(ariaElement => {
-                    const ariaValue = ariaElement.getAttribute('aria-describedby');
-                    if (data.hasOwnProperty(ariaValue)) {
-                        ariaElement.innerHTML = data[ariaValue];
+                // Update elements with 'describedby' attribute
+                //* This is a custom attribute because multiple tags can't have
+                //* the same ID
+                const allElementsWithDescribedBy = document.querySelectorAll('[describedby]');
+                allElementsWithDescribedBy.forEach(DescribedByElement => {
+                    const DescribedByValue = DescribedByElement.getAttribute('describedby');
+                    if (data.hasOwnProperty(DescribedByValue)) {
+                        DescribedByElement.innerHTML = data[DescribedByValue];
+                        console.log(data[DescribedByValue]);
                     }
                 });
             });

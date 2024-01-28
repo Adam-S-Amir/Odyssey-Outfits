@@ -26,7 +26,7 @@ DO NOT REMOVE HTML TAGS FROM KEY VALUES!!!
 
 The aria-label attribute in HTML is used to provide an accessible label for an element that might not have a visible label. It is part of the Accessible Rich Internet Applications (ARIA) specification and is primarily used to improve the accessibility of web content for users with disabilities, especially those using screen readers. The biggest thing that'll set us apart from everyone else is our compliance with ADA standards.
 
-So on EVERY.SINGLE.HTML.TAG you need to add an aria-label tag describing what that tag does in as few words as possible, like so:
+So on EVERY.SINGLE.HTML.TAG with text on it (exclude empty ,doctype, html, body, noscript tags, and anything in the head) you need to add an aria-label tag describing what that tag does in as few words as possible, like so:
 
 ```HTML
 <button>X</button>
