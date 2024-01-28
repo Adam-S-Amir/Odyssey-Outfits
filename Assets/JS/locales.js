@@ -50,7 +50,7 @@ function updateContent() {
     }
 
     // Fetch and load the JSON file for the current language
-    fetch(`./Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
+    fetch(`https://odysseyoutfits.vercel.app/Assets/Locales/${currentLanguage}/${currentLanguage}.json`)
         .then(response => response.json())
         .then(data => {
             // Iterate over the keys in the JSON data and update corresponding elements

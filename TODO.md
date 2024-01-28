@@ -22,4 +22,3 @@
 - [ ] Comments site-wide (backend)
 - [ ] ADA mode
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
-- [ ] Text to speech on mouse hover?
