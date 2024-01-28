@@ -12,9 +12,9 @@ function ShowJobInfo(element) {
     let JobAboutInner = document.getElementById("Job-About-Inner");
     let JAB = [`
         <h1 id="Selected-Job">Selected Job:</h1>
-        <span class='focused job-desc' aria-describedby="${elementID}"></span>
+        <span class='focused job-desc' describedby="${elementID}"></span>
         <h1 id="Department-Division">Department/Division:</h1>
-        <span class='focused job-desc' aria-describedby="${value}"></span>
+        <span class='focused job-desc' describedby="${value}"></span>
         <h1 id="Job-Description">Job Description:</h1>
         <span id="${stringWithoutLowercase}"></span>
         <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
