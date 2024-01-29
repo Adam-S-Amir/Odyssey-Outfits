@@ -367,8 +367,12 @@ section#home>div.container>div.Home-Banner>p {
 
 section#home>div.container>div.Home-Banner>h1>span.title-text,
 section#home>div.container>div.Home-Banner>p>span.title-text {
+/* Black text background instead of shadow. To change back remove the text shadow elements.
     background-color: rgba(0, 0, 0, 0.5);
     background-color: var(--text-background-color-overlay);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+*/
     text-shadow: 2px 2px #000000;
     text-shadow: 2px 2px var(--ADA-black);
     border-radius: 3px;
