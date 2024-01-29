@@ -71,6 +71,7 @@ window.onscroll = function () {
   if (!scrolled) {
     let scrollTop = document.createElement("button");
     scrollTop.id = "scrollToTopBtn";
+    scrollTop.ariaLabel = "Scroll to Top";
     scrollTop.innerText = "Scroll to Top"; // Set button text
     scrollTop.addEventListener('click', scrollToTop);
     document.body.appendChild(scrollTop);
