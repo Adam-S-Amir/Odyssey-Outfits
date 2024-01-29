@@ -6,7 +6,6 @@
 - [ ] ADA Compliance Standards need to be up-to-date
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
 - [ ] Fix Aria labels Career.js
-- [ ] Fix noscript
 
 # Finished
 
@@ -14,6 +13,7 @@
 - [x] ADA Compliance mode
 - [x] Data Collection Policy
 - [x] Noscript tag
+  - [x] noscript covers the entire page
 - [x] Finished pages
   - [x] Home
   - [x] Legal
