@@ -53,6 +53,9 @@ Should be:
 ```
 
 Don't worry about it being in English, I'll put a clause in the Language switcher section in our wiki about how it's basically not our issue to solve, and it should be translated by the user's text-to-speech program, that being said we cant have a text-to-speech on text hover feature, as much as we need to.
+- [ ] Make links open in a new tab
+
+use Target="_blank"
 
 - [x] Cross Browser CSS Support
 
