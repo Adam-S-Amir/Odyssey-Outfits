@@ -4,22 +4,24 @@ let division;
 function ShowJobInfo(element) {
     let elementID = element.id;
     let JobWithoutDash = elementID.replace(/-/g, '');
+    let JobWithSpace = elementID.replace(/-/g, ' ');
     let stringWithoutLowercase = JobWithoutDash.replace(/[a-z]/g, '');
     let value = element.getAttribute('data-value');
+    let valueWithSpace = value.replace(/-/g, ' ');
     let jobWithoutDash = elementID.replace(/-/g, ' ');
     let DivisionWithoutDash = value.replace(/-/g, ' ');
     let KRS = `Key-Responsibilities-${stringWithoutLowercase}`;
     let JobAboutInner = document.getElementById("Job-About-Inner");
     let JAB = [`
-        <h1 id="Selected-Job">Selected Job:</h1>
-        <span class='focused job-desc' describedby="${elementID}"></span>
-        <h1 id="Department-Division">Department/Division:</h1>
-        <span class='focused job-desc' describedby="${value}"></span>
-        <h1 id="Job-Description">Job Description:</h1>
+        <h1 id="Selected-Job" aria-label="Selected Job">Selected Job:</h1>
+        <span class='focused job-desc' aria-label="${JobWithSpace}" describedby="${elementID}"></span>
+        <h1 id="Department-Division" aria-label="Department/Division">Department/Division:</h1>
+        <span class='focused job-desc' aria-label="${valueWithSpace}" describedby="${value}"></span>
+        <h1 id="Job-Description" aria-label="${JobWithSpace} Job Description">Job Description:</h1>
         <span id="${stringWithoutLowercase}"></span>
-        <h1 id="Key-Responsibilities">Key Responsibilities:</h1>
+        <h1 id="Key-Responsibilities" aria-label="Key Responsibilities">Key Responsibilities:</h1>
         <ul id="${KRS}"></ul>
-        <button id="Apply-Now" onclick="ApplyNow()">Apply Now</button>
+        <button id="Apply-Now" aria-label="Apply Now" onclick="ApplyNow()">Apply Now</button>
     `];
     job = jobWithoutDash;
     division = DivisionWithoutDash;
@@ -30,7 +32,6 @@ function ShowJobInfo(element) {
 }
 
 function ApplyNow() {
-    console.log(job, division)
     let JobContainer = document.getElementById("Job-Container");
     let JobForm = [`
         <section id="Job-Overlay">

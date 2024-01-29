@@ -73,7 +73,6 @@ function updateContent() {
                     const DescribedByValue = DescribedByElement.getAttribute('describedby');
                     if (data.hasOwnProperty(DescribedByValue)) {
                         DescribedByElement.innerHTML = data[DescribedByValue];
-                        console.log(data[DescribedByValue]);
                     }
                 });
             });
