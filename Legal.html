@@ -21,14 +21,14 @@
     <header>
         <div class="nav-container">
             <div class="navbar" id="navbar">
-                <h1 onclick="redirectToHomepage()" class="title">Odyssey Outfits</h1>
+                <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits, redirect to homepage.">Odyssey Outfits</h1>
                 <nav>
                     <ul>
-                        <li><a id="nav-home" href="./index.html">Home</a></li>
-                        <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
-                        <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
-                        <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
-                        <li>
+                        <li><a id="nav-home" href="./index.html" aria-label="Home page navigation.">Home</a></li>
+                        <li><a id="nav-contact" href="./Contact.html" aria-label="Contact page navigation.">Contact</a></li>
+                        <li><a id="nav-legal" href="./Legal.html" aria-label="Legal page navigation.">Legal</a></li>
+                        <li><a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers page navigation">Careers</a></li>
+                        <li aria-label="Change sites langauge.">
                             <select title="Change Site Language" id="languageSelect" class="languageSelect"
                                 onchange="changeLanguage(this.value)">
                                 <option value="ar" aria-label="Change language to Arabic.">العربية</option>
@@ -57,7 +57,7 @@
                             </select>
                         </li>
                         <li>
-                            <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
+                            <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode"></button>
                         </li>
                     </ul>
                 </nav>
@@ -67,25 +67,25 @@
 
     <section id="legal">
         <div class="container">
-            <h1 class="legal-header" id="legal-docs">Legal Documents</h1>
+            <h1 class="legal-header" id="legal-docs"aria-label="Legal Documents">Legal Documents</h1>
             <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki" id="github-wiki">GitHub Wiki</a>
+            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki" id="github-wiki" aria-label="Link to Github Wiki.">GitHub Wiki</a>
             <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Feature-List" id="full-feature-list">Full Feature List</a>
+            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Feature-List" id="full-feature-list" aria-label="Link to Full Feature List.">Full Feature List</a>
             <br>
-            <a href="./Compliance.html" id="legal-compliance">Legal Compliance</a>
+            <a href="./Compliance.html" id="legal-compliance" aria-label="Link to Legal Compliance.">Legal Compliance</a>
             <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Legal-Compliance" id="legal-compliance-github">Legal Compliance (GitHub Wiki)</a>
+            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Legal-Compliance" id="legal-compliance-github" aria-label="Link to Legal Compliance Github Wiki.">Legal Compliance (GitHub Wiki)</a>
             <br>
-            <a href="./TOS-Privacy.html" id="TOS-privacy-policy">Terms of Service & Privacy Policy</a>
+            <a href="./TOS-Privacy.html" id="TOS-privacy-policy" aria-label="Link to Terms of Service and Privacy Policy.">Terms of Service & Privacy Policy</a>
             <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Terms-of-Service-&-Privacy-Policy" id="TOS-privacy-policy-github">Terms of Service & Privacy Policy (GitHub Wiki)</a>
+            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Terms-of-Service-&-Privacy-Policy" id="TOS-privacy-policy-github" aria-label="Terms of Service and Privacy Policy Github Wiki">Terms of Service & Privacy Policy (GitHub Wiki)</a>
         </div>
     </section>
 
     <footer class="absolute-footer">
         <div class="container">
-            <p id="copyright">&copy; 2023-2024 Odyssey Outfits.&nbsp;All rights reserved.</p>
+            <p id="copyright" aria-label="Copyright">&copy; 2023-2024 Odyssey Outfits.&nbsp;All rights reserved.</p>
         </div>
     </footer>
     <script src="./Assets/JS/locales.js"></script>
