@@ -1,11 +1,12 @@
 # TODO
 
-- [ ] Comments site-wide (backend)
 - [ ] Refine language localizations
 - [ ] Refine GitHub wiki
 - [ ] ADA Compliance Standards need to be up-to-date
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
 - [ ] Fix Aria labels Career.js
+- [ ] Add target="_blank" to all href's
+
 
 # Finished
 
@@ -28,3 +29,5 @@
 - [x] Toast notification to ask to allow cookies/select language on site load
 - [x] GitHub wiki
 - [x] Meta tags
+- [x] Comments site-wide (backend)
+- [x] Legacy browser CSS support
