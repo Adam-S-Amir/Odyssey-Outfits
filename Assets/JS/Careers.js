@@ -111,6 +111,7 @@ function ApplyNow() {
         behavior: 'smooth'
     });
     updateContent();
+    scrollToTop()
 }
 
 function sendEmail() {

@@ -968,6 +968,7 @@ div.submit-div {
 }
 
 div.submit-div>input#pdfInput {
+    display: none;
     bottom: 0;
     padding: 10px;
     background-color: #073632;
