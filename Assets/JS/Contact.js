@@ -25,8 +25,8 @@ function sendEmail() {
 function confirmation() {
     // HTML content for the confirmation message
     let msg = [`
-            <h1 id='inquiry-sent'>Inquiry Sent!</h1>
-            <p id='received-inquiry'>Thank you for submitting your inquiry! We have received it successfully. Kindly anticipate an email notification regarding the status of your inquiry.</p>
+            <h1 id='inquiry-sent' aria-label="Inquiry Sent!">Inquiry Sent!</h1>
+            <p id='received-inquiry' aria-label="Thank you for submitting your inquiry!">Thank you for submitting your inquiry! We have received it successfully. Kindly anticipate an email notification regarding the status of your inquiry.</p>
         `];
 
     // Display toast with confirmation message and reload action
@@ -41,8 +41,8 @@ function confirmation() {
 function emailError() {
     // HTML content for the error message
     let msg = [`
-            <h1 id='inquiry-not-sent'>Inquiry Not Sent!</h1>
-            <p id='not-received-inquiry'>Thank you for submitting your inquiry! It seems that we had an error sending the confirmation email, please try again soon.</p>
+            <h1 id='inquiry-not-sent' aria-label="Inquiry Not Sent!">Inquiry Not Sent!</h1>
+            <p id='not-received-inquiry' aria-label="Thank you for submitting your inquiry!">Thank you for submitting your inquiry! It seems that we had an error sending the confirmation email, please try again soon.</p>
         `];
 
     // Display toast with error message and reload action
