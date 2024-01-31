@@ -38,34 +38,36 @@ function ApplyNow() {
             <div class="container">
                 <div class="overlay" id="Job-Form">
                     <form>
-                        <label for="form-name" id="label-form-name">First Name:</label>
-                        <input type="text" id="form-name" name="form-name" required>
-                        <label for="form-lname" id="label-form-lname">Last Name:</label>
-                        <input type="text" id="form-lname" name="form-lname" required>
-                        <label for="form-email" id="label-form-email">Email:</label>
-                        <input type="email" id="form-email" name="form-email" required>
-                        <label for="form-phone" id="label-form-phone">Phone Number:</label>
-                        <input type="tel" id="form-phone" name="form-phone" required>
-                        <label for="form-linkedin" id="label-form-linkedin">Linkedin:</label>
-                        <input type="url" id="form-linkedin" name="form-linkedin" required>
-                        <label for="form-address" id="label-form-address">Current Address:</label>
-                        <input type="text" id="form-address" name="form-address" required>
-                        <label for="form-legal" id="label-form-legal">Are you legally authorized to work in the United
+                        <label for="form-name" id="label-form-name" aria-label="First Name">First Name:</label>
+                        <input type="text" id="form-name" name="form-name" required aria-label="Input First Name">
+                        <label for="form-lname" id="label-form-lname" aria-label="Last Name">Last Name:</label>
+                        <input type="text" id="form-lname" name="form-lname" required aria-label="Input Last Name">
+                        <label for="form-email" id="label-form-email" aria-label="Email">Email:</label>
+                        <input type="email" id="form-email" name="form-email" required aria-label="Input Email">
+                        <label for="form-phone" id="label-form-phone" aria-label="Phone Number">Phone Number:</label>
+                        <input type="tel" id="form-phone" name="form-phone" required aria-label="Input Phone Number">
+                        <label for="form-linkedin" id="label-form-linkedin" aria-label="Linkedin">Linkedin:</label>
+                        <input type="url" id="form-linkedin" name="form-linkedin" required aria-label="Input Linkedin">
+                        <label for="form-address" id="label-form-address" aria-label="Current Address">Current Address:</label>
+                        <input type="text" id="form-address" name="form-address" required aria-label="Input Current Address">
+                        <label for="form-legal" id="label-form-legal" aria-label="Are you legally authorized to work in the United
+                        States?">Are you legally authorized to work in the United
                             States?</label>
                         <select id="form-legal" required>
                             <option></option>
-                            <option id="form-yes">Yes</option>
-                            <option id="form-no">No</option>
+                            <option id="form-yes" aria-label="Yes">Yes</option>
+                            <option id="form-no" aria-label="No">No</option>
                         </select>
-                        <label for="form-education" id="label-form-education">Have you completed the following level of
+                        <label for="form-education" id="label-form-education" aria-label="Have you completed the following level of
+                        education: Bachelor's Degree?">Have you completed the following level of
                             education: Bachelor's Degree?</label>
                         <select id="form-education" required>
                             <option></option>
-                            <option id="form-yes-2">Yes</option>
-                            <option id="form-no-2">No</option>
+                            <option id="form-yes-2" aria-label="Yes">Yes</option>
+                            <option id="form-no-2" aria-label="No">No</option>
                         </select>
                         <div class="submit-div">
-                            <label for="pdfInput" id="fileInputLabel">Upload&nbsp;Your Résumé</label>
+                            <label for="pdfInput" id="fileInputLabel" aria-label="Upload Your Résumé">Upload&nbsp;Your Résumé</label>
                             <input type="file" id="pdfInput" accept=".pdf">
                         </div>
                     </form>
@@ -73,7 +75,7 @@ function ApplyNow() {
                 <section id="pdf-viewer">
                     <div class="container">
                         <iframe id="pdfViewer" width="100%" height="500"></iframe>
-                        <button type="submit" id="submit-resume" onclick="sendEmail()">Submit Your Application</button>
+                        <button type="submit" id="submit-resume" onclick="sendEmail()" aria-label="Submit Your Application">Submit Your Application</button>
                     </div>
                 </section>
             </div>
@@ -99,7 +101,7 @@ function ApplyNow() {
 
         } else {
             let msg = [`
-                <p id='pdf-file-error'>Please select a valid PDF file:</p>
+                <p id='pdf-file-error' aria-label="Please select a valid PDF file:">Please select a valid PDF file:</p>
             `]
             window.toast({
                 message: msg,
@@ -156,8 +158,8 @@ function sendEmail() {
 
     function confirmation() {
         let msg = [`
-            <h1 id='application-sent'>Application Sent!</h1>
-            <p id='received-application'>Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
+            <h1 id='application-sent' aria-label="Application Sent!">Application Sent!</h1>
+            <p id='received-application' aria-label="Thank you for submitting your application!">Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
         `]
 
         window.toast({
@@ -169,8 +171,8 @@ function sendEmail() {
 
     function emailError() {
         let msg = [`
-            <h1 id='application-not-sent'>Application Not Sent!</h1>
-            <p id='not-received-application'>Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
+            <h1 id='application-not-sent' aria-label="Application Not Sent!">Application Not Sent!</h1>
+            <p id='not-received-application' aria-label="Thank you for submitting your application!">Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
         `]
 
         window.toast({
