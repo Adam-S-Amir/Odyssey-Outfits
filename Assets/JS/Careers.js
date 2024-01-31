@@ -1,7 +1,9 @@
+// Defining variables
 let job;
 let division;
-
+// This function will display the selected job information on the careers page.
 function ShowJobInfo(element) {
+    // Defining variables taking IDs, replacing IDs, and parsing the information from an element.
     let elementID = element.id;
     let JobWithoutDash = elementID.replace(/-/g, '');
     let JobWithSpace = elementID.replace(/-/g, ' ');
@@ -30,7 +32,7 @@ function ShowJobInfo(element) {
     JobAbout.scrollIntoView();
     updateContent();
 }
-
+// This function creates the job application form after you clicked apply now for a job.
 function ApplyNow() {
     let JobContainer = document.getElementById("Job-Container");
     let JobForm = [`
@@ -79,13 +81,14 @@ function ApplyNow() {
             </div>
         </section>
     `];
+    // Variables for the job container.
     JobContainer.removeAttribute("id");
     JobContainer.innerHTML = JobForm;
     document.getElementById('pdfInput').addEventListener('change', function (event) {
 
         const fileInput = event.target;
         const file = fileInput.files[0];
-
+// Checks if uploaded file is a PDF otherwise display error.
         if (file && file.type === 'application/pdf') {
             const reader = new FileReader();
             document.getElementById('submit-resume').style.display = "block";
@@ -110,17 +113,23 @@ function ApplyNow() {
     document.getElementById("submit-resume").scrollIntoView({
         behavior: 'smooth'
     });
+    // updates the information content of the page.
     updateContent();
+    // auto scrolls to the top of the page.
     scrollToTop()
 }
-
+// 
 function sendEmail() {
+    // variables to find name, email, and other information provided.
     let formname = document.getElementById("form-name").value;
     let formlname = document.getElementById("form-lname").value;
     let formemail = document.getElementById("form-email").value;
     var legalSelect = document.getElementById("form-legal");
     var educationSelect = document.getElementById("form-education");
-
+    /* Checks if you have the required qualifications for the application.
+        If you dont, say you don't meet the requirements.
+        If you do, it says we will be in touch.
+    */
     if (legalSelect.value === "No" || educationSelect.value === "No") {
         emailjs.send("service_swxg0ob", "template_yskewix", {
             to_name: `${formname} ${formlname}`,
@@ -153,26 +162,26 @@ function sendEmail() {
             console.error("Email failed to send:", error);
         });
     }
-
+    // confirmation on submitting your application.
     function confirmation() {
         let msg = [`
             <h1 id='application-sent'>Application Sent!</h1>
             <p id='received-application'>Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
         `]
-
+    // sends toast message to confirm application.
         window.toast({
             message: msg,
             btnmsg: "OK",
             action: () => location.reload(),
         })
     }
-
+    // sends an error if your application was not sent.
     function emailError() {
         let msg = [`
             <h1 id='application-not-sent'>Application Not Sent!</h1>
             <p id='not-received-application'>Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
         `]
-
+    // sends toast message to confirm.
         window.toast({
             message: msg,
             btnmsg: "OK",
@@ -181,5 +190,5 @@ function sendEmail() {
     }
 
 }
-
+// Initialize EmailJS library with API key
 emailjs.init("pNW2vDHr-8gYtWcXy");

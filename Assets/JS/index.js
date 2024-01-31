@@ -252,6 +252,7 @@ window.addEventListener('resize', function (event) {
   detectDeviceType();
 });
 detectDeviceType();
+
 window.toast = window.toast || (({
   message,
   btnmsg,
