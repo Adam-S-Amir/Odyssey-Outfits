@@ -4,8 +4,8 @@
 - [ ] Refine GitHub wiki
 - [ ] ADA Compliance Standards need to be up-to-date
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
-- [ ] Fix Aria labels Career.js
-- [ ] Add target="_blank" to all href's
+
+
 
 
 # Finished
@@ -31,3 +31,5 @@
 - [x] Meta tags
 - [x] Comments site-wide (backend)
 - [x] Legacy browser CSS support
+- [x] Add target="_blank"
+- [x] Add Aria Labels
