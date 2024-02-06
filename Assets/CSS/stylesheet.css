@@ -8,14 +8,17 @@
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+    /* All elements are given the transition properties. */
 }
 
 *:focus {
     outline: none;
+    /* All elements are given the outline property. */
 }
 
 html {
     scroll-behavior: smooth;
+    /* Gives the page the scroll-behavior property. */
 }
 
 body {
@@ -30,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    /* Assigns the body tag many different properties. */
 }
 
 noscript {
@@ -50,35 +54,42 @@ noscript {
     text-align: center;
     z-index: 9999;
     overflow: hidden;
+    /* Assigns the noscript tag many different properties. */
 }
 
 
 noscript::after {
     content: "This website requires JavaScript. Please enable JavaScript in your browser settings.";
+    /* After the noscript is loaded with it's properties. The content is added. */
 }
 
 a {
     color: #B87100;
     color: var(--focused);
+    /* Assigns the 'a' tag the color property. */
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     flex: 1;
+    /* Assigns container class to the properties. */
 }
 
 .container.full {
     width: 100%;
+    /* Html tags with both container and full class are assigned the width. */
 }
 
 header {
     color: #073632;
     color: var(--text-color);
+    /* Assigns the header tag the colors property. */
 }
 
 header h1 {
     margin: 0;
+    /* Finds any h1 tags that are childs of the header tag and assigns then the property. */
 }
 
 .navbar {
@@ -87,10 +98,12 @@ header h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Assigns navbar class to the properties. */
 }
 
 h1.title {
     padding-left: 15px;
+    /* Finds any h1 tags with the title class and assigns them the property. */
 }
 
 div.navbar {
@@ -98,11 +111,13 @@ div.navbar {
     color: var(--text-color);
     padding: 1em 0;
     text-align: center;
+    /* Finds any div tag with the navbar class and assigns them the property. */
 }
 
 div.navbar h1.title {
     margin: 0;
     display: inline-block;
+    /* Finds any div tag with the navbar class and finds any child h1 tag with the class title and assigns the properties. */
 }
 
 div.navbar nav ul {
@@ -113,11 +128,13 @@ div.navbar nav ul {
     padding: 0;
     margin: 0;
     display: inline-block;
+    /* Finds any div tag with the navbar class and finds any nav and ul child to assign the properties. */
 }
 
 div.navbar nav li {
     display: inline-block;
     margin-right: 20px;
+    /* Finds any div tag with the navbar class and finds any nav and li child to assign the properties */
 }
 
 div.navbar a {
@@ -136,46 +153,55 @@ div.navbar a {
     -o-border-radius: 1vmin;
     -o-border-radius: var(--border-radius-large);
     transition: background-color 0.3s ease;
+    /* Finds any div tag with the navbar class and any 'a' tag child and assigns the properties. */
 }
 
 div.navbar a:hover {
     background-color: #B87100;
     background-color: var(--focused);
     color: var(--alt-text-color);
+    /* Finds any div tag with the navbar class and any 'a' tag child and gives them the properies for when you hover over the element. */
 }
 
 div.navbar .focused {
     color: #B87100;
     color: var(--focused);
+    /* Finds any div tag with the navbar class and any child with the focused class and assigns the properties. */
 }
 
 .focused {
     color: #B87100;
     color: var(--focused);
+    /* Assigns focused class to the properties. */
 }
 
 section {
     font-size: larger;
     padding: 2em 0;
     min-height: 100%;
+    /* Assigns the section tag to the properties. */
 }
 
 section>.container>h1 {
     color: #B87100;
     color: var(--focused);
+    /* Finds the section tag, then finds any child with the container class, then finds any h1 tag thats a child of the container class and assigns the properties. */
 }
 
 section>.container>h2 {
     color: #B87100;
     color: var(--focused);
+    /* Finds the section tag, then finds any child with the container class, then finds any h2 tag thats a child of the container class and assigns the properties. */
 }
 
 section>.container>ul>li {
     list-style-type: disclosure-open;
+    /* Finds the section tag, then finds any child with the container class, then finds any ul child of the container class, then finds the li thats a child of ul and assigns the properties. */
 }
 
 section>.container>ul>li:hover {
     list-style-type: disclosure-closed;
+    /* Finds the section tag, then finds any child with the container class, then finds any ul child of the container class, then finds any li child of the ul, and assigns the property for when you hover over the tag. */
 }
 
 
@@ -187,6 +213,7 @@ section>.container>ul>li {
     -moz-transition: all 330ms ease-in-out;
     -ms-transition: all 330ms ease-in-out;
     -o-transition: all 330ms ease-in-out;
+    /*  */
 }
 
 section>.container>ul>li:hover {
