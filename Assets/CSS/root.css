@@ -43,7 +43,7 @@
     -moz-border-radius: var(--border-radius-medium);
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: var(--border-radius-medium);
-    /* Changes the whitespace of the scrollbar */
+    /* Changes the whitespace of the scrollbar. */
 }
 
 ::-webkit-scrollbar-thumb:hover {
