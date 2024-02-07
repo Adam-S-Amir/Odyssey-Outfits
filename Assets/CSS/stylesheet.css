@@ -213,7 +213,7 @@ section>.container>ul>li {
     -moz-transition: all 330ms ease-in-out;
     -ms-transition: all 330ms ease-in-out;
     -o-transition: all 330ms ease-in-out;
-    /*  */
+    /* Finds the section tag, then finds any child with the container class, then finds ul child, then li. */
 }
 
 section>.container>ul>li:hover {
@@ -222,6 +222,7 @@ section>.container>ul>li:hover {
     -moz-transform: translateX(15px);
     -ms-transform: translateX(15px);
     -o-transform: translateX(15px);
+    /* Finds section tag, then finds any child with container class, then ul child, then added the properties for on hover to li. */
 }
 
 button {
@@ -247,6 +248,7 @@ button {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* Applied properties to all button tags. */
 }
 
 .languageSelect {
@@ -270,6 +272,7 @@ button {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* Applies properties to any tag with the languageselect class. */
 }
 
 .error-404 {
@@ -283,6 +286,7 @@ button {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    /* Applies properties to any error-404 class. */
 }
 
 #ADA-Toggle {
@@ -293,6 +297,7 @@ button {
     display: inline-block;
     bottom: -10px;
     position: relative;
+    /* Applied properties to any tag with id ADA-Toggle. */
 }
 
 #scrollToTopBtn {
@@ -310,12 +315,14 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    /* Applied properties to any tag with id scrollToTopBtn. */
 }
 
 #scrollToTopBtn:hover {
     background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     color: var(--focused);
+    /* Applied properties when hovering to any tag with id scrollToTopBtn. */
 }
 
 footer {
@@ -329,6 +336,7 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 1;
+    /* Applied properties to the footer tag. */
 }
 
 .absolute-footer {
@@ -341,6 +349,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    /* Applies properties to any tag with absolute-footer class. */
 }
 
 /** END MAIN STYLES */
@@ -350,6 +359,7 @@ section#home>div.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Finds the section tag with the id home, then finds the div with the class container and applies to properties. */
 }
 
 section#home>div.container>div.Home-Banner {
@@ -368,6 +378,7 @@ section#home>div.container>div.Home-Banner {
     -moz-transform: translate(0%, -38.5px);
     -ms-transform: translate(0%, -38.5px);
     -o-transform: translate(0%, -38.5px);
+    /* Finds the section tag with the id home, then finds any div child with the class container, then finds any child with the class Home-Banner and applies the properties. */
 }
 
 section#home>div.container>div.Home-Banner>h1 {
@@ -379,6 +390,7 @@ section#home>div.container>div.Home-Banner>h1 {
     color: #B87100;
     color: var(--focused);
     width: 50%;
+    /* Finds the section tag with the id home, then finds any div child with the class container, then finds any child with the class Home-Banner, then finds any h1, and applies the properties. */
 }
 
 section#home>div.container>div.Home-Banner>p {
@@ -390,6 +402,7 @@ section#home>div.container>div.Home-Banner>p {
     color: #DDD0C8;
     color: var(--alt-text-color);
     width: 50%;
+    /* Find section tag with home id, then finds child div with container class, then finds child div with Home-Banner class, then paragraph tag and applies the properties.  */
 }
 
 section#home>div.container>div.Home-Banner>h1>span.title-text,
@@ -412,6 +425,7 @@ section#home>div.container>div.Home-Banner>p>span.title-text {
     -ms-border-radius: var(--border-radius-small);
     -o-border-radius: 3px;
     -o-border-radius: var(--border-radius-small);
+    /* Properties apply to span tag with title-text class that is a child of paragraph and h1, from the parent section tag. */
 }
 
 
@@ -442,6 +456,7 @@ section#home>div.container>div.Home-Banner>a#Explore-Careers {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /*  */
 }
 
 section#home>div.container>div.Home-Banner>a#Explore-Careers:hover {
