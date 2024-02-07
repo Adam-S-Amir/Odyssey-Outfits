@@ -180,7 +180,7 @@ function navbar() {
           <option value="tr" aria-label="Turkish.">Türkçe</option>
           <option value="zh" aria-label="Chinese.">中文</option>
       </select>
-      <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode">Toggle ADA Mode</button>
+      <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode"></button>
   </div>
   <a href="javascript:void(0);" class="icon" aria-label="Hide Navbar" onclick="mobilehide()">
       <i class="mobile mobile-bars"></i>
@@ -233,7 +233,7 @@ function navbar_default() {
               </select>
           </li>
           <li>
-              <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode">Toggle ADA Mode</button>
+              <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode"></button>
           </li>
       </ul>
   </nav>
