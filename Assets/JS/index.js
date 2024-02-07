@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let msg = [`
       <h1 id='TOS-welcome' aria-label="Welcome!">Welcome!</h1>
       <p id='TOS-locale' aria-label="Please select a default language">Please select a default language:</p>
-      <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+      <select title="Change Site Language" id="languageSelect_2" class="languageSelect" onchange="changeLanguage(this.value)">
           <option value="ar" aria-label="Arabic.">العربية</option>
           <option value="da" aria-label="Dansk.">Dansk</option>
           <option value="de" aria-label="Deutsch.">Deutsch</option>
