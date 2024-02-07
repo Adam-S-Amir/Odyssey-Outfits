@@ -126,6 +126,14 @@ function HomePage() {
   }
 }
 
+function ContactPage() {
+  const ContactForm = document.querySelector('#Contact-Form');
+  if (ContactForm) {
+    ContactForm.style.left = "-1%";
+    ContactForm.style.width = "85%";
+  }
+}
+
 function CareerPage() {
   const JobContainer = document.querySelector('#Job-Container');
   const JobList = document.querySelector('#Job-List');
@@ -141,6 +149,14 @@ function CareerPage() {
     JobAbout.style.marginLeft = "unset";
     JobAbout.style.flexDirection = "row";
   };
+}
+
+function CareerApply() {
+  let JobForm = document.querySelector('#Job-Form');
+  if (JobForm) {
+    JobForm.style.left = "-1%";
+    JobForm.style.width = "85%";
+  }
 }
 
 function navbar() {
@@ -189,6 +205,7 @@ function navbar() {
   `];
   CareerPage();
   HomePage();
+  ContactPage();
   updateContent();
 }
 

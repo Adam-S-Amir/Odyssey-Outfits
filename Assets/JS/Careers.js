@@ -34,6 +34,7 @@ function ShowJobInfo(element) {
 }
 // This function creates the job application form after you clicked apply now for a job.
 function ApplyNow() {
+    CareerApply();
     let JobContainer = document.getElementById("Job-Container");
     let JobForm = [`
         <section id="Job-Overlay">
