@@ -120,7 +120,7 @@ function ApplyNow() {
     // auto scrolls to the top of the page.
     scrollToTop()
 }
-// 
+
 function sendEmail() {
     // variables to find name, email, and other information provided.
     let formname = document.getElementById("form-name").value;

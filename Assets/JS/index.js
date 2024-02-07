@@ -6,36 +6,36 @@ document.addEventListener("DOMContentLoaded", function () {
     // You can perform further actions here if needed
   } else {
     let msg = [`
-      <h1 id='TOS-welcome'>Welcome!</h1>
-      <p id='TOS-locale'>Please select a default language:</p>
-      <select id="languageSelect_2" class="languageSelect" onchange="changeLanguage(this.value)">
-          <option value="ar">العربية</option>
-          <option value="da">Dansk</option>
-          <option value="de">Deutsch</option>
-          <option value="el">Ελληνικά</option>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="fi">Suomi</option>
-          <option value="fr">Français</option>
-          <option value="he">עברית</option>
-          <option value="hu">Magyar</option>
-          <option value="it">Italiano</option>
-          <option value="ja">日本語</option>
-          <option value="ko">한국어</option>
-          <option value="nb">Norsk Bokmål</option>
-          <option value="nl">Nederlands</option>
-          <option value="pl">Polski</option>
-          <option value="pt">Português</option>
-          <option value="ru">Русский</option>
-          <option value="sk">Slovenčina</option>
-          <option value="sl">Slovenščina</option>
-          <option value="sv">Svenska</option>
-          <option value="tr">Türkçe</option>
-          <option value="zh">中文</option>
+      <h1 id='TOS-welcome' aria-label="Welcome!">Welcome!</h1>
+      <p id='TOS-locale' aria-label="Please select a default language">Please select a default language:</p>
+      <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="ar" aria-label="Arabic.">العربية</option>
+          <option value="da" aria-label="Dansk.">Dansk</option>
+          <option value="de" aria-label="Deutsch.">Deutsch</option>
+          <option value="el" aria-label="Greek.">Ελληνικά</option>
+          <option value="en" aria-label="English.">English</option>
+          <option value="es" aria-label="Spanish.">Español</option>
+          <option value="fi" aria-label="Finnish.">Suomi</option>
+          <option value="fr" aria-label="French.">Français</option>
+          <option value="he" aria-label="Hebrew.">עברית</option>
+          <option value="hu" aria-label="Hungarian.">Magyar</option>
+          <option value="it" aria-label="Italian.">Italiano</option>
+          <option value="ja" aria-label="Japanese.">日本語</option>
+          <option value="ko" aria-label="Korean.">한국어</option>
+          <option value="nb" aria-label="Norwegian Bokmål.">Norsk Bokmål</option>
+          <option value="nl" aria-label="Dutch.">Nederlands</option>
+          <option value="pl" aria-label="Polish.">Polski</option>
+          <option value="pt" aria-label="Portuguese.">Português</option>
+          <option value="ru" aria-label="Russian.">Русский</option>
+          <option value="sk" aria-label="Slovak.">Slovenčina</option>
+          <option value="sl" aria-label="Slovenian.">Slovenščina</option>
+          <option value="sv" aria-label="Swedish.">Svenska</option>
+          <option value="tr" aria-label="Turkish.">Türkçe</option>
+          <option value="zh" aria-label="Chinese.">中文</option>
       </select>
-      <p id='TOS-ADA'>Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
-      <p id='TOS-preamble'>Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
-      <a id='TOS-TOS' href="./TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
+      <p id='TOS-ADA' aria-label="ADA Terms of Service">Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
+      <p id='TOS-preamble' aria-label="Terms of Service">Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
+      <a id='TOS-TOS' aria-label="View Terms of Service" href="./TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
       <br>
       <br>
     `];
@@ -148,44 +148,44 @@ function navbar() {
   let navbarclass = document.getElementById("navbar");
   navbarclass.classList.remove("navbar");
   navbar.innerHTML = [`
-    <div class="topnav">
-        <h1>Odyssey Outfits</h1>
-        <div id="Links">
-            <a id="nav-home" href="./index.html">Home</a>
-            <a id="nav-contact" href="./Contact.html">Contact</a>
-            <a id="nav-legal" href="./Legal.html">Legal</a>
-            <a id="nav-careers" class="focused" href="./Careers.html">Careers</a>
-            <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
-                    <option value="ar">العربية</option>
-                    <option value="da">Dansk</option>
-                    <option value="de">Deutsch</option>
-                    <option value="el">Ελληνικά</option>
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fi">Suomi</option>
-                    <option value="fr">Français</option>
-                    <option value="he">עברית</option>
-                    <option value="hu">Magyar</option>
-                    <option value="it">Italiano</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                    <option value="nb">Norsk Bokmål</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="pl">Polski</option>
-                    <option value="pt">Português</option>
-                    <option value="ru">Русский</option>
-                    <option value="sk">Slovenčina</option>
-                    <option value="sl">Slovenščina</option>
-                    <option value="sv">Svenska</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="zh">中文</option>
-            </select>
-            <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="mobilehide()">
-            <i class="mobile mobile-bars"></i>
-        </a>
-    </div>
+  <div class="topnav">
+  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page." target="_blank">Odyssey Outfits</h1>
+  <div id="Links">
+      <a id="nav-home" href="./index.html" aria-label="Home Page" target="_blank">Home</a>
+      <a id="nav-contact" href="./Contact.html" aria-label="Contact Page" target="_blank">Contact</a>
+      <a id="nav-legal" href="./Legal.html" aria-label="Legal Page" target="_blank">Legal</a>
+      <a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page" target="_blank">Careers</a>
+      <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="ar" aria-label="Arabic.">العربية</option>
+          <option value="da" aria-label="Dansk.">Dansk</option>
+          <option value="de" aria-label="Deutsch.">Deutsch</option>
+          <option value="el" aria-label="Greek.">Ελληνικά</option>
+          <option value="en" aria-label="English.">English</option>
+          <option value="es" aria-label="Spanish.">Español</option>
+          <option value="fi" aria-label="Finnish.">Suomi</option>
+          <option value="fr" aria-label="French.">Français</option>
+          <option value="he" aria-label="Hebrew.">עברית</option>
+          <option value="hu" aria-label="Hungarian.">Magyar</option>
+          <option value="it" aria-label="Italian.">Italiano</option>
+          <option value="ja" aria-label="Japanese.">日本語</option>
+          <option value="ko" aria-label="Korean.">한국어</option>
+          <option value="nb" aria-label="Norwegian Bokmål.">Norsk Bokmål</option>
+          <option value="nl" aria-label="Dutch.">Nederlands</option>
+          <option value="pl" aria-label="Polish.">Polski</option>
+          <option value="pt" aria-label="Portuguese.">Português</option>
+          <option value="ru" aria-label="Russian.">Русский</option>
+          <option value="sk" aria-label="Slovak.">Slovenčina</option>
+          <option value="sl" aria-label="Slovenian.">Slovenščina</option>
+          <option value="sv" aria-label="Swedish.">Svenska</option>
+          <option value="tr" aria-label="Turkish.">Türkçe</option>
+          <option value="zh" aria-label="Chinese.">中文</option>
+      </select>
+      <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode">Toggle ADA Mode</button>
+  </div>
+  <a href="javascript:void(0);" class="icon" aria-label="Hide Navbar" onclick="mobilehide()">
+      <i class="mobile mobile-bars"></i>
+  </a>
+</div>
   `];
   CareerPage();
   HomePage();
@@ -197,45 +197,46 @@ function navbar_default() {
   let navbarclass = document.getElementById("navbar");
   navbarclass.classList.add("navbar");
   navbar.innerHTML = [`
-    <h1 onclick="redirectToHomepage()" class="title">Odyssey Outfits</h1>
-    <nav>
-        <ul>
-            <li><a id="nav-home" href="./index.html">Home</a></li>
-            <li><a id="nav-contact" href="./Contact.html">Contact</a></li>
-            <li><a id="nav-legal" href="./Legal.html">Legal</a></li>
-            <li><a id="nav-careers" class="focused" href="./Careers.html">Careers</a></li>
-            <li>
-                <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
-                    <option value="ar">العربية</option>
-                    <option value="da">Dansk</option>
-                    <option value="de">Deutsch</option>
-                    <option value="el">Ελληνικά</option>
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fi">Suomi</option>
-                    <option value="fr">Français</option>
-                    <option value="he">עברית</option>
-                    <option value="hu">Magyar</option>
-                    <option value="it">Italiano</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                    <option value="nb">Norsk Bokmål</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="pl">Polski</option>
-                    <option value="pt">Português</option>
-                    <option value="ru">Русский</option>
-                    <option value="sk">Slovenčina</option>
-                    <option value="sl">Slovenščina</option>
-                    <option value="sv">Svenska</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="zh">中文</option>
-                </select>
-            </li>
-            <li>
-                <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()'></button>
-            </li>
-        </ul>
-    </nav>
+  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page." target="_blank">Odyssey Outfits</h1>
+  <nav>
+      <ul>
+          <li><a id="nav-home" href="./index.html" aria-label="Home Page" target="_blank">Home</a></li>
+          <li><a id="nav-contact" href="./Contact.html" aria-label="Contact Page" target="_blank">Contact</a></li>
+          <li><a id="nav-legal" href="./Legal.html" aria-label="Legal Page" target="_blank">Legal</a></li>
+          <li><a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page" target="_blank">Careers</a></li>
+          <li aria-label="Change sites language.">
+              <select title="Change Site Language" id="languageSelect" class="languageSelect"
+                  onchange="changeLanguage(this.value)">
+                  <option value="ar" aria-label="Arabic.">العربية</option>
+                  <option value="da" aria-label="Dansk.">Dansk</option>
+                  <option value="de" aria-label="Deutsch.">Deutsch</option>
+                  <option value="el" aria-label="Greek.">Ελληνικά</option>
+                  <option value="en" aria-label="English.">English</option>
+                  <option value="es" aria-label="Spanish.">Español</option>
+                  <option value="fi" aria-label="Finnish.">Suomi</option>
+                  <option value="fr" aria-label="French.">Français</option>
+                  <option value="he" aria-label="Hebrew.">עברית</option>
+                  <option value="hu" aria-label="Hungarian.">Magyar</option>
+                  <option value="it" aria-label="Italian.">Italiano</option>
+                  <option value="ja" aria-label="Japanese.">日本語</option>
+                  <option value="ko" aria-label="Korean.">한국어</option>
+                  <option value="nb" aria-label="Norwegian Bokmål.">Norsk Bokmål</option>
+                  <option value="nl" aria-label="Dutch.">Nederlands</option>
+                  <option value="pl" aria-label="Polish.">Polski</option>
+                  <option value="pt" aria-label="Portuguese.">Português</option>
+                  <option value="ru" aria-label="Russian.">Русский</option>
+                  <option value="sk" aria-label="Slovak.">Slovenčina</option>
+                  <option value="sl" aria-label="Slovenian.">Slovenščina</option>
+                  <option value="sv" aria-label="Swedish.">Svenska</option>
+                  <option value="tr" aria-label="Turkish.">Türkçe</option>
+                  <option value="zh" aria-label="Chinese.">中文</option>
+              </select>
+          </li>
+          <li>
+              <button type="button" id='ADA-Toggle' title="Toggle ADA Mode" onclick='changeRootStyles()' aria-label="Toggle ADA Mode">Toggle ADA Mode</button>
+          </li>
+      </ul>
+  </nav>
   `];
   updateContent();
 }
