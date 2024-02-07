@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </select>
       <p id='TOS-ADA' aria-label="ADA Terms of Service">Our website is in compliance with ADA (Americans with Disabilities Act) standards.<br>As a result, you may click the eye icon located in the top right corner to toggle<br>ADA compliance mode.</p>
       <p id='TOS-preamble' aria-label="Terms of Service">Our website gathers user data to enhance the overall user experience.<br>By continuing to use our site, you agree to our TOS.</p>
-      <a id='TOS-TOS' aria-label="View Terms of Service" href="./TOS-Privacy.html" target="_blank">Terms of Service & Privacy Policy</a>
+      <a id='TOS-TOS' aria-label="View Terms of Service" href="./TOS-Privacy.html">Terms of Service & Privacy Policy</a>
       <br>
       <br>
     `];
@@ -165,12 +165,12 @@ function navbar() {
   navbarclass.classList.remove("navbar");
   navbar.innerHTML = [`
   <div class="topnav">
-  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page." target="_blank">Odyssey Outfits</h1>
+  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page.">Odyssey Outfits</h1>
   <div id="Links">
-      <a id="nav-home" href="./index.html" aria-label="Home Page" target="_blank">Home</a>
-      <a id="nav-contact" href="./Contact.html" aria-label="Contact Page" target="_blank">Contact</a>
-      <a id="nav-legal" href="./Legal.html" aria-label="Legal Page" target="_blank">Legal</a>
-      <a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page" target="_blank">Careers</a>
+      <a id="nav-home" href="./index.html" aria-label="Home Page">Home</a>
+      <a id="nav-contact" href="./Contact.html" aria-label="Contact Page">Contact</a>
+      <a id="nav-legal" href="./Legal.html" aria-label="Legal Page">Legal</a>
+      <a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page">Careers</a>
       <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
           <option value="ar" aria-label="Arabic.">العربية</option>
           <option value="da" aria-label="Dansk.">Dansk</option>
@@ -214,13 +214,13 @@ function navbar_default() {
   let navbarclass = document.getElementById("navbar");
   navbarclass.classList.add("navbar");
   navbar.innerHTML = [`
-  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page." target="_blank">Odyssey Outfits</h1>
+  <h1 onclick="redirectToHomepage()" class="title" aria-label="Odyssey Outfits Home Page.">Odyssey Outfits</h1>
   <nav>
       <ul>
-          <li><a id="nav-home" href="./index.html" aria-label="Home Page" target="_blank">Home</a></li>
-          <li><a id="nav-contact" href="./Contact.html" aria-label="Contact Page" target="_blank">Contact</a></li>
-          <li><a id="nav-legal" href="./Legal.html" aria-label="Legal Page" target="_blank">Legal</a></li>
-          <li><a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page" target="_blank">Careers</a></li>
+          <li><a id="nav-home" href="./index.html" aria-label="Home Page">Home</a></li>
+          <li><a id="nav-contact" href="./Contact.html" aria-label="Contact Page">Contact</a></li>
+          <li><a id="nav-legal" href="./Legal.html" aria-label="Legal Page">Legal</a></li>
+          <li><a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page">Careers</a></li>
           <li aria-label="Change sites language.">
               <select title="Change Site Language" id="languageSelect" class="languageSelect"
                   onchange="changeLanguage(this.value)">

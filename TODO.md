@@ -32,5 +32,4 @@
 - [x] Meta tags
 - [x] Comments site-wide (backend)
 - [x] Legacy browser CSS support
-- [x] Add target="_blank"
 - [x] Add Aria Labels
