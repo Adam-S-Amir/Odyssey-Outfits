@@ -10,14 +10,11 @@ Adam Amir and Matthew Krug, collaborating once more, have partnered to develop a
 ## Authors
 
 - [Adam Amir](https://github.com/Adam-S-Amir)
-- [Matthew Krug](https://www.github.com/Matthew-Krug)
+- [Matthew Krug](https://github.com/Matthew-Krug)
 
 
 
-## Documentation
-
-[Documentation](https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki)
-
+## [Documentation](https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki)
 
 ## License
 
