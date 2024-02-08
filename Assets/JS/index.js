@@ -152,10 +152,12 @@ function CareerPage() {
 }
 
 function CareerApply() {
-  let JobForm = document.querySelector('#Job-Form');
+  const JobForm = document.querySelector('#Job-Form');
+  const pdfViewer = document.querySelector('#pdfViewer');
   if (JobForm) {
     JobForm.style.left = "-1%";
     JobForm.style.width = "85%";
+    pdfViewer.remove();
   }
 }
 

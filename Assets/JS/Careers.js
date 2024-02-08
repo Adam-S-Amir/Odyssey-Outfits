@@ -34,7 +34,6 @@ function ShowJobInfo(element) {
 }
 // This function creates the job application form after you clicked apply now for a job.
 function ApplyNow() {
-    CareerApply();
     let JobContainer = document.getElementById("Job-Container");
     let JobForm = [`
         <section id="Job-Overlay">
@@ -88,38 +87,41 @@ function ApplyNow() {
     JobContainer.removeAttribute("id");
     JobContainer.innerHTML = JobForm;
     document.getElementById('pdfInput').addEventListener('change', function (event) {
-
+        const pdfViewer = document.getElementById('pdfViewer')
         const fileInput = event.target;
         const file = fileInput.files[0];
-// Checks if uploaded file is a PDF otherwise display error.
-        if (file && file.type === 'application/pdf') {
-            const reader = new FileReader();
+        // if element pdfViewer does not exist, the following runs
+        if (!pdfViewer) {
             document.getElementById('submit-resume').style.display = "block";
-            document.getElementById('pdfViewer').style.display = "block";
-
-            reader.onload = function (e) {
-                pdfViewer.src = e.target.result;
-            };
-
-            reader.readAsDataURL(file);
-
-        } else {
-            let msg = [`
+        } else if (pdfViewer) {
+            // Checks if uploaded file is a PDF otherwise display error.
+            if (file && file.type === 'application/pdf') {
+                const reader = new FileReader();
+                pdfViewer.style.display = 'block';
+                reader.onload = function (e) {
+                    pdfViewer.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                let msg = [`
                 <p id='pdf-file-error' aria-label="Please select a valid PDF file:">Please select a valid PDF file:</p>
             `]
-            window.toast({
-                message: msg,
-                btnmsg: "OK",
-            })
+                window.toast({
+                    message: msg,
+                    btnmsg: "OK",
+                })
+            }
         }
     });
     document.getElementById("submit-resume").scrollIntoView({
         behavior: 'smooth'
     });
     // updates the information content of the page.
-    updateContent();
+    // updateContent();
     // auto scrolls to the top of the page.
     scrollToTop()
+    // formats the page properly if it's a mobile user
+    CareerApply();
 }
 
 function sendEmail() {
@@ -171,7 +173,7 @@ function sendEmail() {
             <h1 id='application-sent' aria-label="Application Sent!">Application Sent!</h1>
             <p id='received-application' aria-label="Thank you for submitting your application!">Thank you for submitting your application! We have received it successfully. Kindly anticipate an email notification regarding the status of your application as we progress through our thorough review process. We appreciate your patience and look forward to the possibility of working together.</p>
         `]
-    // sends toast message to confirm application.
+        // sends toast message to confirm application.
         window.toast({
             message: msg,
             btnmsg: "OK",
@@ -184,7 +186,7 @@ function sendEmail() {
             <h1 id='application-not-sent' aria-label="Application Not Sent!">Application Not Sent!</h1>
             <p id='not-received-application' aria-label="Thank you for submitting your application!">Thank you for submitting your application! It seems that we had an error sending the confirmation email, please try again soon.</p>
         `]
-    // sends toast message to confirm.
+        // sends toast message to confirm.
         window.toast({
             message: msg,
             btnmsg: "OK",
