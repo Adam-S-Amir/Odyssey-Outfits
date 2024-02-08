@@ -1180,7 +1180,7 @@ section>div.container>h1.legal-header {
 
 section>div.container>a {
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 /** END ABOUT PAGE */
