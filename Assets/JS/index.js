@@ -388,6 +388,20 @@ function changeRootStyles() {
       background-color: black;
       color: white;
     }
+    section#home>div.container>div.Home-Banner>h1>span.title-text {
+      background-color: rgba(256, 256, 256, 0.5);
+      background-color: var(--text-background-color-overlay);
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      text-shadow: none;
+    }
+    section#home>div.container>div.Home-Banner>p>span.title-text {
+      background-color: rgba(256, 256, 256, 0.5);
+      background-color: var(--text-background-color-overlay);
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      text-shadow: none;
+    }
     #scrollToTopBtn {
       background-color: black;
       color: white;
