@@ -1,13 +1,9 @@
 # TODO
 
 - [ ] Refine language localizations
-- [ ] Refine GitHub wiki
 - [ ] ADA Compliance Standards need to be up-to-date
   - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
 - [ ] CSS Comments
-
-
-
 
 # Finished
 
@@ -33,3 +29,4 @@
 - [x] Comments site-wide (backend)
 - [x] Legacy browser CSS support
 - [x] Add Aria Labels
+- [x] Project Documentation
