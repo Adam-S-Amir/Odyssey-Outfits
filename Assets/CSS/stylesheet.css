@@ -588,7 +588,7 @@ section#why-odyssey>div.container>#tab-content>p {
 
 .topnav #Links {
     display: none;
-    /*  */
+    /* finds any link id thats a child of any topnav class. */
 }
 
 .topnav a,
@@ -599,19 +599,23 @@ section#why-odyssey>div.container>#tab-content>p {
     text-decoration: none;
     font-size: 17px;
     display: block;
+    /* fins any topnav class and child a and h1 elements */
 }
 
 .topnav select,
 .topnav button {
     margin-left: 16px;
+    /* finds any select and button element thats a child of a topnav class */
 }
 
 .topnav select {
     padding: 0;
+    /* finds any select tahts a child of topnav class */
 }
 
 .topnav button {
     pad: 14px 16px;
+    /* finds any button thats a child of topnav class */
 }
 
 .topnav a.icon {
@@ -619,6 +623,7 @@ section#why-odyssey>div.container>#tab-content>p {
     position: absolute;
     right: 0;
     top: 0;
+    /* finds topnav class and child a element with class icon */
 }
 
 .topnav a:hover {
@@ -626,6 +631,7 @@ section#why-odyssey>div.container>#tab-content>p {
     background-color: var(--focused);
     color: #073632;
     color: var(--text-color);
+    /* finds topnav class with child a element and applies to on hover */
 }
 
 .mobile {
@@ -648,6 +654,7 @@ section#why-odyssey>div.container>#tab-content>p {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Mobile class */
 }
 
 .mobile-bars:before {
@@ -656,6 +663,7 @@ section#why-odyssey>div.container>#tab-content>p {
     color: var(--ADA-black);
     font-weight: 1000;
     font-size: 20px;
+    /* mobile class before it loads */
 }
 
 
@@ -674,6 +682,7 @@ section#why-odyssey>div.container>#tab-content>p {
     right: 0;
     height: 100%;
     width: 100%;
+    /* toast-overlay class */
 }
 
 .toast {
@@ -711,11 +720,13 @@ section#why-odyssey>div.container>#tab-content>p {
     -o-transform: translateY(-50%);
     filter: brightness(1);
     -webkit-filter: brightness(1);
+    /* toast class */
 }
 
 .message-container {
     text-align: center;
     padding: 5px;
+    /* message-container class */
 }
 
 .toast-button {
@@ -743,10 +754,12 @@ section#why-odyssey>div.container>#tab-content>p {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* toast-button class */
 }
 
 .toast>p {
     text-align: center;
+    /* any p element descandant of toast class. */
 }
 
 
@@ -758,6 +771,7 @@ section#why-odyssey>div.container>#tab-content>p {
 div#Job-Container {
     display: flex;
     justify-content: space-between;
+    /* any div with job-container id */
 }
 
 section#Job-List,
@@ -775,6 +789,7 @@ section#Job-About {
     border: 3px solid var(--focused);
     border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    /* section with job-list and job-about  */
 }
 
 section#Job-List {
@@ -805,6 +820,7 @@ section#Job-List {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* section with id job-list */
 }
 
 section#Job-About {
@@ -836,6 +852,7 @@ section#Job-About {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* section with id job-about */
 }
 
 section#Job-List>div.container {
@@ -845,6 +862,7 @@ section#Job-List>div.container {
     color: #073632;
     color: var(--text-color);
     /* ^Border will be invisible otherwise */
+    /* section with id job-list, then finds child div with class container  */
 }
 
 section#Job-List>div.container:last-child {
@@ -852,6 +870,7 @@ section#Job-List>div.container:last-child {
     border-bottom: transparent;
     color: transparent;
     /* ^Make the last div border transparent */
+    /* section with id job-list then finds child div with class container and applies to the last child. */
 }
 
 section#Job-List>div.container>h1 {
@@ -860,6 +879,7 @@ section#Job-List>div.container>h1 {
     -moz-transition: all 330ms ease-in-out;
     -ms-transition: all 330ms ease-in-out;
     -o-transition: all 330ms ease-in-out;
+    /* Finds section with id job-list then child div with class container then child h1 element */
 }
 
 section#Job-List>div.container>h1:hover {
@@ -868,10 +888,12 @@ section#Job-List>div.container>h1:hover {
     -moz-transform: translateX(15px);
     -ms-transform: translateX(15px);
     -o-transform: translateX(15px);
+    /* finds section with job-list id, then child div with container class, then h1 child and applies to on hover. */
 }
 
 section#Job-List>div.container>h4:first-of-type {
     word-spacing: 5px;
+    /*  inds section with job-list id, then child div with container class, then h4 first of type.  */
 }
 
 section#Job-List>div.container>h4>img {
@@ -879,24 +901,29 @@ section#Job-List>div.container>h4>img {
     width: 32px;
     top: 10px;
     position: relative;
+    /* finds section with id job-list, then child div with container class, then h4 child, then img child. */
 }
 
 section#Job-List>div.container>*,
 section#Job-About>div.container>* {
     color: #073632;
     color: var(--text-color);
+    /* finds section with job-list and job-about and child div with class container, then any child of the div apply the elements. */
 }
 
 section#Job-List>div.container>h1 {
     text-decoration: underline;
+    /* finds section with id job-list then child div with class container, then child h1 element. */
 }
 
 section#Job-About>div#Job-About-Inner>#Learn-More {
     text-align: center;
+    /* finds section with id job-about, then child div with id job-about-inner, then any id learn-more  */
 }
 
 section#Job-About>div#Job-About-Inner>ul>li {
     text-indent: 0px;
+    /* finds section with id job-about, then child div with id job-about-inner, then child ul, then child li. */
 }
 
 section#Job-About>div#Job-About-Inner>button#Apply-Now {
@@ -905,12 +932,14 @@ section#Job-About>div#Job-About-Inner>button#Apply-Now {
     background-color: var(--focused);
     color: #DDD0C8;
     color: var(--alt-text-color);
+    /* finds section with id job-about, then child div with id job-about-inner, then child button with id apply-now. */
 }
 
 label#pdfInput,
 section#pdfViewer,
 button#submit-resume {
     display: none;
+    /* finds label with id pdfinput, section with id pdfviwer, and button with id submit-resume. */
 }
 
 section#pdfViewer {
@@ -934,10 +963,12 @@ section#pdfViewer {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* section with id pdfviewer */
 }
 
 input#pdfViewer::after {
     content: "PDF Viewer";
+    /* input with id pdfviewer applies after loaded. */
 }
 
 label#fileInputLabel:hover,
@@ -958,6 +989,7 @@ button#submit-resume:hover {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* label with id fileinputlabel and button with id submit-resume applies on hover. */
 }
 
 div#Job-Overlay {
@@ -971,6 +1003,7 @@ div#Job-Overlay {
     -moz-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     -o-transform: translate(-50%, 0%);
+    /* div with id-joboverlay */
 }
 
 div#Job-Form.overlay {
@@ -990,6 +1023,7 @@ div#Job-Form.overlay {
     border: 3px solid var(--focused);
     border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    /* div with id job-form when its appearing in the top layer. */
 }
 
 div#Job-Form.overlay form {
@@ -997,10 +1031,12 @@ div#Job-Form.overlay form {
     color: var(--text-color);
     flex-direction: column;
     width: 100%;
+    /* div with id job-form when its the top layer, find child form */
 }
 
 div.overlay label {
     margin-bottom: 8px;
+    /* div with overlay class, then label child */
 }
 
 div#Job-Form.overlay input,
@@ -1022,12 +1058,14 @@ div#Job-Form.overlay select {
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     resize: none;
+    /* div with id jobform and class overlay, then finds input and select. */
 }
 
 div.submit-div {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    /* div with class submit-div */
 }
 
 div.submit-div>input#pdfInput {
@@ -1051,6 +1089,7 @@ div.submit-div>input#pdfInput {
     -ms-border-radius: var(--border-radius-small);
     -o-border-radius: 3px;
     -o-border-radius: var(--border-radius-small);
+    /* div with class submit-div then finds child input with id pdf-input */
 }
 
 div.submit-div>label#fileInputLabel {
@@ -1081,6 +1120,7 @@ div.submit-div>label#fileInputLabel {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* div with class submit-div, then finds label with id fileInputLabel */
 }
 
 section#pdf-viewer>div.container>button#submit-resume {
@@ -1113,6 +1153,7 @@ section#pdf-viewer>div.container>button#submit-resume {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* finds section with id pdf-viewer, then child div with class container, then child button with id submit-resume. */
 }
 
 
@@ -1132,6 +1173,7 @@ section#contact {
     -moz-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     -o-transform: translate(-50%, 0%);
+    /* finds section with id contact. */
 }
 
 div#Contact-Form.overlay {
@@ -1151,6 +1193,7 @@ div#Contact-Form.overlay {
     border: 3px solid var(--focused);
     border-radius: 5px;
     border-radius: var(--border-radius-medium);
+    /* div with id contact-form applies to overlay */
 }
 
 div#Contact-Form.overlay form {
@@ -1159,11 +1202,14 @@ div#Contact-Form.overlay form {
     flex-direction: column;
     width: 100%;
     /* Ensure form takes up the full width */
+    /* div with id contact-form and is overlaying, and finds child form. */
 }
 
 div#Contact-Form.overlay label {
     margin-bottom: 10px;
     font-size: 20px;
+    /* div with id contact-form then finds child label */
+    /* ? what does .overlay do */
 }
 
 div#Contact-Form.overlay input,
@@ -1185,11 +1231,13 @@ div#Contact-Form.overlay textarea {
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     resize: none;
+    /* finds div with id contact-form then finds child input and textarea. */
 }
 
 div#Contact-Form.overlay>div.submit-div>button {
     width: 100%;
     padding: 8px;
+    /* finds div with id contact-form then child div with submit-div class, then finds child button. */
 }
 
 
@@ -1202,11 +1250,13 @@ section>div.container>h1.legal-header {
     color: #DDD0C8;
     color: var(--alt-text-color);
     text-align: center;
+    /* finds section, then child div with class container, then child h1 with legal-header class. */
 }
 
 section>div.container>a {
     display: block;
     text-align: left;
+    /* finds section, then child div with class container, then child a tag. */
 }
 
 
