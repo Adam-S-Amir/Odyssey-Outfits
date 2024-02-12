@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       action: () => TOS(),
     });
   };
-
+// Sents toast message with the html as a variable.
   function TOS() {
     localStorage.setItem("TOS", "accepted")
   }
@@ -55,16 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem('ada', 'off');
   };
 });
+//  Terms of Service function
 
 function redirectToHomepage() {
   window.location.href = "./index.html";
 }
 let scrolled = false;
-
+// Redirect to homepage function.
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+// scroll to the top of page function
 
 // Show the button when scrolling down and hide it when at the top
 window.onscroll = function () {
@@ -77,13 +79,14 @@ window.onscroll = function () {
     document.body.appendChild(scrollTop);
     scrolled = true;
   }
-
+  // creates scroll to top button.
   const btn = document.getElementById("scrollToTopBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";
   }
+  // hides the scroll to top if you're already scrolled to the top.
 };
 
 
@@ -108,11 +111,11 @@ function detectDeviceType() {
     console.log("Device Type: Computer");
   };
 }
-
+// creates function to finds device type.
 function getDeviceWidth() {
   return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
-
+//  Creates function to get the device width.
 function HomePage() {
   const HomeBanner = document.querySelector("#Home-Banner")
   const HomeHeader = document.querySelector("#Home-Header");
@@ -125,7 +128,7 @@ function HomePage() {
     Tab.style.display = "grid";
   }
 }
-
+//  Creates function to changes home page width.
 function ContactPage() {
   const ContactForm = document.querySelector('#Contact-Form');
   if (ContactForm) {
@@ -133,7 +136,7 @@ function ContactPage() {
     ContactForm.style.width = "85%";
   }
 }
-
+// Creates function to realign contact form.
 function CareerPage() {
   const JobContainer = document.querySelector('#Job-Container');
   const JobList = document.querySelector('#Job-List');
@@ -150,7 +153,7 @@ function CareerPage() {
     JobAbout.style.flexDirection = "row";
   };
 }
-
+// Creates function to style the job About on the career page.
 function CareerApply() {
   const JobForm = document.querySelector('#Job-Form');
   const pdfViewer = document.querySelector('#pdfViewer');
@@ -160,7 +163,7 @@ function CareerApply() {
     pdfViewer.remove();
   }
 }
-
+// Creates function to style the job form and remove the pdf.
 function navbar() {
   let navbar = document.getElementById("navbar");
   let navbarclass = document.getElementById("navbar");
@@ -210,7 +213,7 @@ function navbar() {
   ContactPage();
   updateContent();
 }
-
+// Creates a function that creates the navbar.
 function navbar_default() {
   let navbar = document.getElementById("navbar");
   let navbarclass = document.getElementById("navbar");
@@ -259,7 +262,7 @@ function navbar_default() {
   `];
   updateContent();
 }
-
+// Function to create the default navbar.
 function mobilehide() {
   var x = document.getElementById("Links");
   if (x.style.display === "block") {
@@ -268,11 +271,12 @@ function mobilehide() {
     x.style.display = "block";
   };
 };
+// function to hide elements with the links id.
 window.addEventListener('resize', function (event) {
   detectDeviceType();
 });
 detectDeviceType();
-
+// resize the page based on your device.
 window.toast = window.toast || (({
   message,
   btnmsg,
@@ -327,7 +331,7 @@ window.toast = window.toast || (({
   updateContent();
   window.scrollTo(0, 0);
 });
-
+// Creates the toast.
 window.confirm = (message) => {
   toast({
     message
@@ -427,11 +431,12 @@ function changeRootStyles() {
       <h1 id='ada-disabled'>You have disabled ADA Mode.</h1>
       <p id='ada-disabled-continue'>It seems you've disabled ADA mode, you will need to refresh in order to continue.</p>
     `];
-
+// Changes local storage data to enable or disable ADA mode.
     window.toast({
       message: msg,
       btnmsg: "OK",
       action: () => location.reload(),
     })
   };
+  // Sends the roast and reloads the page.
 }
