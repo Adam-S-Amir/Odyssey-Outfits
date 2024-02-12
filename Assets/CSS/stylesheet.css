@@ -1023,7 +1023,7 @@ div#Job-Form.overlay {
     border: 3px solid var(--focused);
     border-radius: 5px;
     border-radius: var(--border-radius-medium);
-    /* div with id job-form when its appearing in the top layer. */
+    /* div with id job-form and class overlay. */
 }
 
 div#Job-Form.overlay form {
@@ -1031,7 +1031,7 @@ div#Job-Form.overlay form {
     color: var(--text-color);
     flex-direction: column;
     width: 100%;
-    /* div with id job-form when its the top layer, find child form */
+    /* div with id job-form and class overlay, find child form */
 }
 
 div.overlay label {
@@ -1193,7 +1193,7 @@ div#Contact-Form.overlay {
     border: 3px solid var(--focused);
     border-radius: 5px;
     border-radius: var(--border-radius-medium);
-    /* div with id contact-form applies to overlay */
+    /* div with id contact-form and class overlay */
 }
 
 div#Contact-Form.overlay form {
@@ -1202,14 +1202,14 @@ div#Contact-Form.overlay form {
     flex-direction: column;
     width: 100%;
     /* Ensure form takes up the full width */
-    /* div with id contact-form and is overlaying, and finds child form. */
+    /* div with id contact-form and class overlay, and finds child form. */
 }
 
 div#Contact-Form.overlay label {
     margin-bottom: 10px;
     font-size: 20px;
-    /* div with id contact-form then finds child label */
-    /* ? what does .overlay do */
+    /* div with id contact-form and class overlay then finds child label */
+    
 }
 
 div#Contact-Form.overlay input,
@@ -1231,13 +1231,13 @@ div#Contact-Form.overlay textarea {
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
     resize: none;
-    /* finds div with id contact-form then finds child input and textarea. */
+    /* finds div with id contact-form and class overlay then finds child input and textarea. */
 }
 
 div#Contact-Form.overlay>div.submit-div>button {
     width: 100%;
     padding: 8px;
-    /* finds div with id contact-form then child div with submit-div class, then finds child button. */
+    /* finds div with id contact-form and class overlay then child div with submit-div class, then finds child button. */
 }
 
 
