@@ -1,4 +1,5 @@
 /** MAIN STYLES */
+
 * {
     outline: none;
     overflow-wrap: anywhere;
@@ -50,13 +51,13 @@ noscript {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);    color: white;
+    -o-transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
     z-index: 9999;
     overflow: hidden;
     /* Assigns the noscript tag many different properties. */
 }
-
 
 noscript::after {
     content: "This website requires JavaScript. Please enable JavaScript in your browser settings.";
@@ -203,7 +204,6 @@ section>.container>ul>li:hover {
     list-style-type: disclosure-closed;
     /* Finds the section tag, then finds any child with the container class, then finds any ul child of the container class, then finds any li child of the ul, and assigns the property for when you hover over the tag. */
 }
-
 
 section>.container>ul>li {
     margin-top: 10px;
@@ -352,9 +352,12 @@ footer {
     /* Applies properties to any tag with absolute-footer class. */
 }
 
+
 /** END MAIN STYLES */
 
+
 /** HOME PAGE */
+
 section#home>div.container {
     display: flex;
     justify-content: space-between;
@@ -407,7 +410,7 @@ section#home>div.container>div.Home-Banner>p {
 
 section#home>div.container>div.Home-Banner>h1>span.title-text,
 section#home>div.container>div.Home-Banner>p>span.title-text {
-/* Black text background instead of shadow. To change back remove the text shadow elements.
+    /* Black text background instead of shadow. To change back remove the text shadow elements.
     background-color: rgba(0, 0, 0, 0.5);
     background-color: var(--text-background-color-overlay);
     -webkit-box-decoration-break: clone;
@@ -427,7 +430,6 @@ section#home>div.container>div.Home-Banner>p>span.title-text {
     -o-border-radius: var(--border-radius-small);
     /* Properties apply to span tag with title-text class that is a child of paragraph and h1, from the parent section tag. */
 }
-
 
 section#home>div.container>div.Home-Banner>a#Explore-Careers {
     display: inline-block;
@@ -456,7 +458,7 @@ section#home>div.container>div.Home-Banner>a#Explore-Careers {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
-    /*  */
+    /* Finds section with id home, then finds child div with class container, then child div with class home-banner, then a tag with id Explolore-Careers. */
 }
 
 section#home>div.container>div.Home-Banner>a#Explore-Careers:hover {
@@ -476,10 +478,12 @@ section#home>div.container>div.Home-Banner>a#Explore-Careers:hover {
     -ms-border-radius: var(--border-radius-medium);
     -o-border-radius: 5px;
     -o-border-radius: var(--border-radius-medium);
+    /* Finds section with id home, then finds child div with class container, then child div with class home-banner, then a tag with id Explolore-Careers and applied the properties to on hover. */
 }
 
 section#why-odyssey>div.container>h1.why-header {
     text-align: center;
+    /* Finds section with why-odyssey id, then finds child div with class container, then finds h1 with class why-header. */
 }
 
 section#why-odyssey>div.container>div.tab {
@@ -504,6 +508,7 @@ section#why-odyssey>div.container>div.tab {
     -o-border-radius: var(--border-radius-medium);
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
+    /* Finds section with why-odyssey id, then finds child div with class container, then div with class tab.  */
 }
 
 section#why-odyssey>div.container>div.tab>button.tab-links {
@@ -514,6 +519,7 @@ section#why-odyssey>div.container>div.tab>button.tab-links {
     border: none;
     margin: 5px;
     font-size: 17px;
+    /* finds section with why-odyssey id, then finds child div with class container, then finds div with class tab, then ginds button with class tab-links. */
 }
 
 section#why-odyssey>div.container>div.tab>button.tab-links:hover {
@@ -521,6 +527,7 @@ section#why-odyssey>div.container>div.tab>button.tab-links:hover {
     background-color: var(--focused);
     color: #DDD0C8;
     color: var(--alt-text-color);
+    /* finds section with why-dyssey id, then finds div with container class, then finds div with tab class, then finds button with tab-links and applied properties to on hover. */
 }
 
 section#why-odyssey>div.container>div.tab>button.tab-links.active {
@@ -528,6 +535,7 @@ section#why-odyssey>div.container>div.tab>button.tab-links.active {
     background-color: var(--background-color);
     color: #B87100;
     color: var(--focused);
+    /* finds section with why-odyssey id, then finds child div with class container, then finds div with class tab, then finds button with tab-links and applies the properties to when you click the element. */
 }
 
 section#why-odyssey>div.container>div#tab-content {
@@ -550,29 +558,37 @@ section#why-odyssey>div.container>div#tab-content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* finds section with id why-odyssey, then finds div with class container, then finds div with id tab-content */
 }
 
 section#why-odyssey>div.container>div#tab-content>h3 {
     margin-bottom: 20px;
+    /* finds section with why-odyssey id, then child div with container class, then div with id tab-content then child h3. */
 }
 
 section#why-odyssey>div.container>#tab-content>p {
     text-align: center;
     width: 70%;
+    /* finds section with why odyssey id, then child div with class container, then any element with id tab-content, then child p.  */
 }
+
 
 /** END HOME PAGE */
 
+
 /** MOBILE NAVBAR */
+
 .topnav {
     overflow: hidden;
     background-color: #DDD0C8;
     background-color: var(--alt-background-color);
     position: relative;
+    /* finds any element with topnav class */
 }
 
 .topnav #Links {
     display: none;
+    /*  */
 }
 
 .topnav a,
@@ -642,7 +658,9 @@ section#why-odyssey>div.container>#tab-content>p {
     font-size: 20px;
 }
 
+
 /** END MOBILE NAVBAR */
+
 
 /** TOAST */
 
@@ -731,7 +749,9 @@ section#why-odyssey>div.container>#tab-content>p {
     text-align: center;
 }
 
+
 /** END TOAST */
+
 
 /** RESUME */
 
@@ -1095,9 +1115,12 @@ section#pdf-viewer>div.container>button#submit-resume {
     -o-border-radius: var(--border-radius-medium);
 }
 
+
 /** END CAREER  */
 
+
 /** CONTACT PAGE */
+
 section#contact {
     position: relative;
     display: block;
@@ -1169,7 +1192,9 @@ div#Contact-Form.overlay>div.submit-div>button {
     padding: 8px;
 }
 
+
 /** END CONTACT PAGE */
+
 
 /** ABOUT PAGE */
 
@@ -1183,5 +1208,6 @@ section>div.container>a {
     display: block;
     text-align: left;
 }
+
 
 /** END ABOUT PAGE */
