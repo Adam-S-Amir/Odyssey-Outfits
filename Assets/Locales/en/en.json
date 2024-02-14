@@ -35,8 +35,8 @@
   "Healthy-Workplace-3": "Our team is committed to cultivating a healthy and diverse workplace. We believe that a diverse team brings a wealth of perspectives and creativity, fostering innovation in our sustainable fashion endeavors. Our inclusive environment celebrates differences, embracing a culture that promotes mutual respect and understanding.",
 
   "contact-us": "Contact Us!",
-  "contact-name": "Name:",
-  "contact-email": "Email:",
+  "label-contact-name": "Name:",
+  "label-contact-email": "Email:",
   "label-contact-message": "Message:",
   "contact-submit": "Submit",
 
@@ -85,6 +85,7 @@
   "Sales-Department": "Sales Department",
   "Financial-Department": "Financial Department",
   "IT-Department": "IT Department",
+  "Learn-More": "Please Select a Job Title to Learn More!",
 
   "Chief-Financial-Officer": "Chief Financial Officer",
   "Chief-Executive-Officer": "Chief Executive Officer",

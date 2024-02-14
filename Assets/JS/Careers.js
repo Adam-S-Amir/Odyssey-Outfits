@@ -117,7 +117,7 @@ function ApplyNow() {
         behavior: 'smooth'
     });
     // updates the information content of the page.
-    // updateContent();
+    updateContent();
     // auto scrolls to the top of the page.
     scrollToTop()
     // formats the page properly if it's a mobile user
