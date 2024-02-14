@@ -2,7 +2,7 @@
 
 - [ ] Coding spacing - Matt
 - [ ] Advanced Coding Skills - Adam
-  - [ ] JavaScript, ###Language Locales
+  - [ ] JavaScript, Language Locales
 - [ ] Explain extra features
   - [ ] EmailJS - Adam
   - [ ] Importance of ADA Compliance - Matt
