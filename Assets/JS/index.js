@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
           <option value="es" aria-label="Spanish.">Español</option>
           <option value="fi" aria-label="Finnish.">Suomi</option>
           <option value="fr" aria-label="French.">Français</option>
-          <option value="he" aria-label="Hebrew.">עברית</option>
           <option value="hu" aria-label="Hungarian.">Magyar</option>
           <option value="it" aria-label="Italian.">Italiano</option>
           <option value="ja" aria-label="Japanese.">日本語</option>
@@ -192,7 +191,6 @@ function navbar() {
           <option value="es" aria-label="Spanish.">Español</option>
           <option value="fi" aria-label="Finnish.">Suomi</option>
           <option value="fr" aria-label="French.">Français</option>
-          <option value="he" aria-label="Hebrew.">עברית</option>
           <option value="hu" aria-label="Hungarian.">Magyar</option>
           <option value="it" aria-label="Italian.">Italiano</option>
           <option value="ja" aria-label="Japanese.">日本語</option>

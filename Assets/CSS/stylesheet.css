@@ -1,4 +1,63 @@
 /** MAIN STYLES */
+:root {
+    --background-color: #073632;
+    --alt-background-color: #DDD0C8;
+    --text-color: #073632;
+    --alt-text-color: #DDD0C8;
+    --button-background-color: #B87100;
+    --focused: #B87100;
+    --border-color: #DDD0C8;
+    --overlay: rgba(85, 85, 85, 0.8);
+    --scrollbar-track: #B87100;
+    --scrollbar-thumb: #DDD0C8;
+    --ADA-black: #000000;
+    --ADA-white: #FFFFFF;
+    --text-background-color-overlay: rgba(0, 0, 0, 0.5);
+    --border-radius-xlarge: 1vmax;
+    --border-radius-large: 1vmin;
+    --border-radius-medium: 5px;
+    --border-radius-small: 3px;
+    --font-family: 'Archivo', sans-serif;
+    /* Changes the default attributes and declares them as variables. */
+}
+
+::selection {
+    background-color: var(--overlay);
+    /* Changes selection color to overlay variable. */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Changes scrollbar width. */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--focused);
+    /* Changes scrollbar track color. */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border: solid var(--focused);
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: var(--border-radius-medium);
+    /* Changes the whitespace of the scrollbar. */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb);
+    /* Changes the scrollbar hover. */
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    src: url(../Font/Archivo.ttf);
+    /* Changes the font family. */
+}
 
 * {
     outline: none;
