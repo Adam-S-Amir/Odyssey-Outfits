@@ -158,7 +158,7 @@ function CareerApply() {
   const JobForm = document.querySelector('#Job-Form');
   const pdfViewer = document.querySelector('#pdfViewer');
   if (JobForm) {
-    JobForm.style.left = "-1%";
+    JobForm.style.left = "5%";
     JobForm.style.width = "85%";
     pdfViewer.remove();
   }
