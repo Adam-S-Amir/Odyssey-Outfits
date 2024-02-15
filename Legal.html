@@ -68,28 +68,50 @@
     <section id="legal">
         <div class="container">
             <h1 class="legal-header" id="legal-docs"aria-label="Legal Documents">Legal Documents</h1>
-            <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki" id="github-wiki" aria-label="Link to Github Wiki.">GitHub Wiki</a>
-            <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Feature-List" id="full-feature-list" aria-label="Link to Full Feature List.">Full Feature List</a>
-            <br>
-            <a href="./Compliance.html" id="legal-compliance" aria-label="Link to Legal Compliance.">Legal Compliance</a>
-            <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Legal-Compliance" id="legal-compliance-github" aria-label="Link to Legal Compliance Github Wiki.">Legal Compliance (GitHub Wiki)</a>
-            <br>
-            <a href="./TOS-Privacy.html" id="TOS-privacy-policy" aria-label="Link to Terms of Service and Privacy Policy.">Terms of Service & Privacy Policy</a>
-            <br>
-            <a href="https://github.com/Adam-S-Amir/Odyssey-Outfits/wiki/Terms-of-Service-&-Privacy-Policy" id="TOS-privacy-policy-github" aria-label="Terms of Service and Privacy Policy Github Wiki">Terms of Service & Privacy Policy (GitHub Wiki)</a>
+            <div class="tab">
+                <button class="tab-links active" id="legal-compliance" onclick="Legal(event, 'Compliance')" aria-label="Flexibility">Legal Compliance</button>
+                <button class="tab-links" id="TOS-privacy-policy" onclick="Legal(event, 'TOS')" aria-label="Healthy Workplace.">Terms of Service & Privacy Policy</button>
+            </div>
+            <div id="tab-content">
+                <h2 id="hosting" aria-label="Hosting">Hosting</h2>
+                <ol>
+                    <li id="hosting-1" aria-label="Mr. Amir and Mr. Krug, (hereby referred to as The Developers), explicitly state that Odyssey Outfits, (hereby referred to as The Service), is NOT a registered LLC and lacks legal or retail authority to manufacture, sell, or provide any products or services.">Mr. Amir and Mr. Krug, (hereby referred to as &quot;The Developers&quot;), explicitly state that &quot;Odyssey Outfits&quot;, (hereby referred to as &quot;The Service&quot;), is <strong>NOT</strong> a registered LLC and lacks legal or retail authority to manufacture, sell, or provide any products or services.</li>
+                    <li id="hosting-2" aria-label="The repository for The Service is hosted on GitHub, and the The Service is powered by Vercel.com, (hereby referred to as Vercel).">The repository for The Service is hosted on GitHub, and the The Service is powered by Vercel.com, (hereby referred to as &quot;Vercel&quot;).</li>
+                    <li id="hosting-3" aria-label="As per GitHub.com's, (hereby referred to as GitHub), licensing documentation (Section 1, §2 - Licensing a Repository), it is explicitly stated that ...without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you're creating an open source project, we strongly encourage you to include an open source license. Please be informed that this repository and any associated websites are designated strictly for PERSONAL and PRIVATE use, as it is shared property between The Developers.">As per GitHub.com&#39;s, (hereby referred to as &quot;GitHub&quot;), licensing documentation (Section 1, §2 - &quot;<a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license">Licensing a Repository</a>&quot;), it is explicitly stated that &quot;<em>...without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you&#39;re creating an open source project, we strongly encourage you to include an open source license.</em>&quot; Please be informed that this repository and any associated websites are designated strictly for PERSONAL and PRIVATE use, as it is shared property between The Developers.</li>
+                    <li id="hosting-4" aria-label="The Developers are in compliance with both GitHub and Vercel's minimum age requirements.">The Developers are in compliance with both GitHub and Vercel&#39;s minimum age requirements.</li>
+                    <li id="hosting-5" aria-label="Under Vercel's Terms of Service (Section 2, - Temporary Use License), it is explicitly stated that ...subject to your compliance with the terms of this Agreement, you are granted a personal, non-sublicensable, non-exclusive, non-transferable, limited license, to use the Services for your internal business or personal purposes according to the service capacity of your account. Any rights not expressly granted herein are reserved and no license or right to use any trademark of Vercel or any third-party is granted to you in connection with the Services. While Vercel permits the use of its services for business purposes, it is imperative to clarify that the website, powered by Vercel and hosted on GitHub, is exclusively designated for personal use by The Developers. Any utilization beyond this scope is and shall continue to be unauthorized.">Under Vercel&#39;s Terms of Service (Section 2, - &quot;<a href="https://vercel.com/legal/terms">Temporary Use License</a>&quot;), it is explicitly stated that &quot;<em>...subject to your compliance with the terms of this Agreement, you are granted a personal, non-sublicensable, non-exclusive, non-transferable, limited license, to use the Services for your internal business or personal purposes according to the service capacity of your account. Any rights not expressly granted herein are reserved and no license or right to use any trademark of Vercel or any third-party is granted to you in connection with the Services.</em>&quot; While Vercel permits the use of its services for business purposes, it is imperative to clarify that the website, powered by Vercel and hosted on GitHub, is exclusively designated for personal use by The Developers. Any utilization beyond this scope is and shall continue to be unauthorized.</li>
+                </ol>
+                <h2 id="third-party-terms-of-service-compliance" aria-label="Third-Party Terms of Service Compliance">Third-Party Terms of Service Compliance</h2>
+                <ol>
+                    <li id="third-party-terms-of-service-compliance-1" aria-label="The Developers are in strict compliance with any and all third-party services which have been used for their personal project.">The Developers are in strict compliance with any and all third-party services which have been used for their personal project.</li>
+                    <li id="third-party-terms-of-service-compliance-2" aria-label="The Service has utilized Yandex.com's, (hereby referred to as Yandex), online translator. The Developers are both in compliance with Yandex's Terms of Service documentation (Section 2, §2 - Use of the Service), The Service is provided to the User for personal noncommercial use. As The Developers have strictly stated this project is for personal use only.">The Service has utilized Yandex.com&#39;s, (hereby referred to as &quot;Yandex&quot;), online translator. The Developers are both in compliance with Yandex&#39;s Terms of Service documentation (Section 2, §2 - &quot;<a href="https://yandex.com/legal/translate_termsofuse/">Use of the Service</a>&quot;), &quot;<em>The Service is provided to the User for personal noncommercial use.</em>&quot; As The Developers have strictly stated this project is for personal use only.</li>
+                    <li id="third-party-terms-of-service-compliance-3" aria-label="The Developers has utilized EmailJS.com's, (hereby referred to as EmailJS), JavaScript emailing service. The Terms of Service provided by EmailJS do not implicitly implicate the appropriateness of their service for use in either private or commercial contexts, HOWEVER The Developers have stated the use of EmailJS's services are strictly for personal use.">The Developers has utilized EmailJS.com&#39;s, (hereby referred to as &quot;EmailJS&quot;), JavaScript emailing service. The Terms of Service provided by EmailJS do not implicitly implicate the appropriateness of their service for use in either private or commercial contexts, <strong>HOWEVER</strong> The Developers have stated the use of EmailJS&#39;s services are strictly for personal use.</li>
+                </ol>
+                <h2 id="childrens-online-privacy-protection-act-compliance" aria-label="Children's Online Privacy Protection Act Compliance">Children&#39;s Online Privacy Protection Act Compliance</h2>
+                <ol>
+                    <li id="childrens-online-privacy-protection-act-compliance-1" aria-label="This project in compliance with the requirements of COPPA (Children's Online Privacy Protection Act). It is and will continue to be designed for individuals aged 16 years or older, specifically for private, non-commercial use.">This project in compliance with the requirements of COPPA (<a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa">Children&#39;s Online Privacy Protection Act</a>). It is and will continue to be designed for individuals aged 16 years or older, specifically for private, non-commercial use.</li>
+                </ol>
+                <h2 id="copyright-infringement-and-dmca-policy-compliance" aria-label="Copyright Infringement and DMCA Policy Compliance">Copyright Infringement and DMCA Policy Compliance</h2>
+                <ol>
+                    <li id="copyright-infringement-and-dmca-policy-compliance-1" aria-label="The Developers are in compliance with GitHub's Copyright Infringement and DMCA Policy">The Developers are in compliance with GitHub&#39;s <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#f-copyright-infringement-and-dmca-policy">Copyright Infringement and DMCA Policy</a></li>
+                </ol>
+                <h2 id="collection-and-usage-of-user-data" aria-label="Collection and Usage of User Data">Collection and Usage of User Data</h2>
+                <ol>
+                    <li id="collection-and-usage-of-user-data-1" aria-label="While The Service is a fictitious business, the website is used to demonstrate the standards modern websites should utilize. Any and all functions and API's implied to be used by the site are strictly used for testing purposes.">While The Service is a fictitious business, the website is used to demonstrate the standards modern websites should utilize. Any and all functions and API&#39;s implied to be used by the site are strictly used for testing purposes.</li>
+                    <li id="collection-and-usage-of-user-data-2" aria-label="The Service does not store data such as email addresses, geological addresses, phone numbers, names, external documents, or external links provided by the user. Each of these data types are used as temporary data for the Contact Us and Careers which becomes nonexistent to The Developers.">The Service does not store data such as email addresses, geological addresses, phone numbers, names, external documents, or external links provided by the user. Each of these data types are used as temporary data for the &quot;Contact Us&quot; and &quot;Careers&quot; which becomes nonexistent to The Developers.</li>
+                </ol>
+            </div>
         </div>
     </section>
 
-    <footer class="absolute-footer">
+    <footer>
         <div class="container">
             <p id="copyright" aria-label="Copyright">&copy; 2023-2024 Odyssey Outfits.&nbsp;All rights reserved.</p>
         </div>
     </footer>
     <script src="./Assets/JS/locales.js"></script>
     <script src="./Assets/JS/index.js"></script>
+    <script src="./Assets/JS/Legal.js"></script>
 </body>
 
 </html>

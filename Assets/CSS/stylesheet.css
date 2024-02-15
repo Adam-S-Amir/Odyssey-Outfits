@@ -1244,7 +1244,7 @@ div#Contact-Form.overlay>div.submit-div>button {
 /** END CONTACT PAGE */
 
 
-/** ABOUT PAGE */
+/** LEGAL PAGE */
 
 section>div.container>h1.legal-header {
     color: #DDD0C8;
@@ -1260,4 +1260,89 @@ section>div.container>a {
 }
 
 
-/** END ABOUT PAGE */
+section#legal>div.container>h1.why-header {
+    text-align: center;
+    /* Finds section with legal id, then finds child div with class container, then finds h1 with class why-header. */
+}
+
+section#legal>div.container>div.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDD0C8;
+    background-color: var(--alt-background-color);
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid #B87100;
+    border: 3px solid var(--focused);
+    border-radius: 5px;
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
+    -o-border-radius: var(--border-radius-medium);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    /* Finds section with legal id, then finds child div with class container, then div with class tab.  */
+}
+
+section#legal>div.container>div.tab>button.tab-links {
+    background-color: transparent;
+    text-align: center;
+    color: #073632;
+    color: var(--text-color);
+    border: none;
+    margin: 5px;
+    font-size: 17px;
+    /* finds section with legal id, then finds child div with class container, then finds div with class tab, then ginds button with class tab-links. */
+}
+
+section#legal>div.container>div.tab>button.tab-links:hover {
+    background-color: #B87100;
+    background-color: var(--focused);
+    color: #DDD0C8;
+    color: var(--alt-text-color);
+    /* finds section with why-dyssey id, then finds div with container class, then finds div with tab class, then finds button with tab-links and applied properties to on hover. */
+}
+
+section#legal>div.container>div.tab>button.tab-links.active {
+    background-color: #073632;
+    background-color: var(--background-color);
+    color: #B87100;
+    color: var(--focused);
+    /* finds section with legal id, then finds child div with class container, then finds div with class tab, then finds button with tab-links and applies the properties to when you click the element. */
+}
+
+section#legal>div.container>div#tab-content {
+    padding: 6px 12px;
+    border: 3px solid #B87100;
+    border: 3px solid var(--focused);
+    border-radius: 5px;
+    border-radius: var(--border-radius-medium);
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: var(--border-radius-medium);
+    -moz-border-radius: 5px;
+    -moz-border-radius: var(--border-radius-medium);
+    -ms-border-radius: 5px;
+    -ms-border-radius: var(--border-radius-medium);
+    -o-border-radius: 5px;
+    -o-border-radius: var(--border-radius-medium);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* finds section with id legal, then finds div with class container, then finds div with id tab-content */
+}
+
+section#legal>div.container>div#tab-content>h3 {
+    margin-bottom: 20px;
+    /* finds section with legal id, then child div with container class, then div with id tab-content then child h3. */
+}
+
+/** END LEGAL PAGE */

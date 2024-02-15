@@ -163,6 +163,13 @@ function CareerApply() {
     pdfViewer.remove();
   }
 }
+function LegalPage() {
+  const Tab = document.querySelector(".tab");
+  if (Tab) {
+    Tab.style.display = "grid";
+  }
+}
+
 // Creates function to style the job form and remove the pdf.
 function navbar() {
   let navbar = document.getElementById("navbar");
@@ -210,6 +217,7 @@ function navbar() {
   `];
   CareerPage();
   HomePage();
+  LegalPage();
   ContactPage();
   updateContent();
 }
