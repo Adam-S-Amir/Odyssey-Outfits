@@ -1031,6 +1031,7 @@ div#Job-Form.overlay form {
     color: var(--text-color);
     flex-direction: column;
     width: 100%;
+    left: 50%;
     /* div with id job-form and class overlay, find child form */
 }
 
@@ -1132,7 +1133,7 @@ section#pdf-viewer>div.container>button#submit-resume {
     background-color: var(--button-background-color);
     color: #DDD0C8;
     color: var(--alt-text-color);
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

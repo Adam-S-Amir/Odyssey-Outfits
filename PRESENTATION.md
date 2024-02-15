@@ -5,7 +5,7 @@
   - [ ] JavaScript, Language Locales
 - [ ] Explain extra features
   - [ ] EmailJS - Adam
-  - [ ] ADA Compliance - Matt
+  - [ ] Importance of ADA Compliance - Matt
 - [ ] Color theme - Matt
   - [ ] Every page has same colors, HTML & CSS layout
 - [ ] Graphics - Matt
