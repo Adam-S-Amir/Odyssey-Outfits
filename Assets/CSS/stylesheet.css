@@ -1031,6 +1031,7 @@ div#Job-Form.overlay form {
     color: var(--text-color);
     flex-direction: column;
     width: 100%;
+    left: 50%;
     /* div with id job-form and class overlay, find child form */
 }
 
