@@ -1,8 +1,7 @@
 # TODO
 
 - [ ] Fix forms
-- [ ] ADA Compliance Standards need to be up-to-date
-  - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
+- [ ] ```Select``` tag needs ```aria-label```s
 
 
 # Finished
@@ -32,4 +31,5 @@
 - [x] Project Documentation
 - [x] CSS Comments
 - [x] Refine language localizations
- 
+- [x] ADA Compliance Standards are up-to-date
+  - [ ] [ADA Compliance Tester](https://accessibe.com/accessscan?website=odysseyoutfits.vercel.app)
