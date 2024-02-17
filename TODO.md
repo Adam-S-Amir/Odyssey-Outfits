@@ -1,7 +1,7 @@
 # TODO
 
 - [ ] Fix forms
-- [ ] ```Select``` tag needs ```aria-label```s
+- [x] ```Select``` tag needs ```aria-label```s
 
 # Finished
 

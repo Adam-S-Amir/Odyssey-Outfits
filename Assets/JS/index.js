@@ -182,7 +182,7 @@ function navbar() {
       <a id="nav-contact" href="./Contact.html" aria-label="Contact Page">Contact</a>
       <a id="nav-legal" href="./Legal.html" aria-label="Legal Page">Legal</a>
       <a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page">Careers</a>
-      <select title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
+      <select aria-label="Change Site Language" title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
           <option value="ar" aria-label="Arabic.">العربية</option>
           <option value="da" aria-label="Dansk.">Dansk</option>
           <option value="de" aria-label="Deutsch.">Deutsch</option>
@@ -233,8 +233,7 @@ function navbar_default() {
           <li><a id="nav-legal" href="./Legal.html" aria-label="Legal Page">Legal</a></li>
           <li><a id="nav-careers" class="focused" href="./Careers.html" aria-label="Careers Page">Careers</a></li>
           <li aria-label="Change sites language.">
-              <select title="Change Site Language" id="languageSelect" class="languageSelect"
-                  onchange="changeLanguage(this.value)">
+          <select aria-label="Change Site Language" title="Change Site Language" id="languageSelect" class="languageSelect" onchange="changeLanguage(this.value)">
                   <option value="ar" aria-label="Arabic.">العربية</option>
                   <option value="da" aria-label="Dansk.">Dansk</option>
                   <option value="de" aria-label="Deutsch.">Deutsch</option>
